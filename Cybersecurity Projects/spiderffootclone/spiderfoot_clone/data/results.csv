@@ -1,0 +1,60 @@
+DNS Lookup,0.0.0.0 -> 0.0.0.0
+WHOIS Lookup,"domain_name: MSN.COM
+registrar: MarkMonitor, Inc.
+registrar_url: http://www.markmonitor.com
+reseller: None
+updated_date: [datetime.datetime(2024, 5, 3, 11, 15, 40), datetime.datetime(2024, 5, 3, 11, 15, 41, tzinfo=datetime.timezone.utc)]
+creation_date: [datetime.datetime(1994, 11, 10, 5, 0), datetime.datetime(1994, 11, 10, 5, 0, tzinfo=datetime.timezone.utc)]
+expiration_date: [datetime.datetime(2025, 6, 4, 16, 44, 29), datetime.datetime(2025, 6, 4, 0, 0, tzinfo=datetime.timezone.utc)]
+name_servers: ['DNS1.P09.NSONE.NET', 'NS1-204.AZURE-DNS.COM', 'NS2-204.AZURE-DNS.NET', 'NS3-204.AZURE-DNS.ORG', 'NS4-204.AZURE-DNS.INFO']
+status: ['clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'clientTransferProhibited https://icann.org/epp#clientTransferProhibited', 'clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited', 'serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited', 'serverTransferProhibited https://icann.org/epp#serverTransferProhibited', 'serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited', 'clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)', 'clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)', 'clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)', 'serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)', 'serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)', 'serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)']
+emails: ['abusecomplaints@markmonitor.com', 'domains@microsoft.com', 'msnhst@microsoft.com', 'whoisrequest@markmonitor.com']
+dnssec: unsigned
+name: Domain Administrator
+org: Microsoft Corporation
+address: One Microsoft Way,
+city: Redmond
+state: WA
+registrant_postal_code: 98052
+country: US
+"
+Reverse DNS Lookup,Domain: a.ads1.msn.com
+IP Geolocation,Failed: 'country'
+Port Scanner,
+DNS Lookup,66.6.6.6 -> 66.6.6.6
+WHOIS Lookup,"domain_name: ITCTEL.COM
+registrar: NETWORK SOLUTIONS, LLC.
+registrar_url: ['http://networksolutions.com', 'http://www.networksolutions.com']
+reseller: None
+updated_date: [datetime.datetime(2023, 4, 4, 15, 39, 54), datetime.datetime(2021, 2, 3, 14, 19, 18)]
+creation_date: 1995-09-10 04:00:00
+expiration_date: 2026-09-09 04:00:00
+name_servers: ['NS1.ITCTEL.COM', 'NS2.ITCTEL.COM']
+status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+emails: ['domain.operations@web.com', 'bb_department@itccoop.com']
+dnssec: ['signedDelegation', 'Unsigned']
+name: Interstate Telecommunications Coop., Inc.
+org: Interstate Telecommunications Coop., Inc.
+address: 312 4TH ST W
+city: CLEAR LAKE
+state: SD
+registrant_postal_code: 57226-4102
+country: US
+"
+Reverse DNS Lookup,Domain: 66-6-6-6.d2.itctel.com
+IP Geolocation,"status: success
+country: United States
+countryCode: US
+region: SD
+regionName: South Dakota
+city: Milbank
+zip: 57252
+lat: 45.2141
+lon: -96.626
+timezone: America/Chicago
+isp: South Dakota Network
+org: INTERSTATE TELECOMMUNICATIONS COOPERATIVE, INC.
+as: AS13576 SOUTH DAKOTA NETWORK
+query: 66.6.6.6
+"
+Port Scanner,

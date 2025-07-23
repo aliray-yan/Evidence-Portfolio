@@ -1,0 +1,3 @@
+I participated in a phishing email simulation designed to mimic real-world social engineering tactics.
+I interpreted phishing simulation results and made a presentation on it.
+After the analysis, I mitigated the malware attack using Incident Postmortem.

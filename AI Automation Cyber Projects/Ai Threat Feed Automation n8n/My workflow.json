@@ -1,0 +1,622 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://threatpost.com/category/vulnerabilities/feed/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -592,
+        -96
+      ],
+      "id": "71a5435c-df42-468f-aab3-b9ee96d68ae3",
+      "name": "RSS Read",
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "retryOnFail": false
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1104,
+        -128
+      ],
+      "id": "bf391b30-e531-4440-9016-f2748cf14942",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            },
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1104,
+        192
+      ],
+      "id": "3adcaedd-8c60-4bc4-8a1f-0f6d00a44eaa",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Title: {{ $json[\"title\"] }}\nDescription: {{ $json[\"content\"] }}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "You are a cybersecurity analyst. Summarize the following vulnerability in plain English. Include affected systems, any noted severity, and what action should be taken."
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        -208,
+        -112
+      ],
+      "id": "c973db69-dc66-4c17-b1ea-fc82eab4d34d",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        80
+      ],
+      "id": "309fd1f8-a055-4d91-8b57-12a479a49335",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "sqm8Zli9dxwpSjdX",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -128,
+        336
+      ],
+      "id": "55bf1f00-fda1-4b04-b658-6c4da858f20a",
+      "name": "When chat message received",
+      "webhookId": "84f86890-5593-470a-9444-aeb63cf6ac0b"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "127faef8-3b64-4003-a0b8-2eea307f3382",
+              "name": "title",
+              "value": "={{ $('RSS Read').item.json.title }}",
+              "type": "string"
+            },
+            {
+              "id": "40596283-22d8-4646-ad65-e949d8b30223",
+              "name": "content",
+              "value": "={{ $('RSS Read').item.json.content }}",
+              "type": "string"
+            },
+            {
+              "id": "97736c0d-e809-4179-a823-c79f9edb9972",
+              "name": "link",
+              "value": "={{ $('RSS Read').item.json.link }}",
+              "type": "string"
+            },
+            {
+              "id": "378206e7-bc0d-4d71-8221-d82c98ac20c7",
+              "name": "creator",
+              "value": "={{ $('RSS Read').item.json.creator }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        288,
+        -112
+      ],
+      "id": "e27359e2-70e7-4fce-8bfb-c3a0d056c7d2",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "sendTo": "alirayyansahiwal4@gmail.com",
+        "subject": "={{ $json.title }}",
+        "message": "={{ $json.content }} ,{{ $json.link }}, {{ $json.creator }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        784,
+        0
+      ],
+      "id": "2ae5dcff-228b-4ac1-aba9-a6a266855792",
+      "name": "Send a message",
+      "webhookId": "015df80b-4881-45f4-bb4b-3a637dea7fb4",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "47CCRSGJ7YxeiTBQ",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        512,
+        -128
+      ],
+      "id": "f25803fa-83c4-4e94-a36e-92cb317b5db1",
+      "name": "Limit"
+    }
+  ],
+  "pinData": {
+    "RSS Read": [
+      {
+        "json": {
+          "creator": "Nate Nelson",
+          "title": "Ransomware Attacks are on the Rise",
+          "link": "https://threatpost.com/ransomware-attacks-are-on-the-rise/180481/",
+          "pubDate": "Fri, 26 Aug 2022 16:44:27 +0000",
+          "dc:creator": "Nate Nelson",
+          "content": "Lockbit is by far this summer’s most prolific ransomware group, trailed by two offshoots of the Conti group.",
+          "contentSnippet": "Lockbit is by far this summer’s most prolific ransomware group, trailed by two offshoots of the Conti group.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180481",
+          "categories": [
+            "Malware",
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-26T16:44:27.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Nate Nelson",
+          "title": "Cybercriminals Are Selling Access to Chinese Surveillance Cameras",
+          "link": "https://threatpost.com/cybercriminals-are-selling-access-to-chinese-surveillance-cameras/180478/",
+          "pubDate": "Thu, 25 Aug 2022 18:47:15 +0000",
+          "dc:creator": "Nate Nelson",
+          "content": "Tens of thousands of cameras have failed to patch a critical, 11-month-old CVE, leaving thousands of organizations exposed.",
+          "contentSnippet": "Tens of thousands of cameras have failed to patch a critical, 11-month-old CVE, leaving thousands of organizations exposed.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180478",
+          "categories": [
+            "IoT",
+            "Privacy",
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-25T18:47:15.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Threatpost",
+          "title": "Firewall Bug Under Active Attack Triggers CISA Warning",
+          "link": "https://threatpost.com/firewall-bug-under-active-attack-cisa-warning/180467/",
+          "pubDate": "Tue, 23 Aug 2022 13:19:58 +0000",
+          "dc:creator": "Threatpost",
+          "content": "CISA is warning that Palo Alto Networks’ PAN-OS is under active attack and needs to be patched ASAP. ",
+          "contentSnippet": "CISA is warning that Palo Alto Networks’ PAN-OS is under active attack and needs to be patched ASAP.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180467",
+          "categories": [
+            "Vulnerabilities",
+            "Web Security"
+          ],
+          "isoDate": "2022-08-23T13:19:58.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Elizabeth Montalbano",
+          "title": "iPhone Users Urged to Update to Patch 2 Zero-Days",
+          "link": "https://threatpost.com/iphone-users-urged-to-update-to-patch-2-zero-days-under-attack/180448/",
+          "pubDate": "Fri, 19 Aug 2022 15:25:56 +0000",
+          "dc:creator": "Elizabeth Montalbano",
+          "content": "Separate fixes to macOS and iOS patch respective flaws in the kernel and WebKit that can allow threat actors to take over devices and are under attack.",
+          "contentSnippet": "Separate fixes to macOS and iOS patch respective flaws in the kernel and WebKit that can allow threat actors to take over devices and are under attack.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180448",
+          "categories": [
+            "Hacks",
+            "Mobile Security",
+            "News",
+            "Vulnerabilities",
+            "Apple iPhone",
+            "Apple vulnerabilities"
+          ],
+          "isoDate": "2022-08-19T15:25:56.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Elizabeth Montalbano",
+          "title": "Google Patches Chrome’s Fifth Zero-Day of the Year",
+          "link": "https://threatpost.com/google-patches-chromes-fifth-zero-day-of-the-year/180432/",
+          "pubDate": "Thu, 18 Aug 2022 14:31:38 +0000",
+          "dc:creator": "Elizabeth Montalbano",
+          "content": "An insufficient validation input flaw, one of 11 patched in an update this week, could allow for arbitrary code execution and is under active attack.",
+          "contentSnippet": "An insufficient validation input flaw, one of 11 patched in an update this week, could allow for arbitrary code execution and is under active attack.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180432",
+          "categories": [
+            "Vulnerabilities",
+            "Web Security",
+            "Google Chrome",
+            "zero-day vulnerabilities"
+          ],
+          "isoDate": "2022-08-18T14:31:38.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Nate Nelson",
+          "title": "Xiaomi Phone Bug Allowed Payment Forgery",
+          "link": "https://threatpost.com/xiaomi-phones-found-vulnerable-to-payment-forgery/180416/",
+          "pubDate": "Tue, 16 Aug 2022 12:26:27 +0000",
+          "dc:creator": "Nate Nelson",
+          "content": "Mobile transactions could’ve been disabled, created and signed by attackers.",
+          "contentSnippet": "Mobile transactions could’ve been disabled, created and signed by attackers.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180416",
+          "categories": [
+            "Mobile Security",
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-16T12:26:27.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Threatpost",
+          "title": "Black Hat and DEF CON Roundup",
+          "link": "https://threatpost.com/black-hat-and-def-con-roundup/180409/",
+          "pubDate": "Mon, 15 Aug 2022 13:56:58 +0000",
+          "dc:creator": "Threatpost",
+          "content": "‘Summer Camp’ for hackers features a compromised satellite, a homecoming for hackers and cyberwarfare warnings.   ",
+          "contentSnippet": "‘Summer Camp’ for hackers features a compromised satellite, a homecoming for hackers and cyberwarfare warnings.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180409",
+          "categories": [
+            "Black Hat",
+            "Government",
+            "Hacks",
+            "Malware",
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-15T13:56:58.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Elizabeth Montalbano",
+          "title": "Feds: Zeppelin Ransomware Resurfaces with New Compromise, Encryption Tactics",
+          "link": "https://threatpost.com/zeppelin-ransomware-resurfaces/180405/",
+          "pubDate": "Fri, 12 Aug 2022 18:20:38 +0000",
+          "dc:creator": "Elizabeth Montalbano",
+          "content": "The CISA has seen a resurgence of the malware targeting a range of verticals and critical infrastructure organizations by exploiting RDP, firewall vulnerabilities.",
+          "contentSnippet": "The CISA has seen a resurgence of the malware targeting a range of verticals and critical infrastructure organizations by exploiting RDP, firewall vulnerabilities.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180405",
+          "categories": [
+            "Malware",
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-12T18:20:38.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Threatpost",
+          "title": "Microsoft Patches ‘Dogwalk’ Zero-Day and 17 Critical Flaws",
+          "link": "https://threatpost.com/microsoft-patches-dogwalk-zero-day-and-17-critical-flaws/180378/",
+          "pubDate": "Wed, 10 Aug 2022 12:48:05 +0000",
+          "dc:creator": "Threatpost",
+          "content": "August Patch Tuesday tackles 121 CVEs, 17 critical bugs and one zero-day bug exploited in the wild. ",
+          "contentSnippet": "August Patch Tuesday tackles 121 CVEs, 17 critical bugs and one zero-day bug exploited in the wild.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180378",
+          "categories": [
+            "Vulnerabilities"
+          ],
+          "isoDate": "2022-08-10T12:48:05.000Z"
+        }
+      },
+      {
+        "json": {
+          "creator": "Elizabeth Montalbano",
+          "title": "Open Redirect Flaw Snags Amex, Snapchat User Data",
+          "link": "https://threatpost.com/open-redirect-flaw-snags-amex-snapchat-user-data/180354/",
+          "pubDate": "Fri, 05 Aug 2022 13:17:09 +0000",
+          "dc:creator": "Elizabeth Montalbano",
+          "content": "Separate phishing campaigns targeting thousands of victims impersonate FedEx and Microsoft, among others, to trick victims.",
+          "contentSnippet": "Separate phishing campaigns targeting thousands of victims impersonate FedEx and Microsoft, among others, to trick victims.",
+          "guid": "https://kasperskycontenthub.com/threatpost-global/?p=180354",
+          "categories": [
+            "Hacks",
+            "Vulnerabilities",
+            "Web Security"
+          ],
+          "isoDate": "2022-08-05T13:17:09.000Z"
+        }
+      }
+    ],
+    "Basic LLM Chain": [
+      {
+        "json": {
+          "text": "This report highlights a significant increase in ransomware attacks this summer. The most active group is Lockbit, followed by two related groups connected to Conti. While specific affected systems are not mentioned, ransomware typically targets a wide range of organizations and computer systems to encrypt data and demand payment. The severity is high due to the widespread and growing nature of these attacks. Organizations should strengthen their cybersecurity defenses by ensuring regular data backups, updating and patching systems promptly, educating employees about phishing risks, and having an incident response plan ready in case of an attack."
+        }
+      },
+      {
+        "json": {
+          "text": "This vulnerability affects many Chinese-made surveillance cameras that have not been updated to fix a serious security flaw identified over 11 months ago. Because these cameras remain unpatched, cybercriminals are able to gain unauthorized access to them and are even selling this access, exposing thousands of organizations to potential spying or attacks. The issue is severe given the widespread exposure and the sensitive nature of surveillance systems. To protect your systems, it’s important to immediately check if your cameras are affected and apply any available security updates or patches. If no patch is available, consider disconnecting vulnerable devices from the internet or replacing them with devices from vendors that provide timely security support."
+        }
+      },
+      {
+        "json": {
+          "text": "A serious security flaw has been found in Palo Alto Networks’ PAN-OS firewall software, and hackers are currently exploiting this vulnerability. Systems running PAN-OS are at risk of being compromised. The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning urging all users to update their PAN-OS software immediately to protect their networks from potential attacks. If you use PAN-OS firewalls, apply the latest patches from Palo Alto Networks as soon as possible to stay secure."
+        }
+      },
+      {
+        "json": {
+          "text": "There are two critical security flaws affecting Apple devices that need urgent attention. One flaw is in the core operating system (kernel) and the other is in the WebKit browser engine, impacting both macOS and iOS. These vulnerabilities are actively being exploited by attackers, which means hackers could potentially take full control of affected iPhones and Macs. Users are strongly advised to update their devices immediately to the latest patches (Patch 2) provided by Apple to protect against these attacks."
+        }
+      },
+      {
+        "json": {
+          "text": "A security vulnerability has been found in Google Chrome, affecting all users of the browser. The flaw involves poor input validation, which could let attackers run malicious code on your computer without your permission. This is a serious issue and is currently being exploited in real-world attacks. Google has released an update that fixes this and ten other security problems. To protect yourself, you should immediately update Chrome to the latest version available."
+        }
+      },
+      {
+        "json": {
+          "text": "A security flaw was discovered in Xiaomi phones that could let attackers make fake mobile payments without permission. This means hackers might be able to disable legitimate transactions or create and approve fraudulent ones, potentially leading to financial loss. This issue affects Xiaomi mobile devices. The severity is high due to the risk of unauthorized payments. Users should update their phones immediately when a security patch is released by Xiaomi, and avoid making mobile payments until the issue is resolved."
+        }
+      },
+      {
+        "json": {
+          "text": "This summary highlights a recent hacker event known as Black Hat and DEF CON, often called a 'summer camp' for cybersecurity experts and hackers. During these events, discussions and demonstrations included topics like compromised satellites, hackers returning to the scene, and warnings about the increasing risks of cyberwarfare.\n\nAffected systems: Satellite systems and potentially other critical infrastructure discussed at the event.\n\nSeverity: High, due to the involvement of compromised satellite technology and warnings about cyberwarfare threats.\n\nRecommended action: Organizations, especially those using satellite technology or involved in critical infrastructure, should review their cybersecurity defenses, monitor for unusual activity, and stay informed about emerging hacker techniques shared during these events. Staying proactive can help mitigate the risks highlighted by hackers and security experts at Black Hat and DEF CON."
+        }
+      },
+      {
+        "json": {
+          "text": "A type of ransomware called Zeppelin has been seen active again, targeting various industries and critical infrastructure. It spreads by exploiting weaknesses in Remote Desktop Protocol (RDP) and firewall security. This poses a serious threat because ransomware can lock up important systems and demand payment to regain access. Organizations using RDP or whose firewalls may have vulnerabilities should urgently review and strengthen their security measures, such as closing unnecessary RDP access, applying patches, and monitoring for suspicious activity to prevent infection."
+        }
+      },
+      {
+        "json": {
+          "text": "Microsoft has released its August security updates addressing a total of 121 vulnerabilities in its software. Among these are 17 critical flaws that could allow attackers to take control of affected systems. Notably, there is a zero-day vulnerability known as \"Dogwalk,\" which has been actively exploited by attackers.\n\nAffected Systems:\n- Various Microsoft products and services (specific systems include Windows operating systems and possibly other Microsoft software suites, though exact details are not provided).\n\nSeverity:\n- High, with 17 critical vulnerabilities and one actively exploited zero-day (\"Dogwalk\").\n\nRecommended Action:\n- Immediately apply the August Patch Tuesday updates to all Microsoft systems to protect against these vulnerabilities, especially the Dogwalk zero-day exploit. This will help prevent potential attacks and maintain system security."
+        }
+      },
+      {
+        "json": {
+          "text": "This vulnerability involves an \"open redirect\" flaw, which has been exploited in phishing attacks pretending to be from companies like FedEx and Microsoft. These attacks have targeted thousands of users, including customers of American Express and Snapchat, potentially exposing their personal data. The affected systems include websites or services vulnerable to open redirect exploits, where attackers can redirect users to malicious sites without their knowledge. This type of vulnerability is serious because it can facilitate phishing and data theft.\n\nTo protect against this issue:\n- Users should be cautious of unexpected links, especially those claiming to be from well-known companies.\n- Organizations should fix the open redirect flaws in their websites by validating and restricting URL redirections to trusted destinations only.\n- Regularly update and patch web applications to prevent exploitation.\n- Implement additional security measures like multi-factor authentication to reduce risk of compromised accounts."
+        }
+      }
+    ],
+    "Edit Fields": [
+      {
+        "json": {
+          "title": "Ransomware Attacks are on the Rise",
+          "content": "Lockbit is by far this summer’s most prolific ransomware group, trailed by two offshoots of the Conti group.",
+          "link": "https://threatpost.com/ransomware-attacks-are-on-the-rise/180481/",
+          "creator": "Nate Nelson"
+        }
+      },
+      {
+        "json": {
+          "title": "Cybercriminals Are Selling Access to Chinese Surveillance Cameras",
+          "content": "Tens of thousands of cameras have failed to patch a critical, 11-month-old CVE, leaving thousands of organizations exposed.",
+          "link": "https://threatpost.com/cybercriminals-are-selling-access-to-chinese-surveillance-cameras/180478/",
+          "creator": "Nate Nelson"
+        }
+      },
+      {
+        "json": {
+          "title": "Firewall Bug Under Active Attack Triggers CISA Warning",
+          "content": "CISA is warning that Palo Alto Networks’ PAN-OS is under active attack and needs to be patched ASAP. ",
+          "link": "https://threatpost.com/firewall-bug-under-active-attack-cisa-warning/180467/",
+          "creator": "Threatpost"
+        }
+      },
+      {
+        "json": {
+          "title": "iPhone Users Urged to Update to Patch 2 Zero-Days",
+          "content": "Separate fixes to macOS and iOS patch respective flaws in the kernel and WebKit that can allow threat actors to take over devices and are under attack.",
+          "link": "https://threatpost.com/iphone-users-urged-to-update-to-patch-2-zero-days-under-attack/180448/",
+          "creator": "Elizabeth Montalbano"
+        }
+      },
+      {
+        "json": {
+          "title": "Google Patches Chrome’s Fifth Zero-Day of the Year",
+          "content": "An insufficient validation input flaw, one of 11 patched in an update this week, could allow for arbitrary code execution and is under active attack.",
+          "link": "https://threatpost.com/google-patches-chromes-fifth-zero-day-of-the-year/180432/",
+          "creator": "Elizabeth Montalbano"
+        }
+      },
+      {
+        "json": {
+          "title": "Xiaomi Phone Bug Allowed Payment Forgery",
+          "content": "Mobile transactions could’ve been disabled, created and signed by attackers.",
+          "link": "https://threatpost.com/xiaomi-phones-found-vulnerable-to-payment-forgery/180416/",
+          "creator": "Nate Nelson"
+        }
+      },
+      {
+        "json": {
+          "title": "Black Hat and DEF CON Roundup",
+          "content": "‘Summer Camp’ for hackers features a compromised satellite, a homecoming for hackers and cyberwarfare warnings.   ",
+          "link": "https://threatpost.com/black-hat-and-def-con-roundup/180409/",
+          "creator": "Threatpost"
+        }
+      },
+      {
+        "json": {
+          "title": "Feds: Zeppelin Ransomware Resurfaces with New Compromise, Encryption Tactics",
+          "content": "The CISA has seen a resurgence of the malware targeting a range of verticals and critical infrastructure organizations by exploiting RDP, firewall vulnerabilities.",
+          "link": "https://threatpost.com/zeppelin-ransomware-resurfaces/180405/",
+          "creator": "Elizabeth Montalbano"
+        }
+      },
+      {
+        "json": {
+          "title": "Microsoft Patches ‘Dogwalk’ Zero-Day and 17 Critical Flaws",
+          "content": "August Patch Tuesday tackles 121 CVEs, 17 critical bugs and one zero-day bug exploited in the wild. ",
+          "link": "https://threatpost.com/microsoft-patches-dogwalk-zero-day-and-17-critical-flaws/180378/",
+          "creator": "Threatpost"
+        }
+      },
+      {
+        "json": {
+          "title": "Open Redirect Flaw Snags Amex, Snapchat User Data",
+          "content": "Separate phishing campaigns targeting thousands of victims impersonate FedEx and Microsoft, among others, to trick victims.",
+          "link": "https://threatpost.com/open-redirect-flaw-snags-amex-snapchat-user-data/180354/",
+          "creator": "Elizabeth Montalbano"
+        }
+      }
+    ],
+    "Limit": [
+      {
+        "json": {
+          "title": "Ransomware Attacks are on the Rise",
+          "content": "Lockbit is by far this summer’s most prolific ransomware group, trailed by two offshoots of the Conti group.",
+          "link": "https://threatpost.com/ransomware-attacks-are-on-the-rise/180481/",
+          "creator": "Nate Nelson"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "RSS Read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS Read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Read": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        []
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a8799a2a-debe-471b-8e6e-dc5735d56e8f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "196f07b126d1c3b149cec1a2d16d185f4d42426bed80273886e49fa1ae740913"
+  },
+  "id": "wDttlXcZpv9wDzWO",
+  "tags": []
+}
