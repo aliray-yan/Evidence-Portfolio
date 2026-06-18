@@ -1,0 +1,4 @@
+Yes, this is a brute force attack.
+Wazuh detected 20 consecutive failed logon attempts against the local Administrator account on host WIN-11, all occurring within approximately 10 seconds. This triggered Rule 60110 — Multiple Windows audit logon failures — at severity level 7.
+A legitimate user mistyping their password generates 2–3 failures at most before either succeeding or stopping. Twenty failed attempts in rapid succession from the same source, targeting the same account, is the textbook signature of an automated brute force attack — a threat actor systematically cycling through passwords hoping one works.
+In a real SOC environment this alert would be immediately escalated, the source IP blocked at the firewall, and the targeted account temporarily locked pending investigation

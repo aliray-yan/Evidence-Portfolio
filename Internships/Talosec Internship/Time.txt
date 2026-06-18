@@ -1,0 +1,4454 @@
+	Time
+agent.ipagent.idagent.namedata.srcipdata.srcportdata.srcuserrule.descriptionrule.firedtimesrule.mitre.tacticrule.mitre.techniquesyscheck.pathrule.idrule.levelGeoLocation.city_name
+Dec 31, 2025 @ 21:08:29.07610.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 20:58:28.98710.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+4
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 20:58:27.45710.0.0.97
+002
+server02
+121.227.31.82
+55442
+user
+sshd: Attempt to login using a non-existent user
+4
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 20:57:37.02410.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+2
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 20:47:36.95010.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+3
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 20:47:36.93510.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+2
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 20:47:35.40510.0.0.97
+002
+server02
+121.227.31.82
+40162
+user
+sshd: Attempt to login using a non-existent user
+3
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 20:47:35.40210.0.0.97
+002
+server02
+121.227.31.82
+39118
+user
+sshd: Attempt to login using a non-existent user
+2
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 20:46:50.97210.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 20:36:50.89410.0.0.97
+002
+server02
+121.227.31.82
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 20:36:49.34610.0.0.97
+002
+server02
+121.227.31.82
+52592
+user
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 19:27:04.368 - 
+000
+ip-10-0-0-27
+216.232.157.62
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+Surrey
+Dec 31, 2025 @ 19:17:03.810 - 
+000
+ip-10-0-0-27
+216.232.157.62
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+Surrey
+Dec 31, 2025 @ 19:17:02.304 - 
+000
+ip-10-0-0-27
+216.232.157.62
+61462
+a
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Surrey
+Dec 31, 2025 @ 16:47:14.91510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+7
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.91110.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+6
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/mmx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.79010.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+5
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/shimx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.65310.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+4
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/grubx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.36910.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+3
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/mmx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.24710.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/fbx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 16:47:14.22910.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+550
+7
+ - 
+Dec 31, 2025 @ 15:45:35.80310.0.0.97
+002
+server02
+205.210.31.44
+64968
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 31, 2025 @ 12:53:04.71810.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 12:53:02.94610.0.0.97
+002
+server02
+ - 
+32312
+ - 
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 12:53:02.94610.0.0.97
+002
+server02
+8.221.139.48
+32306
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+Singapore
+Dec 31, 2025 @ 12:53:02.90610.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+sshd: connection reset by peer
+1
+ - 
+ - 
+ - 
+5740
+4
+ - 
+Dec 31, 2025 @ 10:56:48.33610.0.0.97
+002
+server02
+36.89.252.210
+44224
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 31, 2025 @ 10:56:48.29510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+sshd: connection reset by peer
+1
+ - 
+ - 
+ - 
+5740
+4
+ - 
+Dec 31, 2025 @ 09:19:55.77010.0.0.97
+002
+server02
+198.235.24.223
+59858
+ - 
+sshd: connection reset
+2
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 31, 2025 @ 09:10:14.013 - 
+000
+ip-10-0-0-27
+147.185.132.210
+65442
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 31, 2025 @ 09:06:07.972 - 
+000
+ip-10-0-0-27
+122.224.55.112
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 08:56:06.472 - 
+000
+ip-10-0-0-27
+122.224.55.112
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 08:56:05.893 - 
+000
+ip-10-0-0-27
+122.224.55.112
+52504
+user
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 07:16:14.80010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Wazuh agent stopped.
+1
+Defense Evasion
+Disable or Modify Tools
+ - 
+506
+3
+ - 
+Dec 31, 2025 @ 07:12:48.72210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 07:06:48.36810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 07:02:01.934 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 07:02:00.913 - 
+000
+ip-10-0-0-27
+ - 
+32946
+ - 
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 07:01:58.912 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+sshd: connection reset by peer
+1
+ - 
+ - 
+ - 
+5740
+4
+ - 
+Dec 31, 2025 @ 07:01:58.912 - 
+000
+ip-10-0-0-27
+47.250.80.158
+38142
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+Kuala Lumpur
+Dec 31, 2025 @ 07:00:48.74210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:54:48.69410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:48:48.66510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:42:48.61710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:36:48.51510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:30:48.25710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:24:48.53210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:18:48.50510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:12:48.45610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:06:48.42210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 06:00:48.38310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:58:48.83810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+System running out of memory. Availability of the system is in risk.
+1
+Impact
+Endpoint Denial of Service
+ - 
+5108
+12
+ - 
+Dec 31, 2025 @ 05:54:48.34210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:48:48.25510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:42:48.27910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:36:48.24910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:30:48.20710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:24:48.16710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:18:48.13310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:12:48.09610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:06:48.04010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 05:00:47.81810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:54:47.48210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:48:47.14410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:46:44.81010.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+7
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.80610.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+6
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/mmx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.68410.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+5
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/shimx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.54710.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+4
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/grubx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.26510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+3
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/mmx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.14410.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/fbx64.efi
+550
+7
+ - 
+Dec 31, 2025 @ 04:46:44.12710.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+550
+7
+ - 
+Dec 31, 2025 @ 04:42:47.93310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:36:47.90010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:30:47.85310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:24:47.81510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:18:47.55410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:12:47.28610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:06:47.74310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 04:02:34.904 - 
+000
+ip-10-0-0-27
+83.50.48.176
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+Las Rozas de Madrid
+Dec 31, 2025 @ 04:00:47.69910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:54:47.65810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:52:34.842 - 
+000
+ip-10-0-0-27
+83.50.48.176
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+3
+ - 
+ - 
+ - 
+651
+3
+Las Rozas de Madrid
+Dec 31, 2025 @ 03:52:34.842 - 
+000
+ip-10-0-0-27
+83.50.48.176
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+2
+ - 
+ - 
+ - 
+651
+3
+Las Rozas de Madrid
+Dec 31, 2025 @ 03:52:33.703 - 
+000
+ip-10-0-0-27
+83.50.48.176
+52700
+pi
+sshd: Attempt to login using a non-existent user
+3
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Las Rozas de Madrid
+Dec 31, 2025 @ 03:52:33.703 - 
+000
+ip-10-0-0-27
+83.50.48.176
+52702
+pi
+sshd: Attempt to login using a non-existent user
+2
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Las Rozas de Madrid
+Dec 31, 2025 @ 03:48:47.62810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:42:47.58710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:36:47.35110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:30:47.52910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:24:47.49310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:19:50.659 - 
+000
+ip-10-0-0-27
+102.134.52.49
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 03:18:47.44810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:12:47.39710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:09:50.606 - 
+000
+ip-10-0-0-27
+102.134.52.49
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 03:09:49.431 - 
+000
+ip-10-0-0-27
+102.134.52.49
+41534
+admin
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 03:06:47.34810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 03:00:47.18410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:54:47.29310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:48:47.25710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:42:47.21110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:36:47.16810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:30:47.13710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:24:47.09510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:18:47.03910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:12:47.00510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:09:29.57710.0.0.97
+002
+server02
+164.52.201.246
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Dec 31, 2025 @ 02:07:08.94510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Host-based anomaly detection event (rootcheck).
+1
+ - 
+ - 
+ - 
+510
+7
+ - 
+Dec 31, 2025 @ 02:06:46.87210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 02:04:32.981 - 
+000
+ip-10-0-0-27
+205.210.31.138
+62460
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 31, 2025 @ 02:02:54.227 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 02:02:52.971 - 
+000
+ip-10-0-0-27
+ - 
+53022
+ - 
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 02:00:46.57510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:59:29.49410.0.0.97
+002
+server02
+164.52.201.246
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Dec 31, 2025 @ 01:59:27.48610.0.0.97
+002
+server02
+164.52.201.246
+47058
+a
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Dec 31, 2025 @ 01:54:46.12710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:48:46.89910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:42:46.85210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:36:46.81110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:30:46.78210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:24:46.73010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:18:46.56610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:12:46.24810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:06:46.64310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 01:00:46.61710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:54:46.56310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:48:46.51710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:42:46.48110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:36:46.43810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:30:46.16910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:24:46.37510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:18:46.32410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:12:46.28510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:06:46.25710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 31, 2025 @ 00:00:46.21310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:54:46.16210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:48:46.13410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:42:45.76010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:40:01.57910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+4
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 23:39:51.52210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+3
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 23:39:50.10710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/home/aliran/.bash_history
+550
+7
+ - 
+Dec 30, 2025 @ 23:39:47.47810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+2
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 23:39:47.47710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+1
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 23:39:46.55210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/root/.bash_history
+550
+7
+ - 
+Dec 30, 2025 @ 23:36:45.39710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:30:46.05110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:30:21.01110.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+4
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 23:30:21.01110.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+3
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 23:30:20.96910.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+Successful sudo to ROOT executed.
+1
+Privilege Escalation, Defense Evasion
+Sudo and Sudo Caching
+ - 
+5402
+3
+ - 
+Dec 30, 2025 @ 23:30:06.98010.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+2
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 23:30:06.96810.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+1
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 23:30:06.96610.0.0.45
+001
+server01
+139.135.53.189
+27517
+ - 
+sshd: authentication success.
+1
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 23:24:46.01110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:18:45.96910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:12:45.93110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:06:45.87510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 23:00:45.44910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:54:45.83510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:48:45.80210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:42:45.76010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:36:45.72210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:30:45.69110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:25:07.56010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+System running out of memory. Availability of the system is in risk.
+1
+Impact
+Endpoint Denial of Service
+ - 
+5108
+12
+ - 
+Dec 30, 2025 @ 22:24:45.27710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:18:45.62910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:12:45.59510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:06:45.56710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+2
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 22:00:45.51210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+1
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:54:45.48010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+10
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:48:45.44910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+9
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:46:30.08610.0.0.97
+002
+server02
+138.59.233.5
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+Curvelo
+Dec 30, 2025 @ 21:45:42.04910.0.0.97
+002
+server02
+198.235.24.247
+61286
+ - 
+sshd: connection reset
+2
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 30, 2025 @ 21:42:45.16310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+8
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:36:45.36710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+7
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:36:28.11310.0.0.97
+002
+server02
+138.59.233.5
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+2
+ - 
+ - 
+ - 
+651
+3
+Curvelo
+Dec 30, 2025 @ 21:36:28.09810.0.0.97
+002
+server02
+138.59.233.5
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+Curvelo
+Dec 30, 2025 @ 21:36:27.94410.0.0.97
+002
+server02
+138.59.233.5
+55024
+pi
+sshd: Attempt to login using a non-existent user
+2
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Curvelo
+Dec 30, 2025 @ 21:36:27.93910.0.0.97
+002
+server02
+138.59.233.5
+57420
+pi
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Curvelo
+Dec 30, 2025 @ 21:30:45.33710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+6
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:29:50.42410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+16
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:29:40.41510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+15
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:29:10.41910.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+16
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:29:10.40610.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+15
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:29:10.40410.0.0.45
+001
+server01
+139.135.53.189
+28254
+ - 
+sshd: authentication success.
+6
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:28:46.37010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+14
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:28:36.32310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+13
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:28:22.32710.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+14
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:28:22.31510.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+13
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:28:22.31310.0.0.45
+001
+server01
+139.135.53.189
+28127
+ - 
+sshd: authentication success.
+5
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:26:56.28510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+12
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:26:46.29710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+11
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:25:52.19910.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+12
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:25:52.18610.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+11
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:25:52.18610.0.0.45
+001
+server01
+139.135.53.189
+29208
+ - 
+sshd: authentication success.
+4
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:25:26.21110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+10
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:25:14.20310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+9
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:25:13.88310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+50
+Impact
+Stored Data Manipulation
+/home/aliran/.bash_history
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:45.31310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+5
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:24:36.17610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+8
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:24:36.17010.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+10
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:24:36.16810.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+Successful sudo to ROOT executed.
+4
+Privilege Escalation, Defense Evasion
+Sudo and Sudo Caching
+ - 
+5402
+3
+ - 
+Dec 30, 2025 @ 21:24:35.50910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+12
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/shadow.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:24:35.50510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+11
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/passwd.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:24:35.50310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+49
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:35.49110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+10
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:24:35.48810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+48
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:35.47910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+47
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:35.46910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+46
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:35.46010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+20
+ - 
+ - 
+/etc/shadow.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:24:35.45210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+19
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:24:35.44410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+18
+ - 
+ - 
+/etc/passwd.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:24:06.14710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+7
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:24:06.10510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Information from the user was changed.
+2
+Persistence
+Account Manipulation
+ - 
+5904
+8
+ - 
+Dec 30, 2025 @ 21:24:06.05810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+45
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:06.04710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+44
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:06.03710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+9
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:24:06.03610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+43
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:06.02610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+42
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:06.01610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+17
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:24:06.00510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+8
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.419610
+553
+7
+ - 
+Dec 30, 2025 @ 21:24:06.00510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+16
+ - 
+ - 
+/etc/group.419610
+554
+5
+ - 
+Dec 30, 2025 @ 21:24:04.50910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+41
+Impact
+Stored Data Manipulation
+/etc/passwd
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:04.49910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+40
+Impact
+Stored Data Manipulation
+/etc/passwd-
+550
+7
+ - 
+Dec 30, 2025 @ 21:24:02.13610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: User changed password.
+3
+ - 
+ - 
+ - 
+5555
+3
+ - 
+Dec 30, 2025 @ 21:24:01.76010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+39
+Impact
+Stored Data Manipulation
+/etc/shadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:58.11710.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+New user added to the system.
+2
+Persistence
+Create Account
+ - 
+5902
+8
+ - 
+Dec 30, 2025 @ 21:23:58.11310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+New group added to the system.
+2
+ - 
+ - 
+ - 
+5901
+8
+ - 
+Dec 30, 2025 @ 21:23:58.10110.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+9
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:23:58.10110.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+Successful sudo to ROOT executed.
+3
+Privilege Escalation, Defense Evasion
+Sudo and Sudo Caching
+ - 
+5402
+3
+ - 
+Dec 30, 2025 @ 21:23:57.70010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+15
+ - 
+ - 
+/home/aziz/.profile
+554
+5
+ - 
+Dec 30, 2025 @ 21:23:57.69810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+13
+ - 
+ - 
+/home/aziz/.bashrc
+554
+5
+ - 
+Dec 30, 2025 @ 21:23:57.69810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+14
+ - 
+ - 
+/home/aziz/.bash_logout
+554
+5
+ - 
+Dec 30, 2025 @ 21:23:57.69110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+38
+Impact
+Stored Data Manipulation
+/etc/subuid-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.68110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+37
+Impact
+Stored Data Manipulation
+/etc/subuid
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.67110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+36
+Impact
+Stored Data Manipulation
+/etc/subgid-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.66210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+35
+Impact
+Stored Data Manipulation
+/etc/subgid
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.65110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+34
+Impact
+Stored Data Manipulation
+/etc/shadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.64110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+33
+Impact
+Stored Data Manipulation
+/etc/shadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.63110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+32
+Impact
+Stored Data Manipulation
+/etc/passwd-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.62110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+31
+Impact
+Stored Data Manipulation
+/etc/passwd
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.60910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+30
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:57.60010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+29
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:56.58510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+7
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:23:56.58410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+28
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:56.57310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+27
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:23:56.55510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+12
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:23:50.12910.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: User login failed.
+3
+Credential Access
+Password Guessing
+ - 
+5503
+5
+ - 
+Dec 30, 2025 @ 21:22:00.01210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: User changed password.
+2
+ - 
+ - 
+ - 
+5555
+3
+ - 
+Dec 30, 2025 @ 21:21:58.78910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+26
+Impact
+Stored Data Manipulation
+/etc/shadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:21:42.00210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: User login failed.
+2
+Credential Access
+Password Guessing
+ - 
+5503
+5
+ - 
+Dec 30, 2025 @ 21:21:15.99210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: User login failed.
+1
+Credential Access
+Password Guessing
+ - 
+5503
+5
+ - 
+Dec 30, 2025 @ 21:20:53.99110.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+8
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:20:53.97810.0.0.45
+001
+server01
+139.135.53.189
+28787
+ - 
+sshd: authentication success.
+3
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:20:53.97810.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+7
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:19:23.94910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+6
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:19:13.93010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+5
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:19:12.06810.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+11
+ - 
+ - 
+/home/abdirehman/.bash_history
+554
+5
+ - 
+Dec 30, 2025 @ 21:19:06.54010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+10
+ - 
+ - 
+/home/abdirehman/.cache/motd.legal-displayed
+554
+5
+ - 
+Dec 30, 2025 @ 21:19:05.89510.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+6
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:19:05.88310.0.0.45
+001
+server01
+ - 
+ - 
+abdirehman
+PAM: Login session opened.
+5
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:19:05.88110.0.0.45
+001
+server01
+139.135.53.189
+28625
+ - 
+sshd: authentication success.
+2
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:18:57.99310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+4
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:18:47.86510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+3
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:18:46.56110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+25
+Impact
+Stored Data Manipulation
+/home/aliran/.bash_history
+550
+7
+ - 
+Dec 30, 2025 @ 21:18:45.24910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+4
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:16:28.820 - 
+000
+ip-10-0-0-27
+205.210.31.154
+61396
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Dec 30, 2025 @ 21:13:27.63310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+2
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:13:27.62810.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+4
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:13:27.62510.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+Successful sudo to ROOT executed.
+2
+Privilege Escalation, Defense Evasion
+Sudo and Sudo Caching
+ - 
+5402
+3
+ - 
+Dec 30, 2025 @ 21:13:25.85110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+6
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/shadow.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:13:25.84610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+5
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/passwd.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:13:25.84510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+23
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:13:25.84410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+4
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:13:25.84410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+24
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:13:25.81910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+22
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:13:25.80910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+21
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:13:25.80010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+9
+ - 
+ - 
+/etc/shadow.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:13:25.79310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+8
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:13:25.78610.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+7
+ - 
+ - 
+/etc/passwd.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:13:01.61110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: Login session closed.
+1
+ - 
+ - 
+ - 
+5502
+3
+ - 
+Dec 30, 2025 @ 21:12:59.72010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+20
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:59.67910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+3
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:12:59.67910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+18
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:59.67910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+19
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:59.65410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+6
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:12:59.65410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+17
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:59.60410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Information from the user was changed.
+1
+Persistence
+Account Manipulation
+ - 
+5904
+8
+ - 
+Dec 30, 2025 @ 21:12:57.82110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+16
+Impact
+Stored Data Manipulation
+/etc/passwd
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:57.81010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+15
+Impact
+Stored Data Manipulation
+/etc/passwd-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:55.60110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+PAM: User changed password.
+1
+ - 
+ - 
+ - 
+5555
+3
+ - 
+Dec 30, 2025 @ 21:12:53.83010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+14
+Impact
+Stored Data Manipulation
+/etc/shadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:45.21910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Listened ports status (netstat) changed (new port opened or closed).
+3
+ - 
+ - 
+ - 
+533
+7
+ - 
+Dec 30, 2025 @ 21:12:33.60510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+New user added to the system.
+1
+Persistence
+Create Account
+ - 
+5902
+8
+ - 
+Dec 30, 2025 @ 21:12:33.60110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+New group added to the system.
+1
+ - 
+ - 
+ - 
+5901
+8
+ - 
+Dec 30, 2025 @ 21:12:33.58910.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+3
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:12:33.58910.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+Successful sudo to ROOT executed.
+1
+Privilege Escalation, Defense Evasion
+Sudo and Sudo Caching
+ - 
+5402
+3
+ - 
+Dec 30, 2025 @ 21:12:32.59310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+5
+ - 
+ - 
+/home/abdirehman/.profile
+554
+5
+ - 
+Dec 30, 2025 @ 21:12:32.59210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+4
+ - 
+ - 
+/home/abdirehman/.bash_logout
+554
+5
+ - 
+Dec 30, 2025 @ 21:12:32.59110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+3
+ - 
+ - 
+/home/abdirehman/.bashrc
+554
+5
+ - 
+Dec 30, 2025 @ 21:12:32.58310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+13
+Impact
+Stored Data Manipulation
+/etc/subuid-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.57410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+12
+Impact
+Stored Data Manipulation
+/etc/subuid
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.56410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+11
+Impact
+Stored Data Manipulation
+/etc/subgid-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.55510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+10
+Impact
+Stored Data Manipulation
+/etc/subgid
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.54410.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+9
+Impact
+Stored Data Manipulation
+/etc/shadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.53010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+2
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/gshadow.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:12:32.52510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File deleted.
+1
+Defense Evasion, Impact
+File Deletion, Data Destruction
+/etc/group.lock
+553
+7
+ - 
+Dec 30, 2025 @ 21:12:32.52110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+8
+Impact
+Stored Data Manipulation
+/etc/shadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.51110.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+7
+Impact
+Stored Data Manipulation
+/etc/passwd-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.50010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+6
+Impact
+Stored Data Manipulation
+/etc/passwd
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.47910.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+2
+ - 
+ - 
+/etc/gshadow.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:12:32.47210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+5
+Impact
+Stored Data Manipulation
+/etc/gshadow-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.46210.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+4
+Impact
+Stored Data Manipulation
+/etc/gshadow
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.45310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+3
+Impact
+Stored Data Manipulation
+/etc/group.lock
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.44310.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/etc/group
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.43010.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/etc/group-
+550
+7
+ - 
+Dec 30, 2025 @ 21:12:32.41510.0.0.45
+001
+server01
+ - 
+ - 
+ - 
+File added to the system.
+1
+ - 
+ - 
+/etc/group.lock
+554
+5
+ - 
+Dec 30, 2025 @ 21:11:19.57010.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+2
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 
+Dec 30, 2025 @ 21:11:19.54910.0.0.45
+001
+server01
+139.135.53.189
+29180
+ - 
+sshd: authentication success.
+1
+Defense Evasion, Persistence, Privilege Escalation, Initial Access, Lateral Movement
+Valid Accounts, Remote Services
+ - 
+5715
+3
+Madison
+Dec 30, 2025 @ 21:11:19.54910.0.0.45
+001
+server01
+ - 
+ - 
+aliran
+PAM: Login session opened.
+1
+Defense Evasion, Persistence, Privilege Escalation, Initial Access
+Valid Accounts
+ - 
+5501
+3
+ - 

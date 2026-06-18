@@ -33,6 +33,12 @@ Welcome to my professional **Evidence Portfolio**, a central place to showcase m
 - Assignments, reports, and notes from BS Software Engineering at GCUF
 - Topics like Data Structures, Digital Forensics, and Web Dev
 
+### 💼 Internships
+- Cyberster Internship — weekly SOC logbooks and incident response practice from a structured Cyberster program
+- Talosec Internship — threat analysis, SpiderFoot reconnaissance, Fortigate/Wazuh monitoring, and incident reporting
+- Tech hierarchy Internship — security tasks, network documentation, and attack simulation evidence for hands-on learning
+- Internship evidence, tasks, and weekly logs for professional experience
+
 ### 📄 SOC+ Community Template
 Includes the official SOC+ Evidence Portfolio template and my completed version for reference.
 

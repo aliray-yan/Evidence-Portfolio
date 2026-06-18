@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VLAN Network Design</title>
+
+<style>
+body{
+  background:#0a0e1a;
+  font-family:'Courier New',monospace;
+  color:#e0e8ff;
+  padding:24px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.card{
+  background:#0d1224;
+  border:1px solid #1e2a4a;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:28px;
+}
+
+.vlan-box{
+  cursor:pointer;
+  border-radius:10px;
+  padding:14px;
+  text-align:center;
+  transition:.2s;
+}
+
+.pc{
+  width:22px;
+  height:18px;
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+}
+
+.step{
+  border-radius:10px;
+  cursor:pointer;
+  overflow:hidden;
+  margin-bottom:10px;
+  border:1px solid #1e2a4a;
+}
+
+.step-header{
+  padding:14px 18px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.step-content{
+  display:none;
+  padding:0 18px 16px 50px;
+}
+
+pre{
+  background:#080c16;
+  border:1px solid #1a2040;
+  border-radius:6px;
+  padding:8px 12px;
+  white-space:pre-wrap;
+  font-size:11px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1 style="text-align:center">VLAN NETWORK DESIGN</h1>
+
+<div id="topology" class="card"></div>
+
+<div class="card">
+<h3>SUBNET REFERENCE</h3>
+<table width="100%" id="table"></table>
+</div>
+
+<div>
+<h3>CONFIGURATION STEPS</h3>
+<div id="steps"></div>
+</div>
+
+</div>
+
+<script>
+/* ================= DATA ================= */
+
+const VLANS=[
+{
+id:10,dept:"IT",hosts:5,
+subnet:"192.168.10.0/27",
+gateway:"192.168.10.1",
+range:"192.168.10.1-.30",
+broadcast:"192.168.10.31",
+color:"#00d4ff",
+dark:"#003d4d",
+mask:"255.255.255.224",
+hostIPs:["192.168.10.2","192.168.10.3","192.168.10.4","192.168.10.5","192.168.10.6"]
+},
+{
+id:20,dept:"HR",hosts:5,
+subnet:"192.168.10.32/27",
+gateway:"192.168.10.33",
+range:"192.168.10.33-.62",
+broadcast:"192.168.10.63",
+color:"#00ff9d",
+dark:"#003d25",
+mask:"255.255.255.224",
+hostIPs:["192.168.10.34","192.168.10.35","192.168.10.36","192.168.10.37","192.168.10.38"]
+},
+{
+id:30,dept:"Web Servers",hosts:3,
+subnet:"192.168.10.64/28",
+gateway:"192.168.10.65",
+range:"192.168.10.65-.78",
+broadcast:"192.168.10.79",
+color:"#ff6b35",
+dark:"#4d1f00",
+mask:"255.255.255.240",
+hostIPs:["192.168.10.66","192.168.10.67","192.168.10.68"]
+}
+];
+
+const steps=[
+{
+phase:"1. Add Devices",
+icon:"🖥️",
+items:["Open Cisco Packet Tracer","Add L3 Switch","Add PCs","Connect cables"]
+},
+{
+phase:"2. Configure VLANs",
+icon:"🔧",
+items:["enable","configure terminal","vlan 10","vlan 20"]
+}
+];
+
+/* ================= VLAN DIAGRAM ================= */
+
+const topo=document.getElementById("topology");
+
+VLANS.forEach(v=>{
+let box=document.createElement("div");
+
+box.className="vlan-box";
+box.style.background=v.dark;
+box.style.border="2px solid "+v.color;
+
+box.innerHTML=`
+<div style="color:${v.color}">VLAN ${v.id}</div>
+<b>${v.dept}</b>
+<div>${v.subnet}</div>
+<div>GW ${v.gateway}</div>
+<div class="hosts" style="display:none"></div>
+`;
+
+let hostDiv=box.querySelector(".hosts");
+
+v.hostIPs.forEach(ip=>{
+hostDiv.innerHTML+=`<div>💻 ${ip}</div>`;
+});
+
+box.onclick=()=>{
+hostDiv.style.display=
+hostDiv.style.display==="none"?"block":"none";
+};
+
+topo.appendChild(box);
+});
+
+/* ================= TABLE ================= */
+
+let table=document.getElementById("table");
+
+table.innerHTML=`
+<tr>
+<th>VLAN</th>
+<th>Dept</th>
+<th>Subnet</th>
+<th>Gateway</th>
+<th>Mask</th>
+</tr>
+`;
+
+VLANS.forEach(v=>{
+table.innerHTML+=`
+<tr>
+<td style="color:${v.color}">${v.id}</td>
+<td>${v.dept}</td>
+<td>${v.subnet}</td>
+<td>${v.gateway}</td>
+<td>${v.mask}</td>
+</tr>
+`;
+});
+
+/* ================= STEPS ================= */
+
+const stepsDiv=document.getElementById("steps");
+
+steps.forEach(s=>{
+let div=document.createElement("div");
+div.className="step";
+
+div.innerHTML=`
+<div class="step-header">
+<span>${s.icon}</span>
+<b>${s.phase}</b>
+</div>
+<div class="step-content"></div>
+`;
+
+let content=div.querySelector(".step-content");
+
+s.items.forEach((it,i)=>{
+content.innerHTML+=`
+<div>
+Step ${i+1}
+<pre>${it}</pre>
+</div>`;
+});
+
+div.onclick=()=>{
+content.style.display=
+content.style.display==="block"?"none":"block";
+};
+
+stepsDiv.appendChild(div);
+});
+</script>
+
+</body>
+</html>

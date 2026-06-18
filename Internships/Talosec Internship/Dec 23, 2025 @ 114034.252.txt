@@ -1,0 +1,6753 @@
+Dec 23, 2025 @ 11:40:34.252
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 23, 2025 @ 11:40:32.807
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+24509
+
+
+ - 
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:55.907
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+sshd: connection reset by peer
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5740
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:55.907
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+104.248.206.232
+
+
+46962
+
+
+ - 
+
+
+sshd: connection reset
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 09:29:17.903
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+sshd: connection reset by peer
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5740
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:17.903
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+104.248.206.232
+
+
+51628
+
+
+ - 
+
+
+sshd: connection reset
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 09:26:52.539
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:50.447
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:50.425
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+35014
+
+
+ec2-user
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:48.464
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:11:25.385
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+7
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.381
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+6
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.260
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+5
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/shimx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.123
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+4
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/grubx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.839
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+3
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.717
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+2
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/fbx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.699
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:07:19.780
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+205.210.31.233
+
+
+63398
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:06:48.373
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:06:46.375
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+39724
+
+
+vyos
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:06:44.407
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:42.331
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:42.316
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+60414
+
+
+linux
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:40.344
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:46:40.243
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:46:38.275
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+37432
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 07:54:31.362
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+134.209.86.24
+
+
+29134
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 06:31:08.751
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:08.706
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:08.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+4
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+49516
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+49516
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:02.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+47756
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+3
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:02.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:20:58.844
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+47748
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+2
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:20:58.844
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:20:54.843
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+55852
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+1
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:20:54.843
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 03:47:31.963
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+198.235.24.212
+
+
+58256
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:57:15.131
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:57:13.961
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+48054
+
+
+ - 
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:45:11.217
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+205.210.31.41
+
+
+64818
+
+
+ - 
+
+
+sshd: connection reset
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:12:07.723
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+198.235.24.79
+
+
+62542
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:53.634
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,371
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:53.631
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,370
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:53.510
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,369
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/shimx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:53.372
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,368
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/grubx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:53.079
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,367
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:52.956
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,366
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/fbx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 21:10:52.940
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1,365
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 22, 2025 @ 20:42:03.914
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 20:42:02.765
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+54526
+
+
+ - 
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 20:27:24.703
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 20:27:23.478
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+8819
+
+
+ - 
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 18:39:53.324
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+4
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:53.279
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+4
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:51.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+40692
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+4
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:49.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+40025
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+3
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:49.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 18:29:47.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+39517
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+2
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:47.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 18:29:45.704
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+176.235.182.73
+
+
+38904
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+1
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Kilis
+
+
+	Dec 22, 2025 @ 18:29:45.704
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 18:20:12.085
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:10:12.006
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:10:11.993
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:10:10.747
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+53684
+
+
+user
+
+
+sshd: Attempt to login using a non-existent user
+
+
+3
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:10:10.741
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+53668
+
+
+linux
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:10:07.987
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:00:07.945
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:00:06.689
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+54942
+
+
+deploy
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 18:00:03.979
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:50:03.890
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:50:02.636
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+38510
+
+
+dspace
+
+
+sshd: Attempt to login using a non-existent user
+
+
+3
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:49:59.888
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:39:59.863
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:39:59.850
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:39:58.587
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+46036
+
+
+test
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:39:58.585
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+13.234.217.49
+
+
+46034
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Mumbai
+
+
+	Dec 22, 2025 @ 17:02:06.384
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+206.189.2.52
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Amsterdam
+
+
+	Dec 22, 2025 @ 16:52:05.614
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+206.189.2.52
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Amsterdam
+
+
+	Dec 22, 2025 @ 16:52:04.331
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+206.189.2.52
+
+
+60886
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+3
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Amsterdam
+
+
+	Dec 22, 2025 @ 16:18:56.199
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+179.43.184.242
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Zurich
+
+
+	Dec 22, 2025 @ 16:08:55.432
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+179.43.184.242
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Zurich
+
+
+	Dec 22, 2025 @ 16:08:55.420
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+179.43.184.242
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Zurich
+
+
+	Dec 22, 2025 @ 16:08:54.109
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+179.43.184.242
+
+
+40088
+
+
+Antminer
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Zurich
+
+
+	Dec 22, 2025 @ 16:08:54.104
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+179.43.184.242
+
+
+40086
+
+
+Antminer
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Zurich
+
+
+	Dec 22, 2025 @ 15:59:28.476
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 15:49:26.493
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 15:49:26.380
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+39918
+
+
+salwaabdullahi
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 22, 2025 @ 15:36:22.245
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+198.235.24.54
+
+
+58084
+
+
+ - 
+
+
+sshd: connection reset
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 22, 2025 @ 15:16:53.809
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+147.185.132.99
+
+
+64880
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 22, 2025 @ 15:03:11.944
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 14:53:10.234
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 22, 2025 @ 14:53:09.848
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+192.145.168.68
+
+
+39904
+
+
+user
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+
+
+
+Dec 23, 2025 @ 23:10:52.946
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+40.65.58.134
+
+
+32808
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+San Jose
+
+
+	Dec 23, 2025 @ 23:10:52.905
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+sshd: connection reset by peer
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5740
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 22:05:15.381
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+147.185.132.225
+
+
+59164
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:55.700
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+7
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:55.696
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+6
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/ubuntu/mmx64.efi
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:55.573
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+5
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/ubuntu/shimx64.efi
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:55.431
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+4
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/ubuntu/grubx64.efi
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:55.068
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/BOOT/mmx64.efi
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:54.928
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/BOOT/fbx64.efi
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 21:11:54.911
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Honeypot file integrity activity detected
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+
+
+100100
+
+
+10
+
+
+ - 
+
+
+	Dec 23, 2025 @ 15:36:14.425
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+150.107.233.91
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Surat
+
+
+	Dec 23, 2025 @ 15:26:14.346
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+150.107.233.91
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Surat
+
+
+	Dec 23, 2025 @ 15:26:12.441
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+150.107.233.91
+
+
+58886
+
+
+a
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Surat
+
+
+	Dec 23, 2025 @ 15:18:10.399
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+147.185.132.246
+
+
+59666
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 11:40:34.252
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+ - 
+
+
+	Dec 23, 2025 @ 11:40:32.807
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+24509
+
+
+ - 
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:55.907
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+sshd: connection reset by peer
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5740
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:55.907
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+104.248.206.232
+
+
+46962
+
+
+ - 
+
+
+sshd: connection reset
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 09:29:17.903
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+sshd: connection reset by peer
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5740
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:29:17.903
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+104.248.206.232
+
+
+51628
+
+
+ - 
+
+
+sshd: connection reset
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 09:26:52.539
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:50.447
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:50.425
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+35014
+
+
+ec2-user
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:16:48.464
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:11:25.385
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+7
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.381
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+6
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.260
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+5
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/shimx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:25.123
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+4
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/ubuntu/grubx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.839
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+3
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/mmx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.717
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+2
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/fbx64.efi
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:11:24.699
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Integrity checksum changed.
+
+
+1
+
+
+Impact
+
+
+Stored Data Manipulation
+
+
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+
+
+550
+
+
+7
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:07:19.780
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+205.210.31.233
+
+
+63398
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+
+	Dec 23, 2025 @ 09:06:48.373
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:06:46.375
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+39724
+
+
+vyos
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 09:06:44.407
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:42.331
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:42.316
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+60414
+
+
+linux
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:56:40.344
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:46:40.243
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 08:46:38.275
+
+
+10.0.0.97
+
+
+002
+
+
+server02
+
+
+45.78.225.195
+
+
+37432
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Kitchener
+
+
+	Dec 23, 2025 @ 07:54:31.362
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+134.209.86.24
+
+
+29134
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+Amsterdam
+
+
+	Dec 23, 2025 @ 06:31:08.751
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Unblocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+652
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:08.706
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:08.705
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+ - 
+
+
+ - 
+
+
+Host Blocked by firewall-drop Active Response
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+651
+
+
+3
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+49516
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+1
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+49516
+
+
+admin
+
+
+sshd: Attempt to login using a non-existent user
+
+
+2
+
+
+Credential Access, Lateral Movement
+
+
+Password Guessing, SSH
+
+
+ - 
+
+
+5710
+
+
+5
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:06.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+4
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:21:02.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+47756
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+3
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:21:02.845
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+3
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:20:58.844
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+47748
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+2
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 06:20:58.844
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+2
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:20:54.843
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+syslog: User authentication failure.
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+2501
+
+
+5
+
+
+ - 
+
+
+	Dec 23, 2025 @ 06:20:54.843
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+121.141.43.115
+
+
+55852
+
+
+ - 
+
+
+Maximum authentication attempts exceeded.
+
+
+1
+
+
+Credential Access
+
+
+Brute Force
+
+
+ - 
+
+
+5758
+
+
+8
+
+
+Busan
+
+
+	Dec 23, 2025 @ 03:47:31.963
+
+
+ - 
+
+
+000
+
+
+ip-10-0-0-27
+
+
+198.235.24.212
+
+
+58256
+
+
+ - 
+
+
+sshd: connection reset
+
+
+1
+
+
+ - 
+
+
+ - 
+
+
+ - 
+
+
+5762
+
+
+4
+
+
+ - 
+
+

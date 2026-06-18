@@ -1,0 +1,739 @@
+147.185.132.144
+ET WORM Potential MySQL bot scanning for SQL server
+ET SCAN NMAP -sS window 1024
+
+206.168.34.58
+Mass scanner 62965 100%
+79.124.56.230 Bulgaria
+5218 4536 4748 4889 4904 all 20%
+ET WORM Potential MySQL bot scanning for SQL server
+ET INFO SSH session in progress on Expected Port
+GPL ICMP Destination Unreachable Communication with Destination Host is Administratively Prohibited
+
+158.94.208.133
+port 25  SMTP
+payload AUTH LOGIN EHLO USER
+Smtp.hello field has USER
+
+
+102.211.152.28
+
+
+has user tag and password tag cloud
+ET INFO SSH session in progress on Expected Port
+port is 22 100%
+brazil country
+
+
+
+
+
+Jan 1, 2026 @ 20:30:55.67510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Jan 1, 2026 @ 20:30:55.12910.0.0.97
+002
+server02
+ - 
+35048
+ - 
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Jan 1, 2026 @ 20:30:55.12910.0.0.97
+002
+server02
+101.200.243.197
+43044
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+Hangzhou
+Jan 1, 2026 @ 20:30:55.08810.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+sshd: connection reset by peer
+1
+ - 
+ - 
+ - 
+5740
+4
+ - 
+Jan 1, 2026 @ 18:41:45.24310.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Jan 1, 2026 @ 18:41:44.34910.0.0.97
+002
+server02
+ - 
+2783
+ - 
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Jan 1, 2026 @ 16:48:15.16810.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+7
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:15.16510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+6
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/mmx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:15.03810.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+5
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/shimx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:14.88410.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+4
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/grubx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:14.58510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+3
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/mmx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:14.46410.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/fbx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 16:48:14.44710.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+550
+7
+ - 
+Jan 1, 2026 @ 16:42:38.356 - 
+000
+ip-10-0-0-27
+116.34.14.135
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Jan 1, 2026 @ 16:32:38.306 - 
+000
+ip-10-0-0-27
+116.34.14.135
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Jan 1, 2026 @ 16:32:36.948 - 
+000
+ip-10-0-0-27
+116.34.14.135
+42136
+admin
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Jan 1, 2026 @ 16:32:32.948 - 
+000
+ip-10-0-0-27
+116.34.14.135
+41166
+ - 
+Maximum authentication attempts exceeded.
+3
+Credential Access
+Brute Force
+ - 
+5758
+8
+ - 
+Jan 1, 2026 @ 16:32:32.948 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+3
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 16:32:30.948 - 
+000
+ip-10-0-0-27
+116.34.14.135
+40534
+ - 
+Maximum authentication attempts exceeded.
+2
+Credential Access
+Brute Force
+ - 
+5758
+8
+ - 
+Jan 1, 2026 @ 16:32:30.948 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+2
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 16:32:26.947 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+1
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 16:32:26.947 - 
+000
+ip-10-0-0-27
+116.34.14.135
+39904
+ - 
+Maximum authentication attempts exceeded.
+1
+Credential Access
+Brute Force
+ - 
+5758
+8
+ - 
+Jan 1, 2026 @ 15:08:41.15510.0.0.97
+002
+server02
+205.210.31.109
+64700
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Jan 1, 2026 @ 12:08:36.26910.0.0.97
+002
+server02
+20.204.50.81
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+ - 
+Jan 1, 2026 @ 11:58:35.32110.0.0.97
+002
+server02
+20.204.50.81
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+ - 
+Jan 1, 2026 @ 11:58:34.17510.0.0.97
+002
+server02
+20.204.50.81
+52504
+admin
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+ - 
+Jan 1, 2026 @ 09:37:36.157 - 
+000
+ip-10-0-0-27
+121.141.43.115
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+Busan
+Jan 1, 2026 @ 09:27:36.110 - 
+000
+ip-10-0-0-27
+121.141.43.115
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+Busan
+Jan 1, 2026 @ 09:27:36.109 - 
+000
+ip-10-0-0-27
+121.141.43.115
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+2
+ - 
+ - 
+ - 
+651
+3
+Busan
+Jan 1, 2026 @ 09:27:34.251 - 
+000
+ip-10-0-0-27
+121.141.43.115
+57860
+admin
+sshd: Attempt to login using a non-existent user
+2
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Busan
+Jan 1, 2026 @ 09:27:34.251 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+Maximum authentication attempts exceeded.
+4
+Credential Access
+Brute Force
+ - 
+5758
+8
+ - 
+Jan 1, 2026 @ 09:27:34.251 - 
+000
+ip-10-0-0-27
+121.141.43.115
+57860
+admin
+sshd: Attempt to login using a non-existent user
+1
+Credential Access, Lateral Movement
+Password Guessing, SSH
+ - 
+5710
+5
+Busan
+Jan 1, 2026 @ 09:27:30.251 - 
+000
+ip-10-0-0-27
+121.141.43.115
+57836
+ - 
+Maximum authentication attempts exceeded.
+3
+Credential Access
+Brute Force
+ - 
+5758
+8
+Busan
+Jan 1, 2026 @ 09:27:30.251 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+3
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 09:27:26.250 - 
+000
+ip-10-0-0-27
+121.141.43.115
+58016
+ - 
+Maximum authentication attempts exceeded.
+2
+Credential Access
+Brute Force
+ - 
+5758
+8
+Busan
+Jan 1, 2026 @ 09:27:26.250 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+2
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 09:27:22.249 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+syslog: User authentication failure.
+1
+ - 
+ - 
+ - 
+2501
+5
+ - 
+Jan 1, 2026 @ 09:27:22.249 - 
+000
+ip-10-0-0-27
+121.141.43.115
+58004
+ - 
+Maximum authentication attempts exceeded.
+1
+Credential Access
+Brute Force
+ - 
+5758
+8
+Busan
+Jan 1, 2026 @ 09:24:39.33610.0.0.97
+002
+server02
+205.210.31.200
+64022
+ - 
+sshd: connection reset
+1
+ - 
+ - 
+ - 
+5762
+4
+ - 
+Jan 1, 2026 @ 05:01:05.845 - 
+000
+ip-10-0-0-27
+ - 
+ - 
+ - 
+Log file rotated.
+2
+ - 
+ - 
+ - 
+591
+3
+ - 
+Jan 1, 2026 @ 05:00:14.52210.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Log file rotated.
+1
+ - 
+ - 
+ - 
+591
+3
+ - 
+Jan 1, 2026 @ 04:47:44.12410.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+7
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/BOOTX64.CSV
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:44.12110.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+6
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/mmx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:43.99810.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+5
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/shimx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:43.85510.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+4
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/ubuntu/grubx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:43.57210.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+3
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/mmx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:43.45210.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+2
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/fbx64.efi
+550
+7
+ - 
+Jan 1, 2026 @ 04:47:43.43610.0.0.97
+002
+server02
+ - 
+ - 
+ - 
+Integrity checksum changed.
+1
+Impact
+Stored Data Manipulation
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+550
+7
+ - 
+Jan 1, 2026 @ 00:22:07.447 - 
+000
+ip-10-0-0-27
+206.189.108.143
+ - 
+ - 
+Host Unblocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+652
+3
+Amsterdam
+Jan 1, 2026 @ 00:12:07.387 - 
+000
+ip-10-0-0-27
+206.189.108.143
+ - 
+ - 
+Host Blocked by firewall-drop Active Response
+1
+ - 
+ - 
+ - 
+651
+3
+Amsterdam
+Jan 1, 2026 @ 00:12:06.379 - 
+000
+ip-10-0-0-27
+206.189.108.143
+33438
+admin
+sshd: Attempt to login using a non-existent user
+1
+

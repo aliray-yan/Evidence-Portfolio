@@ -1,0 +1,6 @@
+What Happened:
+At [timestamp from your screenshot], a PowerShell process was launched on host WIN-11 using the -EncodedCommand flag — a Base64-encoded instruction passed directly to the PowerShell engine. Wazuh captured this via Event ID 4104 (Script Block Logging), which recorded the decoded command content. The use of encoded commands is a deliberate obfuscation technique designed to bypass basic security monitoring that only inspects command-line strings at face value.
+Who Did It:
+User [your username] on host WIN-11 (Agent ID: 003, IP: 192.168.1.8) executed the command at [timestamp]. The action was performed interactively from a PowerShell session.
+Risk Level: Medium
+The specific command executed in this test was harmless. However, the technique — Base64-encoded PowerShell via -EncodedCommand — maps directly to MITRE ATT&CK T1059.001 (Command and Scripting Interpreter: PowerShell). This is one of the most commonly abused techniques in real-world attacks including ransomware deployment, credential dumping, and C2 beaconing. In a live SOC, any -EncodedCommand execution would be flagged for immediate analyst review regardless of the decoded content, because the encoding itself indicates an attempt to avoid detection
