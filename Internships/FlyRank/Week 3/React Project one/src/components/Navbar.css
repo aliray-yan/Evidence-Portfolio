@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-6);
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.navbar__brand:hover {
+  opacity: 0.85;
+}
+
+.navbar__logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  transition: transform var(--transition-base);
+}
+
+.navbar__brand:hover .navbar__logo {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.navbar__link,
+.navbar__button {
+  position: relative;
+  color: #e2e8f0;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.navbar__link:hover,
+.navbar__button:hover {
+  background: rgba(108, 99, 255, 0.18);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.navbar__link.active {
+  background: rgba(108, 99, 255, 0.22);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.navbar__menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.navbar__menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar__links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height var(--transition-slow), opacity var(--transition-fast);
+  }
+
+  .navbar__links.open {
+    max-height: 400px;
+    opacity: 1;
+    padding-top: var(--space-3);
+  }
+
+  .navbar__link,
+  .navbar__button {
+    width: 100%;
+  }
+
+  .navbar__menu-toggle {
+    display: inline-block;
+  }
+}

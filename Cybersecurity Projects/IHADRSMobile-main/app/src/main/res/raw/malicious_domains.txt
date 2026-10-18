@@ -1,0 +1,5 @@
+# Local offline IOC domains for lab testing.
+malicious-update.example
+login-verify.example
+secure-wallet.example
+bad-c2.example

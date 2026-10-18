@@ -1,0 +1,14 @@
+{
+  "name": "blueprint3d-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm --prefix frontend ci && npm --prefix backend ci",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix frontend run build && npm --prefix backend run build",
+    "test": "node --import ./backend/node_modules/tsx/dist/loader.mjs scripts/regression-tests.ts && node --import ./backend/node_modules/tsx/dist/loader.mjs scripts/api-tests.ts && python -m unittest discover -s backend/tests -p \"test_*.py\"",
+    "samples:generate": "node --import ./backend/node_modules/tsx/dist/loader.mjs scripts/generate-samples.ts",
+    "reference:generate": "python scripts/create-map1-reference.py && node --import ./backend/node_modules/tsx/dist/loader.mjs scripts/stage-reference.ts"
+  }
+}

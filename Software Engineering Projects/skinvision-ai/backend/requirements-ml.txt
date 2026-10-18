@@ -1,0 +1,18 @@
+# Optional — only needed if you've trained models and set
+# SKINVISION_MODELS_ARE_TRAINED=true. The backend runs fine in
+# heuristic mode without any of this installed.
+#
+#   pip install -r requirements-ml.txt
+#
+# (Lighter than ml/requirements.txt, which also has training-only
+# deps like pandas/scikit-learn/tqdm that inference doesn't need.)
+#
+# Minimum versions, not exact pins — the shipped checkpoints in
+# backend/app/ml_models/ were verified to load correctly against
+# torch 2.14 / torchvision 0.29 / ultralytics 8.4 (newer than these
+# floors). State_dict compatibility for these standard architectures
+# doesn't depend on an exact version match.
+
+torch>=2.4
+torchvision>=0.19
+ultralytics>=8.3

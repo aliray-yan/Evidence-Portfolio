@@ -1,0 +1,4 @@
+# TEST-NET addresses are safe documentation ranges.
+203.0.113.45
+198.51.100.23
+192.0.2.66

@@ -1,0 +1,16 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" fill="#f7f5ef"/>
+  <rect x="54" y="42" width="612" height="56" rx="24" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <circle cx="90" cy="70" r="14" fill="#e23d28"/>
+  <rect x="402" y="62" width="56" height="12" rx="6" fill="#151515"/>
+  <rect x="476" y="62" width="56" height="12" rx="6" fill="#151515"/>
+  <rect x="550" y="58" width="78" height="20" rx="10" fill="#e23d28"/>
+  <text x="54" y="214" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#151515">Swiss Grid</text>
+  <text x="56" y="258" font-family="Arial, sans-serif" font-size="20" fill="#6f6a60">Clean editorial rhythm for sharp launches.</text>
+  <rect x="54" y="316" width="170" height="56" rx="2" fill="#151515"/>
+  <rect x="250" y="316" width="170" height="56" rx="2" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+  <rect x="478" y="146" width="188" height="260" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+  <rect x="506" y="176" width="132" height="132" fill="#e23d28"/>
+  <rect x="506" y="334" width="84" height="14" fill="#151515"/>
+  <rect x="506" y="360" width="132" height="10" fill="#6f6a60"/>
+</svg>

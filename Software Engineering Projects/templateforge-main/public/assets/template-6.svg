@@ -1,0 +1,13 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" fill="#fff7fb"/>
+  <rect x="52" y="46" width="616" height="68" rx="24" fill="#ffffff"/>
+  <circle cx="92" cy="80" r="18" fill="#ff8fb3"/>
+  <rect x="404" y="68" width="78" height="18" rx="9" fill="#24302f"/>
+  <rect x="502" y="60" width="112" height="34" rx="17" fill="#8edfc4"/>
+  <text x="70" y="210" font-family="Inter, Arial" font-size="56" font-weight="800" fill="#24302f">Soft studio</text>
+  <text x="72" y="256" font-family="Inter, Arial" font-size="20" fill="#687675">Friendly creative pages with layered, editable sections.</text>
+  <rect x="74" y="318" width="152" height="54" rx="27" fill="#ff8fb3"/>
+  <circle cx="464" cy="228" r="92" fill="#8edfc4"/>
+  <rect x="508" y="186" width="116" height="150" rx="28" fill="#ffffff" stroke="#24302f" stroke-width="3"/>
+  <rect x="414" y="278" width="130" height="94" rx="24" fill="#ffd8e7" stroke="#24302f" stroke-width="3"/>
+</svg>

@@ -1,0 +1,4 @@
+storeFile=release/ihadrs-release.jks
+storePassword=replace-with-private-password
+keyAlias=ihadrs-release
+keyPassword=replace-with-private-password

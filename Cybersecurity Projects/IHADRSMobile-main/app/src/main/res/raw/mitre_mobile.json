@@ -1,0 +1,7 @@
+﻿[
+  {
+    "id": "T1476",
+    "name": "Deliver Malicious App via Authorized App Store",
+    "tactic": "Initial Access"
+  }
+]

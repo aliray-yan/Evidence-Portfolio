@@ -1,0 +1,1 @@
+const fs=require('node:fs');const path=require('node:path');const target=path.join(__dirname,'../dist/services/blueprint-processing/worker');fs.mkdirSync(target,{recursive:true});fs.cpSync(path.join(__dirname,'../src/services/blueprint-processing/worker'),target,{recursive:true});console.log('Analysis worker copied.');

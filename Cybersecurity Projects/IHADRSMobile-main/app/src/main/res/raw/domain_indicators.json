@@ -1,0 +1,39 @@
+{
+  "blockedDomains": [
+    "bit.ly",
+    "tinyurl.com",
+    "t.co",
+    "goo.gl",
+    "is.gd",
+    "cutt.ly",
+    "login-verify.example",
+    "secure-wallet.example",
+    "bank-alert.example"
+  ],
+  "suspiciousSuffixes": [
+    "login-verify.example",
+    "account-security.example",
+    "wallet-recovery.example"
+  ],
+  "riskyTlds": [
+    "zip",
+    "top",
+    "xyz",
+    "click",
+    "work",
+    "rest"
+  ],
+  "suspiciousKeywords": [
+    "verify",
+    "login",
+    "password",
+    "wallet",
+    "bank",
+    "otp",
+    "blocked",
+    "reward",
+    "airdrop",
+    "delivery",
+    "invoice"
+  ]
+}

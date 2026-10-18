@@ -1,0 +1,48 @@
+# Android / Gradle
+.gradle/
+build/
+*/build/
+captures/
+local.properties
+*.iml
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Android Studio / IntelliJ
+.idea/
+*.ipr
+*.iws
+
+# Kotlin / Java generated files
+.kotlin/
+*.class
+out/
+
+# Web / Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local browser smoke-test artifacts
+web/tmp-chrome*/
+web/*-smoke.png
+.launcher/
+.launcher-profile/
+launcher/*.pdb
+
+# Downloaded reference archives should stay local
+external_resources/**/*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Secrets and local environment
+.env
+.env.*

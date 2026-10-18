@@ -1,0 +1,11 @@
+import { readFile,writeFile } from 'node:fs/promises';
+import { stagePlan } from '../frontend/src/utils/staging';
+import { assertFloorPlan,checkFloorPlan } from '../frontend/src/utils/planValidation';
+const file='frontend/public/reference/map1-retraced.json';
+const plan:unknown=JSON.parse(await readFile(file,'utf8'));
+assertFloorPlan(plan);
+const staged=stagePlan(plan);
+const errors=checkFloorPlan(staged).filter(issue=>issue.severity==='error');
+if(errors.length)throw new Error(JSON.stringify(errors));
+await writeFile(file,JSON.stringify(staged,null,2)+'\n');
+console.log('Reference includes '+staged.furniture?.length+' independently editable proposed objects.');

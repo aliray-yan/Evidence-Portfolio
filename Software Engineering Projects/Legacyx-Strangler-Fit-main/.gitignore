@@ -1,0 +1,29 @@
+# .NET
+bin/
+obj/
+*.user
+
+# Java / Maven / Gradle
+target/
+.gradle/
+build/
+
+# Node
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Env
+.env
+*.local
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log

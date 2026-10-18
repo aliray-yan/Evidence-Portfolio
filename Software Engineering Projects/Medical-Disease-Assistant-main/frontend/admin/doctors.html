@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Management - MedAssist Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#2563eb', secondary: '#10b981', accent: '#8b5cf6' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+        <div class="p-6 border-b border-gray-800">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                <span class="font-bold text-xl">MedAssist</span>
+            </div>
+            <p class="text-xs text-gray-400 mt-1">Admin Panel</p>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-2">
+                <li><a href="dashboard.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-tachometer-alt w-5 mr-3"></i>Dashboard</a></li>
+                <li><a href="patients.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-users w-5 mr-3"></i>Patients</a></li>
+                <li><a href="doctors.html" class="flex items-center px-4 py-3 bg-gray-800 rounded-lg"><i class="fas fa-user-md w-5 mr-3"></i>Doctors</a></li>
+                <li><a href="predictions.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-brain w-5 mr-3"></i>Predictions</a></li>
+                <li><a href="referrals.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-share-square w-5 mr-3"></i>Referrals</a></li>
+            </ul>
+            <div class="mt-8 pt-4 border-t border-gray-800">
+                <a href="#" onclick="logout()" class="flex items-center px-4 py-3 text-red-400 hover:bg-red-900/20 rounded-lg transition">
+                    <i class="fas fa-sign-out-alt w-5 mr-3"></i>Logout
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black/50 z-30 hidden md:hidden" onclick="toggleSidebar()"></div>
+
+    <main class="md:ml-64 min-h-screen">
+        <header class="bg-white shadow-sm sticky top-0 z-20">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center">
+                    <button onclick="toggleSidebar()" class="md:hidden mr-4 text-gray-600"><i class="fas fa-bars text-xl"></i></button>
+                    <h1 class="text-xl font-semibold text-gray-800">Doctors Management</h1>
+                </div>
+                <button onclick="openAddDoctorModal()"
+                    class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center">
+                    <i class="fas fa-plus mr-2"></i>Add Doctor
+                </button>
+            </div>
+        </header>
+
+        <div class="p-6">
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-primary" id="totalDocs">-</p>
+                    <p class="text-sm text-gray-500">Total Doctors</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-secondary" id="verifiedDocs">-</p>
+                    <p class="text-sm text-gray-500">Verified</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-accent" id="specialtiesCount">-</p>
+                    <p class="text-sm text-gray-500">Specialties</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-yellow-500" id="avgRating">-</p>
+                    <p class="text-sm text-gray-500">Avg Rating</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="bg-white rounded-xl shadow-sm p-4 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="relative">
+                        <input type="text" id="searchDoctors" placeholder="Search by name or email..."
+                            class="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                            oninput="filterDoctors()">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <select id="specialtyFilterAdmin" onchange="filterDoctors()"
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary">
+                        <option value="">All Specialties</option>
+                    </select>
+                    <select id="verifiedFilter" onchange="filterDoctors()"
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary">
+                        <option value="">All Doctors</option>
+                        <option value="true">Verified Only</option>
+                        <option value="false">Unverified Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Doctors Table -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b">
+                            <tr>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Doctor</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Specialty</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Experience</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Fee</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Rating</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Status</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="doctorsTableBody" class="divide-y divide-gray-100">
+                            <tr><td colspan="7" class="text-center py-12"><i class="fas fa-spinner fa-spin text-2xl text-primary"></i></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add/Edit Doctor Modal -->
+    <div id="doctorModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6 border-b flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-gray-800" id="modalTitle">Add New Doctor</h3>
+                <button onclick="closeDoctorModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <form id="doctorForm" onsubmit="submitDoctor(event)" class="space-y-4">
+                    <input type="hidden" id="editDoctorId">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                            <input type="text" id="docName" required placeholder="Dr. John Smith"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="docEmail" required placeholder="doctor@medical.com"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="col-span-2" id="passwordField">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Password *</label>
+                            <input type="password" id="docPassword" placeholder="Min 6 characters"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="docPhone" placeholder="Phone number"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Specialty *</label>
+                            <select id="docSpecialty" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select specialty</option>
+                                <option>General Physician</option>
+                                <option>Cardiologist</option>
+                                <option>Dermatologist</option>
+                                <option>Neurologist</option>
+                                <option>Gastroenterologist</option>
+                                <option>Pulmonologist</option>
+                                <option>Endocrinologist</option>
+                                <option>Orthopedic Surgeon</option>
+                                <option>Rheumatologist</option>
+                                <option>Urologist</option>
+                                <option>Infectious Disease Specialist</option>
+                                <option>Hepatologist</option>
+                                <option>Allergist</option>
+                                <option>Vascular Surgeon</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Experience (years)</label>
+                            <input type="number" id="docExperience" min="0" placeholder="Years"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Consultation Fee ($)</label>
+                            <input type="number" id="docFee" min="0" step="0.01" placeholder="Fee"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Qualifications</label>
+                            <input type="text" id="docQualifications" placeholder="e.g. MBBS, MD, DM"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Bio</label>
+                            <textarea id="docBio" rows="3" placeholder="Brief bio about the doctor..."
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                    </div>
+
+                    <div id="formError" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm"></div>
+
+                    <div class="flex gap-4 pt-2">
+                        <button type="button" onclick="closeDoctorModal()"
+                            class="flex-1 py-3 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition">Cancel</button>
+                        <button type="submit" id="submitDoctorBtn"
+                            class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Save Doctor
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirm Modal -->
+    <div id="deleteModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center">
+            <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-trash-alt text-red-500 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Delete Doctor</h3>
+            <p class="text-gray-500 mb-6">Are you sure you want to delete <strong id="deleteDoctorName"></strong>? This action cannot be undone.</p>
+            <div class="flex gap-4">
+                <button onclick="closeDeleteModal()" class="flex-1 py-3 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition">Cancel</button>
+                <button onclick="confirmDelete()" class="flex-1 bg-red-500 text-white py-3 rounded-lg font-semibold hover:bg-red-600 transition">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin.js"></script>
+    <script>
+        let allDoctors = [];
+        let deleteDoctorId = null;
+        let isEditMode = false;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            checkAuth('admin');
+            fetchDoctors();
+        });
+
+        async function fetchDoctors() {
+            try {
+                const response = await fetch(`${API_URL}/api/admin/doctors`, { headers: getAuthHeaders() });
+                if (!response.ok) throw new Error('Failed');
+                allDoctors = await response.json();
+                updateStats();
+                populateSpecialtyFilter();
+                renderDoctors(allDoctors);
+            } catch (error) {
+                showToast('Failed to load doctors', 'error');
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('totalDocs').textContent = allDoctors.length;
+            document.getElementById('verifiedDocs').textContent = allDoctors.filter(d => d.is_verified).length;
+            const specialties = [...new Set(allDoctors.map(d => d.specialty))];
+            document.getElementById('specialtiesCount').textContent = specialties.length;
+            const avgRating = allDoctors.length ? (allDoctors.reduce((s, d) => s + parseFloat(d.rating), 0) / allDoctors.length).toFixed(1) : '0';
+            document.getElementById('avgRating').textContent = avgRating;
+        }
+
+        function populateSpecialtyFilter() {
+            const specialties = [...new Set(allDoctors.map(d => d.specialty))];
+            const select = document.getElementById('specialtyFilterAdmin');
+            select.innerHTML = '<option value="">All Specialties</option>' +
+                specialties.map(s => `<option value="${s}">${s}</option>`).join('');
+        }
+
+        function filterDoctors() {
+            const search = document.getElementById('searchDoctors').value.toLowerCase();
+            const specialty = document.getElementById('specialtyFilterAdmin').value;
+            const verified = document.getElementById('verifiedFilter').value;
+
+            const filtered = allDoctors.filter(d => {
+                const matchSearch = !search || d.user.full_name.toLowerCase().includes(search) || d.user.email.toLowerCase().includes(search);
+                const matchSpecialty = !specialty || d.specialty === specialty;
+                const matchVerified = !verified || d.is_verified.toString() === verified;
+                return matchSearch && matchSpecialty && matchVerified;
+            });
+
+            renderDoctors(filtered);
+        }
+
+        function renderDoctors(doctors) {
+            const tbody = document.getElementById('doctorsTableBody');
+            if (doctors.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" class="text-center py-12 text-gray-500">No doctors found</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = doctors.map(doc => `
+                <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                                ${doc.user.full_name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">${doc.user.full_name}</p>
+                                <p class="text-xs text-gray-500">${doc.user.email}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">${doc.specialty}</span></td>
+                    <td class="px-6 py-4 text-gray-700">${doc.experience_years} yrs</td>
+                    <td class="px-6 py-4 text-secondary font-medium">$${parseFloat(doc.consultation_fee).toFixed(2)}</td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400 mr-1 text-xs"></i>
+                            <span class="text-gray-700">${parseFloat(doc.rating).toFixed(1)}</span>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        ${doc.is_verified
+                    ? '<span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold"><i class="fas fa-check mr-1"></i>Verified</span>'
+                    : '<span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold">Pending</span>'}
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-2">
+                            <button onclick="openEditDoctorModal(${doc.doctor_id})"
+                                class="p-2 bg-blue-50 text-primary rounded-lg hover:bg-blue-100 transition" title="Edit">
+                                <i class="fas fa-edit text-sm"></i>
+                            </button>
+                            <button onclick="openDeleteModal(${doc.doctor_id}, '${doc.user.full_name}')"
+                                class="p-2 bg-red-50 text-red-500 rounded-lg hover:bg-red-100 transition" title="Delete">
+                                <i class="fas fa-trash-alt text-sm"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function openAddDoctorModal() {
+            isEditMode = false;
+            document.getElementById('modalTitle').textContent = 'Add New Doctor';
+            document.getElementById('doctorForm').reset();
+            document.getElementById('editDoctorId').value = '';
+            document.getElementById('passwordField').classList.remove('hidden');
+            document.getElementById('docPassword').required = true;
+            document.getElementById('formError').classList.add('hidden');
+            document.getElementById('doctorModal').classList.remove('hidden');
+        }
+
+        function openEditDoctorModal(doctorId) {
+            const doc = allDoctors.find(d => d.doctor_id === doctorId);
+            if (!doc) return;
+
+            isEditMode = true;
+            document.getElementById('modalTitle').textContent = 'Edit Doctor';
+            document.getElementById('editDoctorId').value = doctorId;
+            document.getElementById('docName').value = doc.user.full_name;
+            document.getElementById('docEmail').value = doc.user.email;
+            document.getElementById('docPhone').value = doc.user.phone || '';
+            document.getElementById('docSpecialty').value = doc.specialty;
+            document.getElementById('docExperience').value = doc.experience_years;
+            document.getElementById('docFee').value = doc.consultation_fee;
+            document.getElementById('docQualifications').value = doc.qualifications || '';
+            document.getElementById('docBio').value = doc.bio || '';
+            document.getElementById('passwordField').classList.add('hidden');
+            document.getElementById('docPassword').required = false;
+            document.getElementById('formError').classList.add('hidden');
+            document.getElementById('doctorModal').classList.remove('hidden');
+        }
+
+        function closeDoctorModal() {
+            document.getElementById('doctorModal').classList.add('hidden');
+        }
+
+        async function submitDoctor(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitDoctorBtn');
+            const errorDiv = document.getElementById('formError');
+            errorDiv.classList.add('hidden');
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Saving...';
+
+            try {
+                const editId = document.getElementById('editDoctorId').value;
+
+                if (!isEditMode) {
+                    const password = document.getElementById('docPassword').value;
+                    if (!password || password.length < 6) {
+                        throw new Error('Password must be at least 6 characters');
+                    }
+
+                    const payload = {
+                        email: document.getElementById('docEmail').value,
+                        password,
+                        full_name: document.getElementById('docName').value,
+                        phone: document.getElementById('docPhone').value || null,
+                        specialty: document.getElementById('docSpecialty').value,
+                        experience_years: parseInt(document.getElementById('docExperience').value) || 0,
+                        consultation_fee: parseFloat(document.getElementById('docFee').value) || 0,
+                        qualifications: document.getElementById('docQualifications').value || null,
+                        bio: document.getElementById('docBio').value || null
+                    };
+
+                    const response = await fetch(`${API_URL}/api/admin/doctors`, {
+                        method: 'POST',
+                        headers: getAuthHeaders(),
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) {
+                        const err = await response.json();
+                        throw new Error(err.detail || 'Failed to add doctor');
+                    }
+                    showToast('Doctor added successfully', 'success');
+                } else {
+                    const payload = {
+                        specialty: document.getElementById('docSpecialty').value,
+                        experience_years: parseInt(document.getElementById('docExperience').value) || 0,
+                        consultation_fee: parseFloat(document.getElementById('docFee').value) || 0,
+                        qualifications: document.getElementById('docQualifications').value || null,
+                        bio: document.getElementById('docBio').value || null
+                    };
+
+                    const response = await fetch(`${API_URL}/api/admin/doctors/${editId}`, {
+                        method: 'PUT',
+                        headers: getAuthHeaders(),
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) throw new Error('Failed to update doctor');
+                    showToast('Doctor updated successfully', 'success');
+                }
+
+                closeDoctorModal();
+                fetchDoctors();
+            } catch (error) {
+                errorDiv.textContent = error.message;
+                errorDiv.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = 'Save Doctor';
+            }
+        }
+
+        function openDeleteModal(doctorId, doctorName) {
+            deleteDoctorId = doctorId;
+            document.getElementById('deleteDoctorName').textContent = doctorName;
+            document.getElementById('deleteModal').classList.remove('hidden');
+        }
+
+        function closeDeleteModal() {
+            document.getElementById('deleteModal').classList.add('hidden');
+            deleteDoctorId = null;
+        }
+
+        async function confirmDelete() {
+            if (!deleteDoctorId) return;
+            try {
+                const response = await fetch(`${API_URL}/api/admin/doctors/${deleteDoctorId}`, {
+                    method: 'DELETE',
+                    headers: getAuthHeaders()
+                });
+                if (!response.ok) throw new Error('Failed');
+                showToast('Doctor deleted successfully', 'success');
+                closeDeleteModal();
+                fetchDoctors();
+            } catch (error) {
+                showToast('Failed to delete doctor', 'error');
+            }
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+            document.getElementById('sidebarOverlay').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

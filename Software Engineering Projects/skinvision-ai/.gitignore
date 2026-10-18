@@ -1,0 +1,25 @@
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# Backend
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.env
+
+# Trained model weights — large binary files, don't belong in git.
+# Track them with git-lfs or a model registry instead if you need to.
+backend/app/ml_models/classifier/*.pt
+backend/app/ml_models/classifier/labels.json
+backend/app/ml_models/detector/*.pt
+ml/checkpoints/
+
+# Datasets and generated manifests — never commit these; license terms
+# vary per dataset and they're large.
+ml/data/manifest*.csv
+ml/data/*.yaml
+
+.DS_Store

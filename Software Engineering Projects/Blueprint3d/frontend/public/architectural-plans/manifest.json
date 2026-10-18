@@ -1,0 +1,38 @@
+[
+  {
+    "id": "compact-5-marla",
+    "title": "5 MARLA / COMPACT FAMILY HOUSE",
+    "subtitle": "Two bedrooms - separate drawing room - U stair",
+    "w": 27.5,
+    "h": 49.5,
+    "beds": 2,
+    "scale": 50
+  },
+  {
+    "id": "family-7-marla",
+    "title": "7 MARLA / THREE-BEDROOM HOUSE",
+    "subtitle": "Private rear suites - guest bedroom - front drawing room",
+    "w": 33,
+    "h": 57.75,
+    "beds": 3,
+    "scale": 60
+  },
+  {
+    "id": "courtyard-10-marla",
+    "title": "10 MARLA / COURTYARD HOUSE",
+    "subtitle": "Three bedrooms - central courtyard - curved stair lobby",
+    "w": 41.25,
+    "h": 66,
+    "beds": 3,
+    "scale": 75
+  },
+  {
+    "id": "grand-20-marla",
+    "title": "20 MARLA / GARDEN RESIDENCE",
+    "subtitle": "Four bedrooms - garden court - study - two-car porch",
+    "w": 55,
+    "h": 99,
+    "beds": 4,
+    "scale": 100
+  }
+]

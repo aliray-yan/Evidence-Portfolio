@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MedAssist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#10b981',
+                        accent: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-full w-64 bg-white shadow-lg z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+        <div class="p-6 border-b">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                <span class="font-bold text-xl text-gray-800">MedAssist</span>
+            </div>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-2">
+                <li><a href="dashboard.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition"><i class="fas fa-home w-5 mr-3"></i>Dashboard</a></li>
+                <li><a href="symptom-checker.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition"><i class="fas fa-stethoscope w-5 mr-3"></i>Symptom Checker</a></li>
+                <li><a href="history.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition"><i class="fas fa-history w-5 mr-3"></i>Medical History</a></li>
+                <li><a href="doctors.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition"><i class="fas fa-user-md w-5 mr-3"></i>Find Doctors</a></li>
+                <li><a href="book-appointment.html" class="flex items-center px-4 py-3 text-primary bg-blue-50 rounded-lg"><i class="fas fa-calendar-plus w-5 mr-3"></i>Book Appointment</a></li>
+            </ul>
+            <div class="mt-8 pt-4 border-t">
+                <a href="#" onclick="logout()" class="flex items-center px-4 py-3 text-red-600 hover:bg-red-50 rounded-lg transition">
+                    <i class="fas fa-sign-out-alt w-5 mr-3"></i>Logout
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black/50 z-30 hidden md:hidden" onclick="toggleSidebar()"></div>
+
+    <!-- Main Content -->
+    <main class="md:ml-64 min-h-screen">
+        <header class="bg-white shadow-sm sticky top-0 z-20">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center">
+                    <button onclick="toggleSidebar()" class="md:hidden mr-4 text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    <h1 class="text-xl font-semibold text-gray-800">Book Appointment</h1>
+                </div>
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold" id="userAvatar">P</div>
+            </div>
+        </header>
+
+        <div class="p-6">
+
+            <!-- Prediction Context Banner -->
+            <div id="predictionBanner" class="hidden bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-xl p-4 mb-6">
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-brain text-purple-600"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800">Booking based on AI Prediction</p>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Predicted Condition: <strong id="bannerDisease" class="text-purple-700"></strong> &bull;
+                            Recommended Specialist: <strong id="bannerSpecialist" class="text-blue-700"></strong>
+                        </p>
+                    </div>
+                    <button onclick="clearPredictionContext()" class="ml-auto text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Steps Indicator -->
+            <div class="flex items-center justify-center mb-8">
+                <div class="flex items-center">
+                    <div id="step1Dot" class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                    <span class="ml-2 text-sm font-medium text-gray-700">Select Doctor</span>
+                </div>
+                <div class="w-16 h-0.5 mx-4 bg-gray-300" id="stepLine1"></div>
+                <div class="flex items-center">
+                    <div id="step2Dot" class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                    <span class="ml-2 text-sm font-medium text-gray-500" id="step2Label">Choose Slot</span>
+                </div>
+                <div class="w-16 h-0.5 mx-4 bg-gray-300" id="stepLine2"></div>
+                <div class="flex items-center">
+                    <div id="step3Dot" class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                    <span class="ml-2 text-sm font-medium text-gray-500" id="step3Label">Confirm</span>
+                </div>
+            </div>
+
+            <!-- Step 1: Select Doctor -->
+            <div id="stepOne">
+                <!-- Filters -->
+                <div class="bg-white rounded-xl shadow-sm p-4 mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="relative">
+                            <input type="text" id="searchDoc" placeholder="Search doctor..."
+                                class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                                oninput="filterDocs()">
+                            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                        <select id="specialtyFilter" onchange="filterDocs()"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">All Specialties</option>
+                            <option value="General Physician">General Physician</option>
+                            <option value="Cardiologist">Cardiologist</option>
+                            <option value="Dermatologist">Dermatologist</option>
+                            <option value="Neurologist">Neurologist</option>
+                            <option value="Gastroenterologist">Gastroenterologist</option>
+                            <option value="Pulmonologist">Pulmonologist</option>
+                            <option value="Endocrinologist">Endocrinologist</option>
+                            <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                        </select>
+                        <select id="sortDocs" onchange="filterDocs()"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="rating">Highest Rated</option>
+                            <option value="experience">Most Experienced</option>
+                            <option value="fee_low">Lowest Fee</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Doctors List -->
+                <div id="doctorsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-spinner fa-spin text-3xl text-primary"></i>
+                        <p class="text-gray-500 mt-2">Loading doctors...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Choose Time Slot -->
+            <div id="stepTwo" class="hidden">
+                <div class="max-w-2xl mx-auto">
+                    <!-- Selected Doctor Card -->
+                    <div id="selectedDoctorCard" class="bg-white rounded-xl shadow-sm p-6 mb-6"></div>
+
+                    <!-- Date & Time Selection -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                            <i class="fas fa-calendar-alt text-primary mr-2"></i>Select Date & Time
+                        </h3>
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Appointment Date</label>
+                            <input type="date" id="appointmentDate" min=""
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                                onchange="updateTimeSlots()">
+                        </div>
+
+                        <div id="timeSlotsSection" class="hidden">
+                            <label class="block text-sm font-medium text-gray-700 mb-3">Available Time Slots</label>
+                            <div id="timeSlots" class="grid grid-cols-3 md:grid-cols-6 gap-2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Reason for Visit -->
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                            <i class="fas fa-notes-medical text-primary mr-2"></i>Visit Details
+                        </h3>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Reason for Visit</label>
+                            <textarea id="visitReason" rows="3"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="Describe your symptoms or reason for this appointment..."></textarea>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Additional Notes (optional)</label>
+                            <textarea id="additionalNotes" rows="2"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="Any additional information for the doctor..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="flex gap-4">
+                        <button onclick="goToStep(1)" class="flex-1 py-3 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition font-semibold">
+                            <i class="fas fa-arrow-left mr-2"></i>Back
+                        </button>
+                        <button onclick="goToStep(3)" class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Review Booking <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Confirm -->
+            <div id="stepThree" class="hidden">
+                <div class="max-w-lg mx-auto">
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden mb-6">
+                        <div class="bg-gradient-to-r from-primary to-blue-700 p-6 text-white text-center">
+                            <i class="fas fa-calendar-check text-4xl mb-3"></i>
+                            <h3 class="text-xl font-bold">Confirm Your Appointment</h3>
+                            <p class="text-blue-200 text-sm mt-1">Please review the details below</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between py-3 border-b">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-user-md w-5 mr-3 text-primary"></i>
+                                    <span class="text-sm">Doctor</span>
+                                </div>
+                                <span class="font-semibold text-gray-800" id="confirmDoctor">-</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-stethoscope w-5 mr-3 text-primary"></i>
+                                    <span class="text-sm">Specialty</span>
+                                </div>
+                                <span class="font-semibold text-gray-800" id="confirmSpecialty">-</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-calendar w-5 mr-3 text-primary"></i>
+                                    <span class="text-sm">Date</span>
+                                </div>
+                                <span class="font-semibold text-gray-800" id="confirmDate">-</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-clock w-5 mr-3 text-primary"></i>
+                                    <span class="text-sm">Time</span>
+                                </div>
+                                <span class="font-semibold text-gray-800" id="confirmTime">-</span>
+                            </div>
+                            <div class="flex items-center justify-between py-3 border-b">
+                                <div class="flex items-center text-gray-600">
+                                    <i class="fas fa-dollar-sign w-5 mr-3 text-primary"></i>
+                                    <span class="text-sm">Consultation Fee</span>
+                                </div>
+                                <span class="font-semibold text-secondary" id="confirmFee">-</span>
+                            </div>
+                            <div class="py-3">
+                                <div class="flex items-start text-gray-600 mb-2">
+                                    <i class="fas fa-notes-medical w-5 mr-3 text-primary mt-0.5"></i>
+                                    <span class="text-sm">Reason</span>
+                                </div>
+                                <p class="text-gray-800 text-sm ml-8" id="confirmReason">-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-yellow-600 mt-0.5 mr-2"></i>
+                            <p class="text-sm text-yellow-700">
+                                By confirming this appointment, you agree to arrive 10 minutes early. 
+                                Cancellations should be made at least 24 hours in advance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="bookingError" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm mb-4">
+                        <i class="fas fa-exclamation-circle mr-2"></i>
+                        <span id="bookingErrorText"></span>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button onclick="goToStep(2)" class="flex-1 py-3 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition font-semibold">
+                            <i class="fas fa-arrow-left mr-2"></i>Back
+                        </button>
+                        <button onclick="confirmBooking()" id="confirmBtn" class="flex-1 bg-secondary text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition">
+                            <i class="fas fa-check mr-2"></i>Confirm Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Success -->
+            <div id="stepFour" class="hidden">
+                <div class="max-w-lg mx-auto text-center">
+                    <div class="bg-white rounded-2xl shadow-lg p-10">
+                        <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-check-circle text-secondary text-5xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Appointment Booked!</h2>
+                        <p class="text-gray-600 mb-6">Your appointment has been successfully scheduled.</p>
+
+                        <div class="bg-gray-50 rounded-xl p-4 text-left mb-6" id="successDetails"></div>
+
+                        <div class="flex gap-4">
+                            <a href="history.html"
+                                class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition text-center">
+                                View My Appointments
+                            </a>
+                            <a href="dashboard.html"
+                                class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-50 transition text-center">
+                                Go to Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/patient.js"></script>
+    <script>
+        let allDoctors = [];
+        let selectedDoctor = null;
+        let selectedDate = null;
+        let selectedTime = null;
+        let predictionContext = null;
+        let currentStep = 1;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            checkAuth('patient');
+            checkPredictionContext();
+            loadDoctors();
+            setMinDate();
+        });
+
+        function checkPredictionContext() {
+            const stored = localStorage.getItem('bookingPrediction');
+            if (stored) {
+                predictionContext = JSON.parse(stored);
+                document.getElementById('predictionBanner').classList.remove('hidden');
+                document.getElementById('bannerDisease').textContent = predictionContext.disease;
+                document.getElementById('bannerSpecialist').textContent = predictionContext.specialist;
+                document.getElementById('specialtyFilter').value = predictionContext.specialist || '';
+                document.getElementById('visitReason').value = `Seeking consultation for: ${predictionContext.disease}`;
+            }
+        }
+
+        function clearPredictionContext() {
+            predictionContext = null;
+            localStorage.removeItem('bookingPrediction');
+            document.getElementById('predictionBanner').classList.add('hidden');
+        }
+
+        function setMinDate() {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('appointmentDate').min = tomorrow.toISOString().split('T')[0];
+        }
+
+        async function loadDoctors() {
+            try {
+                const specialty = document.getElementById('specialtyFilter').value;
+                let url = `${API_URL}/api/patient/doctors`;
+                if (specialty) url += `?specialty=${encodeURIComponent(specialty)}`;
+                const response = await fetch(url, { headers: getAuthHeaders() });
+                if (!response.ok) throw new Error('Failed');
+                allDoctors = await response.json();
+                renderDoctors(allDoctors);
+            } catch (error) {
+                showToast('Failed to load doctors', 'error');
+            }
+        }
+
+        function filterDocs() {
+            const search = document.getElementById('searchDoc').value.toLowerCase();
+            const specialty = document.getElementById('specialtyFilter').value;
+            const sort = document.getElementById('sortDocs').value;
+
+            let filtered = allDoctors.filter(d => {
+                return (!search || d.full_name.toLowerCase().includes(search)) &&
+                    (!specialty || d.specialty.includes(specialty));
+            });
+
+            filtered.sort((a, b) => {
+                if (sort === 'rating') return b.rating - a.rating;
+                if (sort === 'experience') return b.experience_years - a.experience_years;
+                if (sort === 'fee_low') return a.consultation_fee - b.consultation_fee;
+                return 0;
+            });
+
+            renderDoctors(filtered);
+        }
+
+        function renderDoctors(doctors) {
+            const container = document.getElementById('doctorsList');
+            if (doctors.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-user-md text-4xl text-gray-300 mb-3"></i>
+                        <p class="text-gray-500">No doctors found matching your criteria</p>
+                    </div>`;
+                return;
+            }
+
+            container.innerHTML = doctors.map(doc => `
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition cursor-pointer border-2 border-transparent hover:border-primary"
+                     onclick="selectDoctor(${doc.doctor_id})">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold mr-3">
+                                ${doc.full_name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">${doc.full_name}</h3>
+                                <p class="text-sm text-primary">${doc.specialty}</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm mb-4">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Experience</span>
+                                <span class="font-medium">${doc.experience_years} years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Rating</span>
+                                <span class="font-medium"><i class="fas fa-star text-yellow-400 mr-1"></i>${doc.rating.toFixed(1)}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Fee</span>
+                                <span class="font-medium text-secondary">$${doc.consultation_fee}</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition text-sm">
+                            Select Doctor <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectDoctor(doctorId) {
+            selectedDoctor = allDoctors.find(d => d.doctor_id === doctorId);
+            if (!selectedDoctor) return;
+
+            // Render selected doctor card
+            document.getElementById('selectedDoctorCard').innerHTML = `
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                        ${selectedDoctor.full_name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">${selectedDoctor.full_name}</h3>
+                        <p class="text-primary">${selectedDoctor.specialty}</p>
+                        <p class="text-sm text-gray-500">${selectedDoctor.experience_years} years experience &bull; $${selectedDoctor.consultation_fee} fee</p>
+                    </div>
+                </div>
+            `;
+
+            // Pre-fill reason from prediction
+            if (predictionContext && !document.getElementById('visitReason').value) {
+                document.getElementById('visitReason').value = `Seeking consultation for: ${predictionContext.disease}`;
+            }
+
+            goToStep(2);
+        }
+
+        function updateTimeSlots() {
+            selectedDate = document.getElementById('appointmentDate').value;
+            if (!selectedDate) return;
+
+            const dayName = new Date(selectedDate + 'T00:00:00').toLocaleDateString('en-US', { weekday: 'lowercase' });
+            const schedule = selectedDoctor?.availability_schedule || {};
+            const slots = schedule[dayName] || ['09:00', '10:00', '11:00', '14:00', '15:00', '16:00'];
+
+            document.getElementById('timeSlotsSection').classList.remove('hidden');
+            selectedTime = null;
+
+            document.getElementById('timeSlots').innerHTML = slots.map(slot => `
+                <label class="cursor-pointer">
+                    <input type="radio" name="timeSlot" value="${slot}" class="sr-only peer" onchange="selectedTime='${slot}'">
+                    <div class="py-2 px-3 border-2 border-gray-200 rounded-lg text-center text-sm font-medium 
+                                peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white
+                                hover:border-primary transition">
+                        ${slot}
+                    </div>
+                </label>
+            `).join('');
+        }
+
+        function goToStep(step) {
+            if (step === 3) {
+                if (!selectedDate) { showToast('Please select a date', 'error'); return; }
+                if (!selectedTime) { showToast('Please select a time slot', 'error'); return; }
+                if (!document.getElementById('visitReason').value.trim()) {
+                    showToast('Please provide a reason for your visit', 'error'); return;
+                }
+                populateConfirmation();
+            }
+
+            currentStep = step;
+            document.getElementById('stepOne').classList.toggle('hidden', step !== 1);
+            document.getElementById('stepTwo').classList.toggle('hidden', step !== 2);
+            document.getElementById('stepThree').classList.toggle('hidden', step !== 3);
+            document.getElementById('stepFour').classList.toggle('hidden', step !== 4);
+
+            // Update step dots
+            [1, 2, 3].forEach(s => {
+                const dot = document.getElementById(`step${s === 1 ? 'One' : s === 2 ? 'Two' : 'Three'}Dot`) ||
+                    document.getElementById(`step${s}Dot`);
+            });
+
+            updateStepIndicators(step);
+        }
+
+        function updateStepIndicators(step) {
+            ['1', '2', '3'].forEach(s => {
+                const dot = document.getElementById(`step${s}Dot`);
+                if (dot) {
+                    if (parseInt(s) <= step) {
+                        dot.className = 'w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold';
+                    } else {
+                        dot.className = 'w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold';
+                    }
+                }
+            });
+            if (step >= 2) document.getElementById('stepLine1').classList.add('bg-primary');
+            if (step >= 3) document.getElementById('stepLine2').classList.add('bg-primary');
+        }
+
+        function populateConfirmation() {
+            document.getElementById('confirmDoctor').textContent = selectedDoctor.full_name;
+            document.getElementById('confirmSpecialty').textContent = selectedDoctor.specialty;
+            document.getElementById('confirmDate').textContent = formatDate(selectedDate);
+            document.getElementById('confirmTime').textContent = formatTime(selectedTime + ':00');
+            document.getElementById('confirmFee').textContent = `$${selectedDoctor.consultation_fee}`;
+            document.getElementById('confirmReason').textContent = document.getElementById('visitReason').value;
+        }
+
+        async function confirmBooking() {
+            const btn = document.getElementById('confirmBtn');
+            const errorDiv = document.getElementById('bookingError');
+            errorDiv.classList.add('hidden');
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Booking...';
+
+            try {
+                const payload = {
+                    doctor_id: selectedDoctor.doctor_id,
+                    appointment_date: selectedDate,
+                    appointment_time: selectedTime + ':00',
+                    reason: document.getElementById('visitReason').value,
+                    notes: document.getElementById('additionalNotes').value,
+                    prediction_id: predictionContext?.prediction_id || null
+                };
+
+                const response = await fetch(`${API_URL}/api/patient/book`, {
+                    method: 'POST',
+                    headers: getAuthHeaders(),
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const err = await response.json();
+                    throw new Error(err.detail || 'Booking failed');
+                }
+
+                localStorage.removeItem('bookingPrediction');
+
+                // Show success
+                document.getElementById('successDetails').innerHTML = `
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Doctor</span>
+                            <span class="font-semibold">${selectedDoctor.full_name}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Date</span>
+                            <span class="font-semibold">${formatDate(selectedDate)}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Time</span>
+                            <span class="font-semibold">${formatTime(selectedTime + ':00')}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Status</span>
+                            <span class="font-semibold text-yellow-600">Pending Confirmation</span>
+                        </div>
+                    </div>
+                `;
+
+                goToStep(4);
+            } catch (error) {
+                document.getElementById('bookingErrorText').textContent = error.message;
+                errorDiv.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i>Confirm Booking';
+            }
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+            document.getElementById('sidebarOverlay').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

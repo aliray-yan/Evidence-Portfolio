@@ -1,0 +1,15 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" fill="#fbfbef"/>
+  <rect x="38" y="34" width="644" height="452" fill="#f2f0df" stroke="#080808" stroke-width="4"/>
+  <rect x="38" y="34" width="644" height="66" fill="#b7ff2a" stroke="#080808" stroke-width="4"/>
+  <text x="60" y="78" font-family="Arial Black, Arial" font-size="28" fill="#080808">BRUTAL STUDIO</text>
+  <text x="60" y="192" font-family="Arial Black, Arial" font-size="66" fill="#080808">LOUD PAGES.</text>
+  <text x="60" y="258" font-family="Arial Black, Arial" font-size="66" fill="#080808">CLEAR ACTION.</text>
+  <rect x="60" y="316" width="192" height="68" fill="#ff4f1f" stroke="#080808" stroke-width="4"/>
+  <rect x="388" y="142" width="230" height="90" fill="#ffffff" stroke="#080808" stroke-width="4"/>
+  <rect x="418" y="174" width="108" height="18" fill="#080808"/>
+  <rect x="388" y="252" width="230" height="90" fill="#b7ff2a" stroke="#080808" stroke-width="4"/>
+  <rect x="418" y="284" width="132" height="18" fill="#080808"/>
+  <rect x="388" y="362" width="230" height="90" fill="#ffffff" stroke="#080808" stroke-width="4"/>
+  <rect x="418" y="394" width="148" height="18" fill="#080808"/>
+</svg>

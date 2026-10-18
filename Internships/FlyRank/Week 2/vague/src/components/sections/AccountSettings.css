@@ -1,0 +1,179 @@
+.account-settings h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profile-image-container {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+}
+
+.upload-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid var(--bg-primary);
+  transition: all 0.2s ease;
+}
+
+.upload-badge:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.profile-form {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.profile-form > :nth-child(3),
+.profile-form > :nth-child(4) {
+  grid-column: span 2;
+}
+
+/* Theme Options */
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-option:hover {
+  border-color: var(--primary);
+  background-color: var(--bg-secondary);
+}
+
+.theme-option input[type="radio"] {
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+/* Language Section */
+.language-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.language-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.language-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Danger Zone */
+.danger-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-danger-secondary {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--danger);
+  background-color: transparent;
+  color: var(--danger);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-danger-secondary:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.btn-danger {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-danger:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form > :nth-child(3),
+  .profile-form > :nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .language-row {
+    grid-template-columns: 1fr;
+  }
+
+  .danger-actions {
+    flex-direction: column;
+  }
+
+  .btn-danger-secondary,
+  .btn-danger {
+    width: 100%;
+  }
+}

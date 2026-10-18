@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  error:
+    include-message: never
+    include-stacktrace: never
+    include-exception: false
+
+spring:
+  application:
+    name: inventory-service
+  datasource:
+    url: jdbc:postgresql://inventory-db:5432/inventory_db
+    username: ${POSTGRES_USER:legacyx}
+    # No guessable fallback — docker compose always supplies a real
+    # POSTGRES_PASSWORD (required, no default, see docker-compose.yml /
+    # .env.example). An unset value here fails the datasource connection
+    # loudly instead of silently trying a known password.
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: inventory-service
+      auto-offset-reset: earliest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: never
+  metrics:
+    tags:
+      application: ${spring.application.name}

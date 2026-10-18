@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: blueprint3d-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: blueprint3d
+      POSTGRES_PASSWORD: blueprint3d
+      POSTGRES_DB: blueprint3d
+    ports:
+      - '5432:5432'
+    volumes:
+      - blueprint3d-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U blueprint3d']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  blueprint3d-postgres-data:

@@ -1,0 +1,13 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" fill="#090b13"/>
+  <rect x="42" y="38" width="636" height="444" rx="26" fill="#121725" stroke="#20d7ff" stroke-width="2"/>
+  <rect x="72" y="70" width="180" height="32" rx="6" fill="#20d7ff"/>
+  <rect x="452" y="70" width="72" height="20" rx="4" fill="#ff36b9"/>
+  <rect x="548" y="70" width="72" height="20" rx="4" fill="#20d7ff"/>
+  <text x="76" y="206" font-family="Inter, Arial" font-size="60" font-weight="900" fill="#f8fbff">NEON FLOW</text>
+  <text x="78" y="250" font-family="Inter, Arial" font-size="19" fill="#9ca3af">Animated systems, dark panels, crisp interactions.</text>
+  <rect x="78" y="312" width="176" height="58" rx="12" fill="#ff36b9"/>
+  <rect x="396" y="156" width="216" height="216" rx="24" fill="#090b13" stroke="#20d7ff"/>
+  <path d="M426 300L476 210L526 275L568 188" stroke="#20d7ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="568" cy="188" r="16" fill="#ff36b9"/>
+</svg>

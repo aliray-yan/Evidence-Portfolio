@@ -1,0 +1,8 @@
+{
+  "_comment": "From PRD section 8, Dataset D (tiswan14/acne-dataset-image, ~4,620 images, Apache 2.0 per its description - classification-oriented, NOT bounding boxes, despite covering the same lesion types as the Dataset C detector). Papules/Pustules/Cysts don't have their own classifier concern label, so they're folded into 'acne'. Verify real folder names after download before trusting this.",
+  "Blackheads": ["blackheads"],
+  "Whiteheads": ["whiteheads"],
+  "Papules": ["acne"],
+  "Pustules": ["acne"],
+  "Cysts": ["acne"]
+}

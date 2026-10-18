@@ -1,0 +1,2259 @@
+{
+  "schemaVersion": 1,
+  "unit": "ft",
+  "plot": {
+    "width": 12.573,
+    "length": 20.1168,
+    "marlaSquareFeet": 272.25
+  },
+  "walls": [
+    {
+      "id": "wall-001",
+      "start": {
+        "x": 0.1524,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 2.1336,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-002",
+      "start": {
+        "x": 2.1336,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 3.048,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-003",
+      "start": {
+        "x": 3.048,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-004",
+      "start": {
+        "x": 4.4196,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 6.7056,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-005",
+      "start": {
+        "x": 6.7056,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 8.382,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-006",
+      "start": {
+        "x": 8.382,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 10.5918,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-007",
+      "start": {
+        "x": 10.5918,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 0.1524
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-008",
+      "start": {
+        "x": 2.1336,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 2.1336,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-009",
+      "start": {
+        "x": 0.1524,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 2.1336,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-010",
+      "start": {
+        "x": 2.1336,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 3.048,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-011",
+      "start": {
+        "x": 6.7056,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 8.382,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-012",
+      "start": {
+        "x": 10.5918,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-013",
+      "start": {
+        "x": 0.1524,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 0.1524,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-014",
+      "start": {
+        "x": 0.1524,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 0.1524,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-015",
+      "start": {
+        "x": 0.1524,
+        "y": 6.2484
+      },
+      "end": {
+        "x": 0.1524,
+        "y": 7.4676
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-016",
+      "start": {
+        "x": 0.1524,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 0.1524,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-017",
+      "start": {
+        "x": 0.1524,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 0.1524,
+        "y": 18.7452
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-018",
+      "start": {
+        "x": 3.048,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 3.048,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-019",
+      "start": {
+        "x": 4.4196,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 5.334
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-020",
+      "start": {
+        "x": 4.4196,
+        "y": 5.334
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-021",
+      "start": {
+        "x": 4.4196,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-022",
+      "start": {
+        "x": 4.4196,
+        "y": 11.43
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-023",
+      "start": {
+        "x": 4.4196,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-024",
+      "start": {
+        "x": 4.4196,
+        "y": 14.478
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 18.7452
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-025",
+      "start": {
+        "x": 0.1524,
+        "y": 6.2484
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-026",
+      "start": {
+        "x": 8.382,
+        "y": 6.2484
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-027",
+      "start": {
+        "x": 8.382,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 8.382,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-028",
+      "start": {
+        "x": 8.382,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 8.382,
+        "y": 5.334
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-029",
+      "start": {
+        "x": 8.382,
+        "y": 5.334
+      },
+      "end": {
+        "x": 8.382,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-030",
+      "start": {
+        "x": 8.382,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 8.382,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-031",
+      "start": {
+        "x": 8.382,
+        "y": 11.43
+      },
+      "end": {
+        "x": 8.382,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-032",
+      "start": {
+        "x": 8.382,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 8.382,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-033",
+      "start": {
+        "x": 6.7056,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 6.7056,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-034",
+      "start": {
+        "x": 4.4196,
+        "y": 5.334
+      },
+      "end": {
+        "x": 8.382,
+        "y": 5.334
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-035",
+      "start": {
+        "x": 12.4206,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-036",
+      "start": {
+        "x": 12.4206,
+        "y": 1.9812
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 6.2484
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-037",
+      "start": {
+        "x": 12.4206,
+        "y": 6.2484
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 7.4676
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-038",
+      "start": {
+        "x": 12.4206,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-039",
+      "start": {
+        "x": 12.4206,
+        "y": 11.43
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-040",
+      "start": {
+        "x": 10.5918,
+        "y": 0.1524
+      },
+      "end": {
+        "x": 10.5918,
+        "y": 1.9812
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-041",
+      "start": {
+        "x": 0.1524,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 7.4676
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-042",
+      "start": {
+        "x": 4.4196,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 8.382,
+        "y": 7.4676
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-043",
+      "start": {
+        "x": 8.382,
+        "y": 7.4676
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 7.4676
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-044",
+      "start": {
+        "x": 0.1524,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-045",
+      "start": {
+        "x": 4.4196,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 6.2484,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-046",
+      "start": {
+        "x": 6.2484,
+        "y": 13.2588
+      },
+      "end": {
+        "x": 8.382,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-047",
+      "start": {
+        "x": 4.4196,
+        "y": 11.43
+      },
+      "end": {
+        "x": 6.2484,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-048",
+      "start": {
+        "x": 6.2484,
+        "y": 11.43
+      },
+      "end": {
+        "x": 8.382,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-049",
+      "start": {
+        "x": 8.382,
+        "y": 11.43
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 11.43
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-050",
+      "start": {
+        "x": 4.4196,
+        "y": 14.478
+      },
+      "end": {
+        "x": 8.382,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-051",
+      "start": {
+        "x": 8.382,
+        "y": 14.478
+      },
+      "end": {
+        "x": 8.5344,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-052",
+      "start": {
+        "x": 8.5344,
+        "y": 14.478
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 14.478
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-053",
+      "start": {
+        "x": 6.2484,
+        "y": 11.43
+      },
+      "end": {
+        "x": 6.2484,
+        "y": 13.2588
+      },
+      "height": 2.8956,
+      "thickness": 0.1524,
+      "type": "interior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-054",
+      "start": {
+        "x": 0.1524,
+        "y": 18.7452
+      },
+      "end": {
+        "x": 4.4196,
+        "y": 18.7452
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-055",
+      "start": {
+        "x": 4.4196,
+        "y": 18.7452
+      },
+      "end": {
+        "x": 8.5344,
+        "y": 18.7452
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-056",
+      "start": {
+        "x": 8.5344,
+        "y": 14.478
+      },
+      "end": {
+        "x": 8.5344,
+        "y": 18.7452
+      },
+      "height": 2.8956,
+      "thickness": 0.22860000000000003,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    },
+    {
+      "id": "wall-front-gate",
+      "start": {
+        "x": 0.1524,
+        "y": 19.9644
+      },
+      "end": {
+        "x": 12.4206,
+        "y": 19.9644
+      },
+      "height": 1.524,
+      "thickness": 0.1524,
+      "type": "exterior",
+      "source": "manual",
+      "color": "#f0ede5"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-01",
+      "name": "Master Bath",
+      "boundary": [
+        {
+          "x": 0.2667,
+          "y": 0.2667
+        },
+        {
+          "x": 2.0574,
+          "y": 0.2667
+        },
+        {
+          "x": 2.0574,
+          "y": 1.905
+        },
+        {
+          "x": 0.2667,
+          "y": 1.905
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 1.7907000000000002,
+        "length": 1.6383,
+        "sourceText": "5'-10\u00bd\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-02",
+      "name": "Dressing",
+      "boundary": [
+        {
+          "x": 2.2098,
+          "y": 0.2667
+        },
+        {
+          "x": 2.9718,
+          "y": 0.2667
+        },
+        {
+          "x": 2.9718,
+          "y": 1.905
+        },
+        {
+          "x": 2.2098,
+          "y": 1.905
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 0.762,
+        "length": 1.6383,
+        "sourceText": "2'-6\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-03",
+      "name": "Master Bedroom",
+      "boundary": [
+        {
+          "x": 3.1242,
+          "y": 0.2667
+        },
+        {
+          "x": 4.3434,
+          "y": 0.2667
+        },
+        {
+          "x": 4.3434,
+          "y": 6.1722
+        },
+        {
+          "x": 0.2667,
+          "y": 6.1722
+        },
+        {
+          "x": 0.2667,
+          "y": 2.0574
+        },
+        {
+          "x": 3.1242,
+          "y": 2.0574
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 4.0767,
+        "length": 5.9055,
+        "sourceText": "13'-4\u00bd\" \u00d7 19'-4\u00bd\" MAX",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-04",
+      "name": "Bath 03",
+      "boundary": [
+        {
+          "x": 6.7818,
+          "y": 0.2667
+        },
+        {
+          "x": 8.3058,
+          "y": 0.2667
+        },
+        {
+          "x": 8.3058,
+          "y": 1.905
+        },
+        {
+          "x": 6.7818,
+          "y": 1.905
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 1.524,
+        "length": 1.6383,
+        "sourceText": "5'-0\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-05",
+      "name": "Bedroom 03",
+      "boundary": [
+        {
+          "x": 4.4958,
+          "y": 0.2667
+        },
+        {
+          "x": 6.6294,
+          "y": 0.2667
+        },
+        {
+          "x": 6.6294,
+          "y": 2.0574
+        },
+        {
+          "x": 8.3058,
+          "y": 2.0574
+        },
+        {
+          "x": 8.3058,
+          "y": 5.2578
+        },
+        {
+          "x": 4.4958,
+          "y": 5.2578
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.81,
+        "length": 4.9911,
+        "sourceText": "12'-6\" \u00d7 16'-4\u00bd\" MAX",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-06",
+      "name": "Bath 02",
+      "boundary": [
+        {
+          "x": 10.668,
+          "y": 0.2667
+        },
+        {
+          "x": 12.3063,
+          "y": 0.2667
+        },
+        {
+          "x": 12.3063,
+          "y": 1.905
+        },
+        {
+          "x": 10.668,
+          "y": 1.905
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 1.6383,
+        "length": 1.6383,
+        "sourceText": "5'-4\u00bd\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-07",
+      "name": "Bedroom 02",
+      "boundary": [
+        {
+          "x": 8.4582,
+          "y": 0.2667
+        },
+        {
+          "x": 10.5156,
+          "y": 0.2667
+        },
+        {
+          "x": 10.5156,
+          "y": 2.0574
+        },
+        {
+          "x": 12.3063,
+          "y": 2.0574
+        },
+        {
+          "x": 12.3063,
+          "y": 6.1722
+        },
+        {
+          "x": 8.4582,
+          "y": 6.1722
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.8481,
+        "length": 5.9055,
+        "sourceText": "12'-7\u00bd\" \u00d7 19'-4\u00bd\" MAX",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-08",
+      "name": "Private Gallery",
+      "boundary": [
+        {
+          "x": 4.4958,
+          "y": 5.4102
+        },
+        {
+          "x": 8.3058,
+          "y": 5.4102
+        },
+        {
+          "x": 8.3058,
+          "y": 6.3246
+        },
+        {
+          "x": 12.3063,
+          "y": 6.3246
+        },
+        {
+          "x": 12.3063,
+          "y": 7.3533
+        },
+        {
+          "x": 0.2667,
+          "y": 7.3533
+        },
+        {
+          "x": 0.2667,
+          "y": 6.3246
+        },
+        {
+          "x": 4.4958,
+          "y": 6.3246
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 12.0396,
+        "length": 1.9431,
+        "sourceText": "39'-6\" \u00d7 6'-4\u00bd\" MAX",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-09",
+      "name": "Tv Lounge",
+      "boundary": [
+        {
+          "x": 0.2667,
+          "y": 7.5438
+        },
+        {
+          "x": 4.3053,
+          "y": 7.5438
+        },
+        {
+          "x": 4.3053,
+          "y": 13.1826
+        },
+        {
+          "x": 0.2667,
+          "y": 13.1826
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 4.038600000000001,
+        "length": 5.638800000000001,
+        "sourceText": "13'-3\" \u00d7 18'-6\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-10",
+      "name": "Open Courtyard",
+      "boundary": [
+        {
+          "x": 4.4196,
+          "y": 7.4676
+        },
+        {
+          "x": 8.382,
+          "y": 7.4676
+        },
+        {
+          "x": 8.382,
+          "y": 11.43
+        },
+        {
+          "x": 4.4196,
+          "y": 11.43
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": true,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.9624,
+        "length": 3.9624,
+        "sourceText": "13'-0\" \u00d7 13'-0\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-11",
+      "name": "Dining Room",
+      "boundary": [
+        {
+          "x": 8.4963,
+          "y": 7.5438
+        },
+        {
+          "x": 12.3063,
+          "y": 7.5438
+        },
+        {
+          "x": 12.3063,
+          "y": 11.3538
+        },
+        {
+          "x": 8.4963,
+          "y": 11.3538
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.81,
+        "length": 3.81,
+        "sourceText": "12'-6\" \u00d7 12'-6\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-12",
+      "name": "Kitchen",
+      "boundary": [
+        {
+          "x": 8.4582,
+          "y": 11.5062
+        },
+        {
+          "x": 12.3063,
+          "y": 11.5062
+        },
+        {
+          "x": 12.3063,
+          "y": 14.3637
+        },
+        {
+          "x": 8.4582,
+          "y": 14.3637
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.8481,
+        "length": 2.8575,
+        "sourceText": "12'-7\u00bd\" \u00d7 9'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-13",
+      "name": "Powder",
+      "boundary": [
+        {
+          "x": 4.4958,
+          "y": 11.5443
+        },
+        {
+          "x": 6.1722,
+          "y": 11.5443
+        },
+        {
+          "x": 6.1722,
+          "y": 13.1826
+        },
+        {
+          "x": 4.4958,
+          "y": 13.1826
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 1.6764000000000001,
+        "length": 1.6383,
+        "sourceText": "5'-6\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-14",
+      "name": "Laundry",
+      "boundary": [
+        {
+          "x": 6.3246,
+          "y": 11.5443
+        },
+        {
+          "x": 8.3058,
+          "y": 11.5443
+        },
+        {
+          "x": 8.3058,
+          "y": 13.1826
+        },
+        {
+          "x": 6.3246,
+          "y": 13.1826
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 1.9812,
+        "length": 1.6383,
+        "sourceText": "6'-6\" \u00d7 5'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-15",
+      "name": "Entry Gallery",
+      "boundary": [
+        {
+          "x": 4.4958,
+          "y": 13.335
+        },
+        {
+          "x": 8.3058,
+          "y": 13.335
+        },
+        {
+          "x": 8.3058,
+          "y": 14.4018
+        },
+        {
+          "x": 4.4958,
+          "y": 14.4018
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.81,
+        "length": 1.0668,
+        "sourceText": "12'-6\" \u00d7 3'-6\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-16",
+      "name": "Drawing Room",
+      "boundary": [
+        {
+          "x": 0.2667,
+          "y": 13.335
+        },
+        {
+          "x": 4.3434,
+          "y": 13.335
+        },
+        {
+          "x": 4.3434,
+          "y": 18.6309
+        },
+        {
+          "x": 0.2667,
+          "y": 18.6309
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 4.0767,
+        "length": 5.2959000000000005,
+        "sourceText": "13'-4\u00bd\" \u00d7 17'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-17",
+      "name": "Entrance / Stair Lobby",
+      "boundary": [
+        {
+          "x": 4.4958,
+          "y": 14.5542
+        },
+        {
+          "x": 8.4201,
+          "y": 14.5542
+        },
+        {
+          "x": 8.4201,
+          "y": 18.6309
+        },
+        {
+          "x": 4.4958,
+          "y": 18.6309
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.9243,
+        "length": 4.0767,
+        "sourceText": "12'-10\u00bd\" \u00d7 13'-4\u00bd\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-18",
+      "name": "Car Porch",
+      "boundary": [
+        {
+          "x": 8.5344,
+          "y": 14.478
+        },
+        {
+          "x": 12.4206,
+          "y": 14.478
+        },
+        {
+          "x": 12.4206,
+          "y": 19.9644
+        },
+        {
+          "x": 8.5344,
+          "y": 19.9644
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": true,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 3.8862,
+        "length": 5.486400000000001,
+        "sourceText": "12'-9\" \u00d7 18'-0\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    },
+    {
+      "id": "room-19",
+      "name": "Front Approach",
+      "boundary": [
+        {
+          "x": 0.1524,
+          "y": 18.7452
+        },
+        {
+          "x": 8.5344,
+          "y": 18.7452
+        },
+        {
+          "x": 8.5344,
+          "y": 19.9644
+        },
+        {
+          "x": 0.1524,
+          "y": 19.9644
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": true,
+      "ceilingHeight": 2.8956,
+      "source": "manual",
+      "declaredSize": {
+        "width": 8.382,
+        "length": 1.2192,
+        "sourceText": "27'-6\" \u00d7 4'-0\"",
+        "confidence": 1
+      },
+      "dimensionStatus": "confirmed"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door-01",
+      "wallId": "wall-056",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-02",
+      "wallId": "wall-024",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-03",
+      "wallId": "wall-044",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-04",
+      "wallId": "wall-041",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-05",
+      "wallId": "wall-054",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-06",
+      "wallId": "wall-043",
+      "offset": 1.5621,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-07",
+      "wallId": "wall-049",
+      "offset": 1.5621,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-08",
+      "wallId": "wall-021",
+      "offset": 1.524,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-09",
+      "wallId": "wall-050",
+      "offset": 2.7127200000000005,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-10",
+      "wallId": "wall-046",
+      "offset": 0.6096,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-11",
+      "wallId": "wall-022",
+      "offset": 0.5334,
+      "width": 0.762,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-12",
+      "wallId": "wall-025",
+      "offset": 1.6764000000000001,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-13",
+      "wallId": "wall-026",
+      "offset": 1.5621,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-14",
+      "wallId": "wall-034",
+      "offset": 1.524,
+      "width": 0.9144000000000001,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-15",
+      "wallId": "wall-018",
+      "offset": 0.5334,
+      "width": 0.762,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-16",
+      "wallId": "wall-008",
+      "offset": 0.5334,
+      "width": 0.762,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-17",
+      "wallId": "wall-012",
+      "offset": 0.5334,
+      "width": 0.762,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-18",
+      "wallId": "wall-027",
+      "offset": 0.5334,
+      "width": 0.762,
+      "height": 2.1336,
+      "sillHeight": 0.0,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "door-19",
+      "wallId": "wall-front-gate",
+      "offset": 8.8011,
+      "width": 3.048,
+      "height": 1.3716000000000002,
+      "sillHeight": 0.0,
+      "swing": "sliding",
+      "openAngle": 0,
+      "color": "#ae8761",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    }
+  ],
+  "windows": [
+    {
+      "id": "window-01",
+      "wallId": "wall-001",
+      "offset": 0.6858000000000001,
+      "width": 0.6096,
+      "height": 0.762,
+      "sillHeight": 1.3716000000000002,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-02",
+      "wallId": "wall-014",
+      "offset": 1.524,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-03",
+      "wallId": "wall-005",
+      "offset": 0.5334,
+      "width": 0.6096,
+      "height": 0.762,
+      "sillHeight": 1.3716000000000002,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-04",
+      "wallId": "wall-004",
+      "offset": 0.5334,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-05",
+      "wallId": "wall-007",
+      "offset": 0.6096,
+      "width": 0.6096,
+      "height": 0.762,
+      "sillHeight": 1.3716000000000002,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-06",
+      "wallId": "wall-036",
+      "offset": 1.524,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-07",
+      "wallId": "wall-016",
+      "offset": 2.286,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-08",
+      "wallId": "wall-030",
+      "offset": 1.3716000000000002,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-09",
+      "wallId": "wall-052",
+      "offset": 1.3335000000000001,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-10",
+      "wallId": "wall-047",
+      "offset": 0.6096,
+      "width": 0.6096,
+      "height": 0.762,
+      "sillHeight": 1.3716000000000002,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-11",
+      "wallId": "wall-048",
+      "offset": 0.45720000000000005,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    },
+    {
+      "id": "window-12",
+      "wallId": "wall-017",
+      "offset": 2.1336,
+      "width": 1.2192,
+      "height": 1.2192,
+      "sillHeight": 0.9144000000000001,
+      "openAngle": 80,
+      "color": "#b5d1dc",
+      "frameColor": "#64736a",
+      "source": "manual",
+      "confidence": 1
+    }
+  ],
+  "stairs": [
+    {
+      "id": "stair-main",
+      "boundary": [
+        {
+          "x": 4.52628,
+          "y": 15.0114
+        },
+        {
+          "x": 7.57428,
+          "y": 15.0114
+        },
+        {
+          "x": 7.57428,
+          "y": 16.5354
+        },
+        {
+          "x": 4.52628,
+          "y": 16.5354
+        }
+      ],
+      "fromLevel": 0,
+      "toLevel": 1,
+      "direction": "up",
+      "shape": "curved",
+      "height": 2.8956,
+      "steps": 17,
+      "rotation": 0,
+      "color": "#c6b598",
+      "source": "manual"
+    }
+  ],
+  "columns": [],
+  "furniture": [],
+  "metadata": {
+    "accuracyStatus": "reviewed",
+    "analysisNotes": [
+      "Original generated architectural test layout. PNG and JSON use the same wall and opening coordinates.",
+      "Room dimensions are clear bounding extents; MAX identifies irregular rooms. Outer dimension chains use wall centre lines.",
+      "Single ground floor only. Stair rise and upper-floor connection are concept assumptions."
+    ],
+    "dimensions": [
+      {
+        "id": "dim-0",
+        "text": "5'-10\u00bd\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 1.7907000000000002,
+        "lengthMeters": 1.6383,
+        "roomId": "room-01",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-1",
+        "text": "2'-6\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 0.762,
+        "lengthMeters": 1.6383,
+        "roomId": "room-02",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-2",
+        "text": "13'-4\u00bd\" \u00d7 19'-4\u00bd\" MAX",
+        "axis": "room",
+        "valueMeters": 4.0767,
+        "lengthMeters": 5.9055,
+        "roomId": "room-03",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-3",
+        "text": "5'-0\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 1.524,
+        "lengthMeters": 1.6383,
+        "roomId": "room-04",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-4",
+        "text": "12'-6\" \u00d7 16'-4\u00bd\" MAX",
+        "axis": "room",
+        "valueMeters": 3.81,
+        "lengthMeters": 4.9911,
+        "roomId": "room-05",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-5",
+        "text": "5'-4\u00bd\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 1.6383,
+        "lengthMeters": 1.6383,
+        "roomId": "room-06",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-6",
+        "text": "12'-7\u00bd\" \u00d7 19'-4\u00bd\" MAX",
+        "axis": "room",
+        "valueMeters": 3.8481,
+        "lengthMeters": 5.9055,
+        "roomId": "room-07",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-7",
+        "text": "39'-6\" \u00d7 6'-4\u00bd\" MAX",
+        "axis": "room",
+        "valueMeters": 12.0396,
+        "lengthMeters": 1.9431,
+        "roomId": "room-08",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-8",
+        "text": "13'-3\" \u00d7 18'-6\"",
+        "axis": "room",
+        "valueMeters": 4.038600000000001,
+        "lengthMeters": 5.638800000000001,
+        "roomId": "room-09",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-9",
+        "text": "13'-0\" \u00d7 13'-0\"",
+        "axis": "room",
+        "valueMeters": 3.9624,
+        "lengthMeters": 3.9624,
+        "roomId": "room-10",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-10",
+        "text": "12'-6\" \u00d7 12'-6\"",
+        "axis": "room",
+        "valueMeters": 3.81,
+        "lengthMeters": 3.81,
+        "roomId": "room-11",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-11",
+        "text": "12'-7\u00bd\" \u00d7 9'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 3.8481,
+        "lengthMeters": 2.8575,
+        "roomId": "room-12",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-12",
+        "text": "5'-6\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 1.6764000000000001,
+        "lengthMeters": 1.6383,
+        "roomId": "room-13",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-13",
+        "text": "6'-6\" \u00d7 5'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 1.9812,
+        "lengthMeters": 1.6383,
+        "roomId": "room-14",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-14",
+        "text": "12'-6\" \u00d7 3'-6\"",
+        "axis": "room",
+        "valueMeters": 3.81,
+        "lengthMeters": 1.0668,
+        "roomId": "room-15",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-15",
+        "text": "13'-4\u00bd\" \u00d7 17'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 4.0767,
+        "lengthMeters": 5.2959000000000005,
+        "roomId": "room-16",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-16",
+        "text": "12'-10\u00bd\" \u00d7 13'-4\u00bd\"",
+        "axis": "room",
+        "valueMeters": 3.9243,
+        "lengthMeters": 4.0767,
+        "roomId": "room-17",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-17",
+        "text": "12'-9\" \u00d7 18'-0\"",
+        "axis": "room",
+        "valueMeters": 3.8862,
+        "lengthMeters": 5.486400000000001,
+        "roomId": "room-18",
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dim-18",
+        "text": "27'-6\" \u00d7 4'-0\"",
+        "axis": "room",
+        "valueMeters": 8.382,
+        "lengthMeters": 1.2192,
+        "roomId": "room-19",
+        "confidence": 1,
+        "status": "confirmed"
+      }
+    ],
+    "imageRegistration": {
+      "width": 2339,
+      "height": 3308,
+      "left": 227.77777777777777,
+      "top": 445.9755030621175,
+      "pixelsPerMeter": 104.98687664041994
+    }
+  }
+}

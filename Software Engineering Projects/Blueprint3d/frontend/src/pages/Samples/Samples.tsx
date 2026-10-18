@@ -1,0 +1,5 @@
+import { SAMPLES } from '../../data/samples';
+import { SampleCard } from '../../components/shared/SampleCard';
+import { Icon } from '../../components/shared/Icon';
+import '../Dashboard/Dashboard.css';
+export function Samples() { return <div><div className="page-heading"><div><span className="tiny-label">THE SAMPLE LIBRARY</span><h1>A little inspiration. A head start.</h1><p>Four original floor plans, ready to edit, explore, and make your own.</p></div><a className="secondary-button" href="/samples/sample-floor-plans.zip" download><Icon name="download" size={16}/>Download all maps</a></div><div className="sample-grid">{SAMPLES.map(s => <SampleCard key={s.id} sample={s}/>)}</div><div className="sample-help"><Icon name="check"/><div><h3>Two ways to test your home</h3><p><strong>Explore in 3D</strong> creates a project using exact floor-plan data. Download a PNG to test image analysis, or import its matching JSON for a precise result. The download pack also includes SVGs for crisp, printable maps.</p><p>All dimensions are in metres. These plans are original test layouts for visualization.</p></div></div></div>; }

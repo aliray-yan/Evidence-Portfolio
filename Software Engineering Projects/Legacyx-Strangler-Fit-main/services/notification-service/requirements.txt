@@ -1,0 +1,7 @@
+confluent-kafka==2.5.3
+
+# dev/test only
+pytest==8.3.3
+
+# dev/test only
+pytest==8.3.3

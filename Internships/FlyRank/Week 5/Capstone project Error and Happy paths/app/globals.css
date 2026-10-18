@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* Lets Tailwind detect the utility classes used inside Streamdown's
+   compiled components (the AI Assistant's Markdown renderer). */
+@source "../node_modules/streamdown/dist/*.js";
+@import "streamdown/styles.css";
+
+/*
+ * Design tokens — light mode (default) and dark mode.
+ *
+ * Palette rationale: a cool graphite/slate base (not a warm neutral) with
+ * a single confident indigo-blue signal color. Blue reads as precise and
+ * trustworthy — it also happens to be literally "blue team" coded, which
+ * fits a portfolio that's half SOC analyst, half software engineer.
+ * Amber is used sparingly as the secondary accent (pending/attention
+ * states, warm contrast against all the cool blue) rather than as an
+ * equal partner to primary.
+ *
+ * Every value below was checked against WCAG contrast requirements before
+ * being picked (not eyeballed): body text >=4.5:1, borders >=3:1 against
+ * both the page background and card surfaces, and button text >=4.5:1
+ * against its own button background. See /contrast-notes if this ever
+ * needs re-deriving — the short version is `relative luminance -> ratio`
+ * per WCAG 2.x, checked pairwise for every token above.
+ */
+:root {
+  --background: #f6f7f9;
+  --foreground: #12151c;
+  --card: #ffffff;
+  --card-foreground: #12151c;
+  --border: #7d8598;
+  --muted: #eef0f4;
+  --muted-foreground: #565f72;
+  --primary: #1d4ed8;
+  --primary-foreground: #ffffff;
+  --secondary: #b45309;
+  --secondary-foreground: #ffffff;
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+}
+
+.dark {
+  --background: #0a0d13;
+  --foreground: #e7eaf0;
+  --card: #10141c;
+  --card-foreground: #e7eaf0;
+  --border: #616b80;
+  --muted: #161b25;
+  --muted-foreground: #9aa3b5;
+  --primary: #7ea2ff;
+  --primary-foreground: #0a0d13;
+  --secondary: #f0b255;
+  --secondary-foreground: #0a0d13;
+  --destructive: #f2857a;
+  --destructive-foreground: #0a0d13;
+}
+
+/* @theme inline keeps these mapped to the CSS variables above at runtime
+   (not baked in at build time), which is what lets toggling the .dark
+   class on <html> instantly re-color every background, text, and border
+   utility across the whole app without touching component code. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer utilities {
+  /* Only shows a ring for keyboard focus (Tab), not on mouse click. */
+  .focus-ring {
+    @apply outline-none;
+  }
+  .focus-ring:focus-visible {
+    @apply ring-2 ring-primary/60 ring-offset-2 ring-offset-background;
+  }
+
+  .font-display {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono), ui-monospace, monospace;
+  }
+
+  /* A barely-there dot grid for section backdrops — a nod to network/
+     node diagrams without tipping into a neon "hacker" cliché. Opacity
+     is intentionally low (4-8%) so it reads as texture, not pattern. */
+  .bg-grid-dots {
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 24px 24px;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent 85%);
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+    opacity: 0.35;
+  }
+}

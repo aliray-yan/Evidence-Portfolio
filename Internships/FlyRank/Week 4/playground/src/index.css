@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+
+  --surface: #ffffff;
+  --surface-raised: #f6f5f9;
+  --text: #16181d;
+  --text-heading: #0b0c10;
+  --muted: #565c6b;
+  --border: #e3e2e8;
+  --accent: #6d5efc;
+  --accent-contrast: #ffffff;
+  --focus-ring: #6d5efc;
+
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  font: 16px/1.55 var(--sans);
+  color: var(--text);
+  background: var(--surface-raised);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1b1d24;
+    --surface-raised: #121319;
+    --text: #e7e8ec;
+    --text-heading: #f8f8fa;
+    --muted: #a3a8b8;
+    --border: #2c2e38;
+    --accent: #a293ff;
+    --accent-contrast: #14121f;
+    --focus-ring: #a293ff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-heading);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+/* Consistent, always-visible focus styling instead of relying on the
+   browser default, which is inconsistent across UAs and easy to lose track
+   of when auditing custom interactive widgets. */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+code {
+  font-family: var(--mono);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+}

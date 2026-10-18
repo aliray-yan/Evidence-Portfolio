@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-ui: "Space Grotesk Variable", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: Aquire, "Aquire Regular", "Orbitron Variable", Orbitron, Rajdhani, "Arial Black", Impact, sans-serif;
+  --font-luxury: Vorage, "Vorage Regular", "Cormorant Garamond Variable", "Bodoni 72", Didot, "Times New Roman", Georgia, serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+@font-face {
+  font-family: "Aquire";
+  src: local("Aquire"), local("Aquire Regular"), local("Aquire-BW0ox");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vorage";
+  src: local("Vorage"), local("Vorage Regular");
+  font-display: swap;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #f4f6f8;
+  color: #111318;
+  font-family: var(--font-ui);
+}
+
+.dark body {
+  background: #0e1117;
+  color: #f8fafc;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.canvas-scrollbar::-webkit-scrollbar,
+.panel-scrollbar::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.canvas-scrollbar::-webkit-scrollbar-thumb,
+.panel-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.32);
+  border-radius: 999px;
+}
+
+.checkerboard {
+  background-image:
+    linear-gradient(45deg, rgba(148, 163, 184, 0.16) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(148, 163, 184, 0.16) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(148, 163, 184, 0.16) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(148, 163, 184, 0.16) 75%);
+  background-size: 18px 18px;
+  background-position:
+    0 0,
+    0 9px,
+    9px -9px,
+    -9px 0;
+}
+
+.template-html {
+  --tf-bg: #ffffff;
+  --tf-ink: #111318;
+  --tf-muted: #5d6470;
+  --tf-accent: #4ea0dc;
+  --tf-accent-2: #ef5b9b;
+  --tf-soft: #f4f6f8;
+  --tf-radius: 20px;
+  --tf-font: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: var(--tf-bg);
+  color: var(--tf-ink);
+  font-family: var(--tf-font);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.font-luxury {
+  font-family: var(--font-luxury);
+  letter-spacing: 0.03em;
+}
+
+.tf-ambient-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+.tf-dark-geometry {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tf-dark-geometry::before,
+.tf-dark-geometry::after {
+  content: "";
+  position: absolute;
+  width: 46vw;
+  height: 46vw;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transform: rotate(32deg);
+}
+
+.tf-dark-geometry::before {
+  right: -12vw;
+  top: 8vh;
+}
+
+.tf-dark-geometry::after {
+  left: -18vw;
+  bottom: -22vw;
+}
+
+.tf-scanline {
+  position: relative;
+}
+
+.tf-scanline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  transform: translateY(-100%);
+  animation: tf-scan 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes tf-scan {
+  0%,
+  34% {
+    transform: translateY(-100%);
+  }
+  68%,
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.template-html button {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

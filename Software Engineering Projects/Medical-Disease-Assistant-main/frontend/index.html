@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#10b981',
+                        accent: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                    <span class="font-bold text-xl text-gray-800">MedAssist</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features" class="text-gray-600 hover:text-primary transition">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+                    <a href="login.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        AI-Powered Medical Diagnosis Assistant
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Get instant disease predictions based on your symptoms. Book appointments with specialists and track your complete medical history.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="register.html" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                            Get Started
+                        </a>
+                        <a href="#features" class="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold border-2 border-primary hover:bg-blue-50 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600" 
+                         alt="Medical Technology" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Portals -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Access Your Portal</h2>
+            <p class="text-gray-600 text-center mb-12">Choose your role to login or register</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Admin Portal -->
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-user-shield text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Admin Portal</h3>
+                        <p class="mb-6 text-purple-100">Full system access with analytics, user management, and reporting capabilities.</p>
+                        <a href="login.html?role=admin" class="inline-block bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
+                            Admin Login
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Patient Portal -->
+                <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-user text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Patient Portal</h3>
+                        <p class="mb-6 text-blue-100">Check symptoms, get AI predictions, book appointments, and manage your health records.</p>
+                        <div class="space-y-3">
+                            <a href="login.html?role=patient" class="block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+                                Patient Login
+                            </a>
+                            <a href="register.html" class="block bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Portal -->
+                <div class="bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-user-md text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Doctor Portal</h3>
+                        <p class="mb-6 text-green-100">Manage appointments, view patient history, and provide better healthcare.</p>
+                        <a href="login.html?role=doctor" class="inline-block bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition">
+                            Doctor Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Powerful Features</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Our AI-powered platform provides comprehensive healthcare management tools</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">AI Diagnosis</h3>
+                    <p class="text-gray-600">Advanced ML model predicting 41 diseases with over 95% accuracy based on symptoms.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-check text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Easy Booking</h3>
+                    <p class="text-gray-600">Book appointments with specialists directly from your diagnosis results.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-history text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Medical History</h3>
+                    <p class="text-gray-600">Complete tracking of your health journey with predictions and consultations.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Secure & Private</h3>
+                    <p class="text-gray-600">Your medical data is encrypted and protected with enterprise-grade security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">41+</div>
+                    <div class="text-blue-200">Diseases Detected</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">132</div>
+                    <div class="text-blue-200">Symptoms Analyzed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">95%+</div>
+                    <div class="text-blue-200">Accuracy Rate</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-blue-200">Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About MedAssist</h2>
+                    <p class="text-gray-600 mb-4">
+                        MedAssist is a comprehensive healthcare platform that combines artificial intelligence with modern web technologies to provide accessible medical assistance.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Our AI model is trained on extensive medical datasets, enabling accurate disease predictions based on symptoms. We connect patients with qualified specialists for professional consultations.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-secondary mr-3"></i>
+                            AI-powered symptom analysis
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-secondary mr-3"></i>
+                            Verified healthcare professionals
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-secondary mr-3"></i>
+                            Complete medical history tracking
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-secondary mr-3"></i>
+                            Easy appointment scheduling
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600" 
+                         alt="Medical Team" 
+                         class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Contact Us</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600">support@medassist.com</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Phone</h3>
+                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Address</h3>
+                    <p class="text-gray-600">123 Medical Drive, Health City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-white">MedAssist</span>
+                    </div>
+                    <p class="text-sm">AI-powered medical diagnosis assistant for better healthcare access.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Portals</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="login.html?role=admin" class="hover:text-white transition">Admin Login</a></li>
+                        <li><a href="login.html?role=patient" class="hover:text-white transition">Patient Login</a></li>
+                        <li><a href="login.html?role=doctor" class="hover:text-white transition">Doctor Login</a></li>
+                        <li><a href="register.html" class="hover:text-white transition">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2024 MedAssist. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

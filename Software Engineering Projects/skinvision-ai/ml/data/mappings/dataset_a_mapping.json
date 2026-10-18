@@ -1,0 +1,11 @@
+{
+  "_comment": "From PRD section 8, Dataset A (shijo96john/facial-skin-acne-pigmentation-pores-wrinkles). These are the folder names AS DESCRIBED in the dataset's Kaggle page - the PRD itself warns that descriptions aren't enough and the actual downloaded folder names must be checked (they may use underscores, different casing, etc). Run prepare_classification_manifest.py once WITHOUT --mapping first, compare its printed folder list against the keys below, fix any mismatches, then re-run with --mapping.",
+  "Dark Spots": ["dark_spots"],
+  "Inflammatory Acne": ["acne"],
+  "Non-Inflammatory Acne - Blackheads": ["blackheads"],
+  "Non-Inflammatory Acne - Whiteheads": ["whiteheads"],
+  "Pigmentation": ["pigmentation"],
+  "Pores": ["visible_pores"],
+  "Redness": ["redness"],
+  "Wrinkles": ["wrinkles"]
+}

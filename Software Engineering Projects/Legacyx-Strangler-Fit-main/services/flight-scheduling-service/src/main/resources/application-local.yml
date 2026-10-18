@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5437/flight_scheduling_db
+  jpa:
+    show-sql: true
+  kafka:
+    bootstrap-servers: localhost:9094

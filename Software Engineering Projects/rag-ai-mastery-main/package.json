@@ -1,0 +1,22 @@
+{
+  "name": "rag-ai-mastery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RAG AI Mastery: Zero to Advanced learning platform by Ali Rayyan.",
+  "scripts": {
+    "client:dev": "npm run dev --prefix client",
+    "server:dev": "npm run dev --prefix server",
+    "client:build": "npm run build --prefix client",
+    "server:seed": "npm run seed --prefix server",
+    "server:prisma:generate": "npm run prisma:generate --prefix server"
+  },
+  "keywords": [
+    "rag",
+    "ai",
+    "llm",
+    "learning-platform",
+    "vector-search"
+  ],
+  "author": "Ali Rayyan",
+  "license": "MIT"
+}

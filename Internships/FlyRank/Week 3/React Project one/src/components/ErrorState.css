@@ -1,0 +1,20 @@
+.error-state {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  border-radius: var(--radius-md);
+  color: #fecdd3;
+}
+
+.error-state__icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.error-state__message {
+  margin: 0;
+  font-size: 0.95rem;
+}

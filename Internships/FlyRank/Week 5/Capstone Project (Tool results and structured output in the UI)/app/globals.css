@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Lets Tailwind detect the utility classes used inside Streamdown's
+   compiled components (the AI Assistant's Markdown renderer). */
+@source "../node_modules/streamdown/dist/*.js";
+@import "streamdown/styles.css";
+
+/*
+ * Design tokens — light mode (default) and dark mode.
+ * Every value below was checked against WCAG contrast requirements before
+ * being picked (not eyeballed): body text >=4.5:1, borders >=3:1 against
+ * both the page background and card surfaces, and button text >=4.5:1
+ * against its own button background.
+ */
+:root {
+  --background: #f5f0e6;
+  --foreground: #211d18;
+  --card: #ffffff;
+  --card-foreground: #211d18;
+  --border: #8f8062;
+  --muted: #ede6d6;
+  --muted-foreground: #6b6355;
+  --primary: #c0432b;
+  --primary-foreground: #ffffff;
+  --secondary: #db8a2e;
+  --secondary-foreground: #211d18;
+  --destructive: #8b2635;
+  --destructive-foreground: #ffffff;
+}
+
+.dark {
+  --background: #1b1712;
+  --foreground: #f2ecdd;
+  --card: #272019;
+  --card-foreground: #f2ecdd;
+  --border: #897758;
+  --muted: #2e2820;
+  --muted-foreground: #bbb09a;
+  --primary: #eb6c50;
+  --primary-foreground: #1b1712;
+  --secondary: #eda347;
+  --secondary-foreground: #1b1712;
+  --destructive: #e56a5a;
+  --destructive-foreground: #1b1712;
+}
+
+/* @theme inline keeps these mapped to the CSS variables above at runtime
+   (not baked in at build time), which is what lets toggling the .dark
+   class on <html> instantly re-color every background, text, and border
+   utility across the whole app without touching component code. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --font-display: var(--font-archivo-black);
+  --font-sans: var(--font-jakarta);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer utilities {
+  /* Only shows a ring for keyboard focus (Tab), not on mouse click. */
+  .focus-ring {
+    @apply outline-none;
+  }
+  .focus-ring:focus-visible {
+    @apply ring-2 ring-primary/60 ring-offset-2 ring-offset-background;
+  }
+
+  .font-display {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+}

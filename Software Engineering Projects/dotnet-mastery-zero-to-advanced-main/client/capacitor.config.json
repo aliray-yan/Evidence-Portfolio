@@ -1,0 +1,6 @@
+{
+  "appId": "com.alirayyan.dotnetmastery",
+  "appName": ".NET Mastery",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

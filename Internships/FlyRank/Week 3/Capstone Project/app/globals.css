@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-cyan-400/20 text-cyan-400;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply outline-none ring-2 ring-cyan-400/60 ring-offset-2 ring-offset-navy-950;
+  }
+}

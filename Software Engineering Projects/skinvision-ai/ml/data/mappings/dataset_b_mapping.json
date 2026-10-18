@@ -1,0 +1,8 @@
+{
+  "_comment": "From PRD section 8, Dataset B (ahmedismaiil/skin-issues-version-2-dataset-balanced). The PRD only names the five categories, not the exact folder strings, so these keys are a best guess - check the real folder names after downloading and fix this file before use. PRD also flags this dataset's license as 'unknown, must not be used in a commercial product until verified' - check that before training on it at all.",
+  "Acne": ["acne"],
+  "Blackheads": ["blackheads"],
+  "Dark spots": ["dark_spots"],
+  "Pores": ["visible_pores"],
+  "Wrinkles": ["wrinkles"]
+}

@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  error:
+    include-message: never
+    include-stacktrace: never
+    include-exception: false
+
+spring:
+  application:
+    name: flight-scheduling-service
+  datasource:
+    url: jdbc:postgresql://flight-scheduling-db:5432/flight_scheduling_db
+    username: ${POSTGRES_USER:legacyx}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  kafka:
+    bootstrap-servers: kafka:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: never
+  metrics:
+    tags:
+      application: ${spring.application.name}

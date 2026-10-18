@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+backend/venv/
+.venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Generated machine learning artifacts
+*.joblib
+backend/app/ml/*.joblib
+
+# Logs and local runtime files
+*.log
+*.err
+*.sqlite
+*.db
+logs/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Frontend/package artifacts
+node_modules/
+dist/
+build/

@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/inventory_db
+  jpa:
+    show-sql: true
+  kafka:
+    bootstrap-servers: localhost:9094

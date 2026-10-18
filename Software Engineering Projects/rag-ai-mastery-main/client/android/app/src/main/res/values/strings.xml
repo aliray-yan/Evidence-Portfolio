@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RAG AI Mastery</string>
+    <string name="title_activity_main">RAG AI Mastery</string>
+    <string name="package_name">com.alirayyan.ragaimastery</string>
+    <string name="custom_url_scheme">com.alirayyan.ragaimastery</string>
+</resources>

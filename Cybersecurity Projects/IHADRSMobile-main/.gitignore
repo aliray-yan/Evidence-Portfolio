@@ -1,0 +1,51 @@
+# Gradle / Android build output
+.gradle/
+build/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+**/captures/
+**/outputs/
+
+# Local SDK and machine-specific config
+local.properties
+*.iml
+.idea/
+.vscode/
+
+# Release artifacts and generated packages
+*.apk
+*.aab
+*.ap_
+*.idsig
+*.mapping
+
+# Signing material. Never commit private keys or passwords.
+release-signing.properties
+release/
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# Keep the non-secret template visible in Git.
+!release-signing.properties.example
+
+# Secrets / environment files
+.env
+.env.*
+!.env.example
+
+# Runtime dumps, logs, and temporary files
+*.hprof
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

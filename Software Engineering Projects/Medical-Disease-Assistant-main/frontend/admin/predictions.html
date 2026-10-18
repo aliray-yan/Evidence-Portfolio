@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictions - MedAssist Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#2563eb', secondary: '#10b981', accent: '#8b5cf6' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+    <aside id="sidebar" class="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+        <div class="p-6 border-b border-gray-800">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                <span class="font-bold text-xl">MedAssist</span>
+            </div>
+            <p class="text-xs text-gray-400 mt-1">Admin Panel</p>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-2">
+                <li><a href="dashboard.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-tachometer-alt w-5 mr-3"></i>Dashboard</a></li>
+                <li><a href="patients.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-users w-5 mr-3"></i>Patients</a></li>
+                <li><a href="doctors.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-user-md w-5 mr-3"></i>Doctors</a></li>
+                <li><a href="predictions.html" class="flex items-center px-4 py-3 bg-gray-800 rounded-lg"><i class="fas fa-brain w-5 mr-3"></i>Predictions</a></li>
+                <li><a href="referrals.html" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition"><i class="fas fa-share-square w-5 mr-3"></i>Referrals</a></li>
+            </ul>
+            <div class="mt-8 pt-4 border-t border-gray-800">
+                <a href="#" onclick="logout()" class="flex items-center px-4 py-3 text-red-400 hover:bg-red-900/20 rounded-lg transition">
+                    <i class="fas fa-sign-out-alt w-5 mr-3"></i>Logout
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black/50 z-30 hidden md:hidden" onclick="toggleSidebar()"></div>
+
+    <main class="md:ml-64 min-h-screen">
+        <header class="bg-white shadow-sm sticky top-0 z-20">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center">
+                    <button onclick="toggleSidebar()" class="md:hidden mr-4 text-gray-600"><i class="fas fa-bars text-xl"></i></button>
+                    <h1 class="text-xl font-semibold text-gray-800">Disease Predictions</h1>
+                </div>
+                <span class="text-sm text-gray-500">Total: <strong id="totalCount">-</strong></span>
+            </div>
+        </header>
+
+        <div class="p-6">
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-primary" id="sTotalPreds">-</p>
+                    <p class="text-sm text-gray-500">Total</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-secondary" id="sAvgConfidence">-</p>
+                    <p class="text-sm text-gray-500">Avg Confidence</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-accent" id="sWithReferral">-</p>
+                    <p class="text-sm text-gray-500">With Referral</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-yellow-500" id="sUniqueDiseases">-</p>
+                    <p class="text-sm text-gray-500">Unique Diseases</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="bg-white rounded-xl shadow-sm p-4 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="relative md:col-span-2">
+                        <input type="text" id="searchPred" placeholder="Search patient name or disease..."
+                            class="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary"
+                            oninput="filterPredictions()">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+                    </div>
+                    <select id="diseaseFilter" onchange="filterPredictions()"
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary">
+                        <option value="">All Diseases</option>
+                    </select>
+                    <select id="referralFilter" onchange="filterPredictions()"
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary">
+                        <option value="">All Predictions</option>
+                        <option value="yes">With Referral</option>
+                        <option value="no">No Referral</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b">
+                            <tr>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">#</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Patient</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Predicted Disease</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Confidence</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Specialist</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Symptoms</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Date</th>
+                                <th class="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Referred</th>
+                            </tr>
+                        </thead>
+                        <tbody id="predictionsTableBody" class="divide-y divide-gray-100">
+                            <tr><td colspan="8" class="text-center py-12"><i class="fas fa-spinner fa-spin text-2xl text-primary"></i></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Symptoms Detail Modal -->
+    <div id="symptomsModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Symptoms Details</h3>
+                <button onclick="closeSymptomsModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div id="symptomsModalContent"></div>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin.js"></script>
+    <script>
+        let allPredictions = [];
+
+        document.addEventListener('DOMContentLoaded', function () {
+            checkAuth('admin');
+            fetchPredictions();
+        });
+
+        async function fetchPredictions() {
+            try {
+                const response = await fetch(`${API_URL}/api/admin/predictions`, { headers: getAuthHeaders() });
+                if (!response.ok) throw new Error('Failed');
+                allPredictions = await response.json();
+                updateStats();
+                populateDiseaseFilter();
+                renderPredictions(allPredictions);
+            } catch (error) {
+                showToast('Failed to load predictions', 'error');
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('totalCount').textContent = allPredictions.length;
+            document.getElementById('sTotalPreds').textContent = allPredictions.length;
+            const avgConf = allPredictions.length
+                ? (allPredictions.reduce((s, p) => s + p.confidence_score, 0) / allPredictions.length * 100).toFixed(1) + '%'
+                : '0%';
+            document.getElementById('sAvgConfidence').textContent = avgConf;
+            document.getElementById('sWithReferral').textContent = allPredictions.filter(p => p.has_referral).length;
+            document.getElementById('sUniqueDiseases').textContent = new Set(allPredictions.map(p => p.predicted_disease)).size;
+        }
+
+        function populateDiseaseFilter() {
+            const diseases = [...new Set(allPredictions.map(p => p.predicted_disease))].sort();
+            document.getElementById('diseaseFilter').innerHTML = '<option value="">All Diseases</option>' +
+                diseases.map(d => `<option value="${d}">${d}</option>`).join('');
+        }
+
+        function filterPredictions() {
+            const search = document.getElementById('searchPred').value.toLowerCase();
+            const disease = document.getElementById('diseaseFilter').value;
+            const referral = document.getElementById('referralFilter').value;
+
+            const filtered = allPredictions.filter(p => {
+                const matchSearch = !search ||
+                    p.patient_name.toLowerCase().includes(search) ||
+                    p.predicted_disease.toLowerCase().includes(search);
+                const matchDisease = !disease || p.predicted_disease === disease;
+                const matchReferral = !referral ||
+                    (referral === 'yes' && p.has_referral) ||
+                    (referral === 'no' && !p.has_referral);
+                return matchSearch && matchDisease && matchReferral;
+            });
+
+            renderPredictions(filtered);
+        }
+
+        function renderPredictions(predictions) {
+            const tbody = document.getElementById('predictionsTableBody');
+            if (predictions.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="text-center py-12 text-gray-500">No predictions found</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = predictions.map((pred, idx) => `
+                <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4 text-sm text-gray-400">${idx + 1}</td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                                <span class="text-primary text-xs font-bold">
+                                    ${pred.patient_name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                                </span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-800">${pred.patient_name}</p>
+                                <p class="text-xs text-gray-400">${pred.patient_email}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">
+                            ${pred.predicted_disease}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-16 bg-gray-200 rounded-full h-1.5">
+                                <div class="h-1.5 rounded-full ${pred.confidence_score >= 0.8 ? 'bg-green-500' : pred.confidence_score >= 0.5 ? 'bg-yellow-500' : 'bg-red-500'}"
+                                     style="width: ${(pred.confidence_score * 100).toFixed(0)}%"></div>
+                            </div>
+                            <span class="text-xs font-medium ${pred.confidence_score >= 0.8 ? 'text-green-600' : pred.confidence_score >= 0.5 ? 'text-yellow-600' : 'text-red-600'}">
+                                ${(pred.confidence_score * 100).toFixed(1)}%
+                            </span>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-sm text-gray-600">${pred.recommended_specialist || '-'}</td>
+                    <td class="px-6 py-4">
+                        <button onclick="showSymptoms(${pred.prediction_id})"
+                            class="text-xs text-primary hover:underline">
+                            ${pred.symptoms_selected.length} symptoms
+                            <i class="fas fa-eye ml-1"></i>
+                        </button>
+                    </td>
+                    <td class="px-6 py-4 text-xs text-gray-500">${formatDate(pred.prediction_date)}</td>
+                    <td class="px-6 py-4">
+                        ${pred.has_referral
+                    ? '<span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Yes</span>'
+                    : '<span class="px-2 py-1 bg-gray-100 text-gray-500 rounded-full text-xs">No</span>'}
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function showSymptoms(predictionId) {
+            const pred = allPredictions.find(p => p.prediction_id === predictionId);
+            if (!pred) return;
+
+            document.getElementById('symptomsModalContent').innerHTML = `
+                <div class="mb-4">
+                    <p class="text-sm font-semibold text-gray-700 mb-2">Patient: ${pred.patient_name}</p>
+                    <p class="text-sm text-gray-500 mb-1">Disease: <strong class="text-purple-700">${pred.predicted_disease}</strong></p>
+                    <p class="text-sm text-gray-500 mb-4">Confidence: <strong class="${pred.confidence_score >= 0.8 ? 'text-green-600' : 'text-yellow-600'}">${(pred.confidence_score * 100).toFixed(1)}%</strong></p>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-gray-700 mb-3">Symptoms Selected (${pred.symptoms_selected.length}):</p>
+                    <div class="flex flex-wrap gap-2 max-h-48 overflow-y-auto">
+                        ${pred.symptoms_selected.map(s =>
+                `<span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">${formatSymptomName(s)}</span>`
+            ).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('symptomsModal').classList.remove('hidden');
+        }
+
+        function closeSymptomsModal() {
+            document.getElementById('symptomsModal').classList.add('hidden');
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+            document.getElementById('sidebarOverlay').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

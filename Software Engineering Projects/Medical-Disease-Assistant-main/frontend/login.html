@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Medical Diagnosis Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#10b981',
+                        accent: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full mx-4">
+        <!-- Logo -->
+        <div class="text-center mb-8">
+            <a href="index.html" class="inline-flex items-center">
+                <i class="fas fa-heartbeat text-primary text-3xl mr-2"></i>
+                <span class="font-bold text-2xl text-gray-800">MedAssist</span>
+            </a>
+        </div>
+
+        <!-- Login Card -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+            <div class="text-center mb-6">
+                <div id="roleIcon" class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-user text-primary text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900" id="loginTitle">Login</h2>
+                <p class="text-gray-600 mt-2" id="loginSubtitle">Sign in to your account</p>
+            </div>
+
+            <!-- Role Tabs -->
+            <div class="flex rounded-lg bg-gray-100 p-1 mb-6">
+                <button onclick="setRole('patient')" id="tabPatient" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition role-tab active">
+                    Patient
+                </button>
+                <button onclick="setRole('doctor')" id="tabDoctor" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition role-tab">
+                    Doctor
+                </button>
+                <button onclick="setRole('admin')" id="tabAdmin" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition role-tab">
+                    Admin
+                </button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <input type="email" id="email" name="email" required
+                                class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition"
+                                placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <input type="password" id="password" name="password" required
+                                class="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition"
+                                placeholder="Enter your password">
+                            <button type="button" onclick="togglePassword()" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary">
+                            <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                        </label>
+                        <a href="#" class="text-sm text-primary hover:text-blue-700">Forgot password?</a>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm">
+                        <i class="fas fa-exclamation-circle mr-2"></i>
+                        <span id="errorText"></span>
+                    </div>
+
+                    <button type="submit" id="loginBtn" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
+                        <span>Sign In</span>
+                        <i class="fas fa-spinner fa-spin ml-2 hidden" id="loginSpinner"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Register Link (for patients only) -->
+            <div id="registerLink" class="mt-6 text-center">
+                <p class="text-gray-600">
+                    Don't have an account?
+                    <a href="register.html" class="text-primary font-semibold hover:text-blue-700">Register here</a>
+                </p>
+            </div>
+
+            <!-- Demo Credentials -->
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                <p class="text-xs text-gray-500 font-medium mb-2">Demo Credentials:</p>
+                <div class="text-xs text-gray-600 space-y-1" id="demoCredentials">
+                    <p><strong>Admin:</strong> admin@medical.com / Admin@123</p>
+                    <p><strong>Doctor:</strong> dr.smith@medical.com / Doctor@123</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-6">
+            <a href="index.html" class="text-gray-600 hover:text-primary transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Initialize role from URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const role = urlParams.get('role') || 'patient';
+            setRole(role);
+        });
+    </script>
+</body>
+</html>

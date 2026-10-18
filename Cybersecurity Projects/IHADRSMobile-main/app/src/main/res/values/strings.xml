@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IHADRS Mobile</string>
+    <string name="monitoring_active_title">IHADRS is protecting your device</string>
+    <string name="monitoring_active_text">Monitoring active. Tap the app for details.</string>
+</resources>

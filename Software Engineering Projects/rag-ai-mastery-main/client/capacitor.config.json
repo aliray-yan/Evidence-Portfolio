@@ -1,0 +1,9 @@
+{
+  "appId": "com.alirayyan.ragaimastery",
+  "appName": "RAG AI Mastery",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

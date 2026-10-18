@@ -1,0 +1,1278 @@
+{
+  "schemaVersion": 1,
+  "unit": "ft",
+  "plot": {
+    "width": 12.2301,
+    "length": 21.336,
+    "marlaSquareFeet": 272.25
+  },
+  "walls": [
+    {
+      "id": "wall-bfd25d6823f7",
+      "start": {
+        "x": 12.1825,
+        "y": 0.0643
+      },
+      "end": {
+        "x": 12.1825,
+        "y": 21.1111
+      },
+      "thickness": 0.1,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-0403d554c3a2",
+      "start": {
+        "x": 0.1112,
+        "y": 0.2249
+      },
+      "end": {
+        "x": 0.1112,
+        "y": 21.336
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-b844643b1d10",
+      "start": {
+        "x": 0.2541,
+        "y": 5.9606
+      },
+      "end": {
+        "x": 11.0865,
+        "y": 5.9606
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-37ec9b07af46",
+      "start": {
+        "x": 10.9436,
+        "y": 5.0769
+      },
+      "end": {
+        "x": 10.9436,
+        "y": 13.7849
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-979ffa963e41",
+      "start": {
+        "x": 6.4804,
+        "y": 13.8973
+      },
+      "end": {
+        "x": 12.1348,
+        "y": 13.8973
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-3b54ccbe1825",
+      "start": {
+        "x": 0.2224,
+        "y": 0.1285
+      },
+      "end": {
+        "x": 4.2249,
+        "y": 0.1285
+      },
+      "thickness": 0.254,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-8ebbe40d6fa0",
+      "start": {
+        "x": 0.5718,
+        "y": 21.336
+      },
+      "end": {
+        "x": 3.9073,
+        "y": 21.336
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-56c7a860c9e9",
+      "start": {
+        "x": 0.2224,
+        "y": 3.0687
+      },
+      "end": {
+        "x": 12.2301,
+        "y": 3.0687
+      },
+      "thickness": 0.1,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-a442ba97f7be",
+      "start": {
+        "x": 0.2224,
+        "y": 12.6763
+      },
+      "end": {
+        "x": 4.2249,
+        "y": 12.6763
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-e68067a50163",
+      "start": {
+        "x": 0.2541,
+        "y": 10.6841
+      },
+      "end": {
+        "x": 2.8908,
+        "y": 10.6841
+      },
+      "thickness": 0.1,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-bf7d3580b608",
+      "start": {
+        "x": 4.3044,
+        "y": 1.221
+      },
+      "end": {
+        "x": 4.3044,
+        "y": 18.7333
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-0d9cbbb3b73e",
+      "start": {
+        "x": 12.0713,
+        "y": 0.9318
+      },
+      "end": {
+        "x": 12.0713,
+        "y": 2.8598
+      },
+      "thickness": 0.127,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-c0fae6583749",
+      "start": {
+        "x": 6.3851,
+        "y": 1.1086
+      },
+      "end": {
+        "x": 9.657,
+        "y": 1.1086
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-c77838c3ffa8",
+      "start": {
+        "x": 4.4155,
+        "y": 18.4119
+      },
+      "end": {
+        "x": 6.258,
+        "y": 18.4119
+      },
+      "thickness": 0.318,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-533926d6ca09",
+      "start": {
+        "x": 4.4155,
+        "y": 18.7172
+      },
+      "end": {
+        "x": 6.258,
+        "y": 18.7172
+      },
+      "thickness": 0.286,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-16d168291f03",
+      "start": {
+        "x": 10.3241,
+        "y": 1.1889
+      },
+      "end": {
+        "x": 12.1348,
+        "y": 1.1889
+      },
+      "thickness": 0.381,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-c9b5ba560ef6",
+      "start": {
+        "x": 0.953,
+        "y": 20.4684
+      },
+      "end": {
+        "x": 2.5413,
+        "y": 20.4684
+      },
+      "thickness": 0.127,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-c399e714750a",
+      "start": {
+        "x": 10.2606,
+        "y": 1.221
+      },
+      "end": {
+        "x": 10.2606,
+        "y": 2.7955
+      },
+      "thickness": 0.254,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-a2ebb9be09cc",
+      "start": {
+        "x": 11.9601,
+        "y": 18.1227
+      },
+      "end": {
+        "x": 11.9601,
+        "y": 19.6972
+      },
+      "thickness": 0.349,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-390d58e57810",
+      "start": {
+        "x": 2.589,
+        "y": 18.8618
+      },
+      "end": {
+        "x": 2.589,
+        "y": 20.4042
+      },
+      "thickness": 0.1,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-d28b5b0d2675",
+      "start": {
+        "x": 4.7332,
+        "y": 15.1826
+      },
+      "end": {
+        "x": 6.0039,
+        "y": 15.1826
+      },
+      "thickness": 0.159,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-4c86893bd67e",
+      "start": {
+        "x": 4.892,
+        "y": 15.4236
+      },
+      "end": {
+        "x": 6.0039,
+        "y": 15.4236
+      },
+      "thickness": 0.318,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-6ea61b42e1bf",
+      "start": {
+        "x": 11.0547,
+        "y": 12.9333
+      },
+      "end": {
+        "x": 12.1348,
+        "y": 12.9333
+      },
+      "thickness": 0.286,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-02b44cebc363",
+      "start": {
+        "x": 11.0547,
+        "y": 13.2386
+      },
+      "end": {
+        "x": 12.1348,
+        "y": 13.2386
+      },
+      "thickness": 0.318,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-f7033e3d45a9",
+      "start": {
+        "x": 11.0547,
+        "y": 13.5599
+      },
+      "end": {
+        "x": 12.1348,
+        "y": 13.5599
+      },
+      "thickness": 0.318,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-68ad8b0dbfb6",
+      "start": {
+        "x": 6.1309,
+        "y": 12.7887
+      },
+      "end": {
+        "x": 6.1309,
+        "y": 16.3555
+      },
+      "thickness": 0.254,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-19c2f4cf0675",
+      "start": {
+        "x": 6.7345,
+        "y": 17.6086
+      },
+      "end": {
+        "x": 7.7828,
+        "y": 17.6086
+      },
+      "thickness": 0.191,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-09946dd0a9d0",
+      "start": {
+        "x": 6.2898,
+        "y": 12.6602
+      },
+      "end": {
+        "x": 6.2898,
+        "y": 13.6563
+      },
+      "thickness": 0.381,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-9706e4d701c3",
+      "start": {
+        "x": 6.3851,
+        "y": 12.7887
+      },
+      "end": {
+        "x": 6.3851,
+        "y": 13.7849
+      },
+      "thickness": 0.254,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-e582141b1f65",
+      "start": {
+        "x": 5.2097,
+        "y": 19.1028
+      },
+      "end": {
+        "x": 6.1309,
+        "y": 19.1028
+      },
+      "thickness": 0.159,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-164b0b5a9816",
+      "start": {
+        "x": 4.5267,
+        "y": 5.1091
+      },
+      "end": {
+        "x": 4.5267,
+        "y": 13.6563
+      },
+      "thickness": 0.222,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-763e7252bbcb",
+      "start": {
+        "x": 4.9238,
+        "y": 17.1748
+      },
+      "end": {
+        "x": 5.8133,
+        "y": 17.1748
+      },
+      "thickness": 0.286,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-cd5446fcfa99",
+      "start": {
+        "x": 4.2249,
+        "y": 2.2493
+      },
+      "end": {
+        "x": 4.2249,
+        "y": 3.1169
+      },
+      "thickness": 0.381,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-ca53f128c5aa",
+      "start": {
+        "x": 4.4155,
+        "y": 12.7887
+      },
+      "end": {
+        "x": 4.4155,
+        "y": 13.6563
+      },
+      "thickness": 0.381,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-4e0ddff48a61",
+      "start": {
+        "x": 0.2224,
+        "y": 18.7333
+      },
+      "end": {
+        "x": 0.2224,
+        "y": 19.5366
+      },
+      "thickness": 0.381,
+      "height": 2.8,
+      "type": "exterior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-e542097d0a64",
+      "start": {
+        "x": 0.4447,
+        "y": 18.7333
+      },
+      "end": {
+        "x": 0.4447,
+        "y": 19.5366
+      },
+      "thickness": 0.1,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-995681593816",
+      "start": {
+        "x": 4.0979,
+        "y": 2.2493
+      },
+      "end": {
+        "x": 4.0979,
+        "y": 3.0205
+      },
+      "thickness": 0.191,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-deef999af466",
+      "start": {
+        "x": 9.4982,
+        "y": 8.7079
+      },
+      "end": {
+        "x": 10.7688,
+        "y": 8.7079
+      },
+      "thickness": 0.318,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    },
+    {
+      "id": "wall-2eadc18c001b",
+      "start": {
+        "x": 2.1919,
+        "y": 12.4353
+      },
+      "end": {
+        "x": 2.8908,
+        "y": 12.4353
+      },
+      "thickness": 0.254,
+      "height": 2.8,
+      "type": "interior",
+      "materialKey": "painted-wall",
+      "color": "#f0ede5",
+      "source": "detected"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-3b74e145f001",
+      "name": "Master bath",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 0.2571
+        },
+        {
+          "x": 4.1848,
+          "y": 0.2571
+        },
+        {
+          "x": 4.1848,
+          "y": 3.0003
+        },
+        {
+          "x": 0.2224,
+          "y": 3.0003
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 3.9624,
+        "length": 2.7432000000000003,
+        "sourceText": "13'-0\"x9-0\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-072c2d5f174c",
+      "name": "Laundry",
+      "boundary": [
+        {
+          "x": 10.3876,
+          "y": 1.3817
+        },
+        {
+          "x": 12.0077,
+          "y": 1.3817
+        },
+        {
+          "x": 12.0077,
+          "y": 3.0205
+        },
+        {
+          "x": 10.3876,
+          "y": 3.0205
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "dimensionStatus": "review"
+    },
+    {
+      "id": "room-609d0b4fdf87",
+      "name": "Master bedroom",
+      "boundary": [
+        {
+          "x": 4.1932,
+          "y": 1.221
+        },
+        {
+          "x": 10.594,
+          "y": 1.221
+        },
+        {
+          "x": 10.594,
+          "y": 5.793
+        },
+        {
+          "x": 4.1932,
+          "y": 5.793
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 6.4008,
+        "length": 4.572,
+        "sourceText": "21-0\"x15'-0\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-113141db31c4",
+      "name": "Wardrobe",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 3.1169
+        },
+        {
+          "x": 4.1932,
+          "y": 3.1169
+        },
+        {
+          "x": 4.1932,
+          "y": 5.8481
+        },
+        {
+          "x": 0.2224,
+          "y": 5.8481
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "dimensionStatus": "review"
+    },
+    {
+      "id": "room-d81486554e86",
+      "name": "Service kitchen",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 10.7323
+        },
+        {
+          "x": 4.1932,
+          "y": 10.7323
+        },
+        {
+          "x": 4.1932,
+          "y": 12.3068
+        },
+        {
+          "x": 0.2224,
+          "y": 12.3068
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "dimensionStatus": "review"
+    },
+    {
+      "id": "room-f27726f3795a",
+      "name": "Lobby",
+      "boundary": [
+        {
+          "x": 4.6379,
+          "y": 6.073
+        },
+        {
+          "x": 10.8324,
+          "y": 6.073
+        },
+        {
+          "x": 10.8324,
+          "y": 15.1023
+        },
+        {
+          "x": 4.6379,
+          "y": 15.1023
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "dimensionStatus": "review"
+    },
+    {
+      "id": "room-092627243dae",
+      "name": "Entrance lobby",
+      "boundary": [
+        {
+          "x": 4.4155,
+          "y": 14.0098
+        },
+        {
+          "x": 6.2443,
+          "y": 14.0098
+        },
+        {
+          "x": 6.2443,
+          "y": 18.277
+        },
+        {
+          "x": 4.4155,
+          "y": 18.277
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 1.8288000000000002,
+        "length": 4.2672,
+        "sourceText": "6'x14'",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-fd79526858cf",
+      "name": "Drawing room",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 12.7887
+        },
+        {
+          "x": 4.1848,
+          "y": 12.7887
+        },
+        {
+          "x": 4.1848,
+          "y": 18.5799
+        },
+        {
+          "x": 0.2224,
+          "y": 18.5799
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 3.9624,
+        "length": 5.7912,
+        "sourceText": "13'-0\"x19'-0\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-ced9e9a6e29e",
+      "name": "Car porch",
+      "boundary": [
+        {
+          "x": 6.258,
+          "y": 13.526
+        },
+        {
+          "x": 11.8968,
+          "y": 13.526
+        },
+        {
+          "x": 11.8968,
+          "y": 19.0886
+        },
+        {
+          "x": 6.258,
+          "y": 19.0886
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": true,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 5.638800000000001,
+        "length": 5.562600000000001,
+        "sourceText": "18'-6\"x18'-3\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-85e04a3ec429",
+      "name": "Bathroom",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 12.7887
+        },
+        {
+          "x": 2.5084,
+          "y": 12.7887
+        },
+        {
+          "x": 2.5084,
+          "y": 14.3127
+        },
+        {
+          "x": 0.2224,
+          "y": 14.3127
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 2.286,
+        "length": 1.524,
+        "sourceText": "7'-6\"x5'-0\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-e426cb62c789",
+      "name": "Kitchen",
+      "boundary": [
+        {
+          "x": 0.2224,
+          "y": 6.073
+        },
+        {
+          "x": 4.1848,
+          "y": 6.073
+        },
+        {
+          "x": 4.1848,
+          "y": 10.5688
+        },
+        {
+          "x": 0.2224,
+          "y": 10.5688
+        }
+      ],
+      "floorMaterialKey": "tile",
+      "outdoor": false,
+      "ceilingHeight": 2.8,
+      "source": "detected",
+      "declaredSize": {
+        "width": 3.9624,
+        "length": 4.4958,
+        "sourceText": "13'-0\"x14'-9\"",
+        "confidence": 0.75
+      },
+      "dimensionStatus": "matched"
+    },
+    {
+      "id": "room-665aa9dc1a95",
+      "name": "TV lounge",
+      "boundary": [
+        {
+          "x": 4.6379,
+          "y": 6.073
+        },
+        {
+          "x": 10.8324,
+          "y": 6.073
+        },
+        {
+          "x": 10.8324,
+          "y": 13.7849
+        },
+        {
+          "x": 4.6379,
+          "y": 13.7849
+        }
+      ],
+      "floorMaterialKey": "wood",
+      "outdoor": false,
+      "ceilingHeight": 5.6,
+      "source": "detected",
+      "dimensionStatus": "review"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door-14c1d21e05da",
+      "wallId": "wall-b844643b1d10",
+      "offset": 4.2885,
+      "width": 1.2071,
+      "height": 2.1,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ac8059",
+      "source": "detected",
+      "confidence": 0.5
+    },
+    {
+      "id": "door-2d620db02b19",
+      "wallId": "wall-bf7d3580b608",
+      "offset": 2.667,
+      "width": 1.221,
+      "height": 2.1,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ac8059",
+      "source": "detected",
+      "confidence": 0.5
+    },
+    {
+      "id": "door-044c242cf8ef",
+      "wallId": "wall-bf7d3580b608",
+      "offset": 6.4908,
+      "width": 0.9318,
+      "height": 2.1,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ac8059",
+      "source": "detected",
+      "confidence": 0.5
+    },
+    {
+      "id": "door-4f42b996ada2",
+      "wallId": "wall-bf7d3580b608",
+      "offset": 12.9494,
+      "width": 1.5424,
+      "height": 2.1,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ac8059",
+      "source": "detected",
+      "confidence": 0.5
+    },
+    {
+      "id": "door-b46be2d597c3",
+      "wallId": "wall-68ad8b0dbfb6",
+      "offset": 0.8676,
+      "width": 1.6066,
+      "height": 2.1,
+      "swing": "left",
+      "openAngle": 80,
+      "color": "#ac8059",
+      "source": "detected",
+      "confidence": 0.5
+    }
+  ],
+  "windows": [],
+  "stairs": [],
+  "columns": [],
+  "furniture": [],
+  "metadata": {
+    "confidence": 0.75,
+    "analysisEngine": "cv-ocr",
+    "accuracyStatus": "draft",
+    "analysisNotes": [
+      "Wall strokes were separated from sheet borders and annotation lines. OCR room dimensions constrain readable rectangular footprints.",
+      "Laundry: dimension label unreadable or incomplete; footprint requires review.",
+      "Wardrobe: dimension label unreadable or incomplete; footprint requires review.",
+      "Service kitchen: dimension label unreadable or incomplete; footprint requires review.",
+      "Lobby: dimension label unreadable or incomplete; footprint requires review.",
+      "TV lounge: OCR measurement exceeded the plot; it was rejected rather than applied.",
+      "TV lounge: dimension label unreadable or incomplete; footprint requires review.",
+      "Door gaps are candidates, not confirmed symbols. Windows and furniture proposed by the app must be reviewed.",
+      "Curved/nonrectangular spaces, double-height dimensions and stair geometry require review against the drawing."
+    ],
+    "dimensions": [
+      {
+        "id": "dimension-41026c0c9bfc",
+        "text": "User supplied plot width",
+        "axis": "x",
+        "valueMeters": 12.2301,
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dimension-e55771c80b2a",
+        "text": "User supplied plot length",
+        "axis": "y",
+        "valueMeters": 21.336,
+        "confidence": 1,
+        "status": "confirmed"
+      },
+      {
+        "id": "dimension-026178a2614e",
+        "text": "13'-0\"x9-0\"",
+        "axis": "room",
+        "valueMeters": 3.9624,
+        "lengthMeters": 2.7432000000000003,
+        "roomId": "room-3b74e145f001",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-f3c355f9c30c",
+        "text": "21-0\"x15'-0\"",
+        "axis": "room",
+        "valueMeters": 6.4008,
+        "lengthMeters": 4.572,
+        "roomId": "room-609d0b4fdf87",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-90c585c4a71b",
+        "text": "6'x14'",
+        "axis": "room",
+        "valueMeters": 1.8288000000000002,
+        "lengthMeters": 4.2672,
+        "roomId": "room-092627243dae",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-db52498820c1",
+        "text": "13'-0\"x19'-0\"",
+        "axis": "room",
+        "valueMeters": 3.9624,
+        "lengthMeters": 5.7912,
+        "roomId": "room-fd79526858cf",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-5d5fd82bc148",
+        "text": "18'-6\"x18'-3\"",
+        "axis": "room",
+        "valueMeters": 5.638800000000001,
+        "lengthMeters": 5.562600000000001,
+        "roomId": "room-ced9e9a6e29e",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-ae6319c9af2e",
+        "text": "7'-6\"x5'-0\"",
+        "axis": "room",
+        "valueMeters": 2.286,
+        "lengthMeters": 1.524,
+        "roomId": "room-85e04a3ec429",
+        "confidence": 0.75,
+        "status": "review"
+      },
+      {
+        "id": "dimension-7f825a64cd2c",
+        "text": "13'-0\"x14'-9\"",
+        "axis": "room",
+        "valueMeters": 3.9624,
+        "lengthMeters": 4.4958,
+        "roomId": "room-e426cb62c789",
+        "confidence": 0.75,
+        "status": "review"
+      }
+    ],
+    "imageRegistration": {
+      "width": 585,
+      "height": 796,
+      "left": 70,
+      "top": 38,
+      "pixelsPerMeter": 31.479709896076074,
+      "pixelsPerMeterY": 31.121109861267342
+    },
+    "ocrLabels": [
+      {
+        "name": "Servant bath",
+        "text": "wide _ BATH\nru"
+      },
+      {
+        "name": "Master bath",
+        "text": "13'-0\"x9-0\""
+      },
+      {
+        "name": "Laundry",
+        "text": "ED ROOM"
+      },
+      {
+        "name": "Master bedroom",
+        "text": "21-0\"x15'-0\""
+      },
+      {
+        "name": "Wardrobe",
+        "text": "ee\n13-0\"x8'- 104\" >"
+      },
+      {
+        "name": "Service kitchen",
+        "text": "By [eteesof | | OPW ||\nZz t-"
+      },
+      {
+        "name": "Lobby",
+        "text": "4 6-7 DOU!"
+      },
+      {
+        "name": "Entrance lobby",
+        "text": "6'x14'"
+      },
+      {
+        "name": "Drawing room",
+        "text": "13'-0\"x19\"-0\""
+      },
+      {
+        "name": "Car porch",
+        "text": "18'-6\"x18'-3\""
+      },
+      {
+        "name": "Bathroom",
+        "text": "7'-6\"x5'-0\""
+      },
+      {
+        "name": "Driveway",
+        "text": "ES iy\n& GATE 17-0\""
+      },
+      {
+        "name": "Kitchen",
+        "text": "13'-0\"x14'-9\""
+      },
+      {
+        "name": "TV lounge",
+        "text": "71'-0\"x25'-\"\n= DOUBLE %\nHEIGHT"
+      }
+    ]
+  }
+}

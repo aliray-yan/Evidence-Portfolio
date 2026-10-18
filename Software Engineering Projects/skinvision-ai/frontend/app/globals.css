@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for SkinVision AI.
+
+  Palette is a deliberate departure from two common AI-generated
+  defaults: the warm cream + terracotta combination, and the
+  near-black + neon-accent combination. Instead: a cool, clinical
+  "paper" neutral, a confident but calm teal for trust/primary
+  actions, and a muted clay-rust used ONLY to mark detected regions
+  on the analysis image — so that color reinforces meaning (something
+  was found) rather than decorating the whole UI.
+*/
+@theme {
+  --color-paper: #eef1ec;
+  --color-paper-warm: #fbfaf7;
+  --color-ink: #171b18;
+  --color-ink-muted: #5c645c;
+  --color-line: #dee3da;
+
+  --color-teal: #3f6e63;
+  --color-teal-dark: #2c4f47;
+  --color-teal-tint: #dfe9e5;
+
+  --color-clay: #b85c42;
+  --color-clay-tint: #f3ded6;
+
+  --color-amber: #a9791f;
+  --color-amber-tint: #f1e6cd;
+
+  --color-sage: #7c9088;
+  --color-sage-tint: #e7ece9;
+
+  --color-error: #a8402e;
+  --color-error-tint: #f4ddd7;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: var(--color-teal-tint);
+    color: var(--color-teal-dark);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
