@@ -1,0 +1,41 @@
+Source Name	Path	Date Accessed	Data Source	Comment
+web.lnk	C:\Documents and Settings\Jo\Desktop\web	2009-11-23 21:55:46 UTC	jo-2009-11-24.E01	
+Pics.lnk	C:\Documents and Settings\Jo\Desktop\Pics	2009-11-23 18:24:51 UTC	jo-2009-11-24.E01	
+HighQuality.lnk	C:\Documents and Settings\Jo\Desktop\Pics\HighQuality	2009-11-24 22:14:30 UTC	jo-2009-11-24.E01	
+patentauto.lnk	C:\Documents and Settings\Jo\Desktop\web\patentauto.py	2009-11-23 21:55:45 UTC	jo-2009-11-24.E01	
+diit-1.5.lnk	C:\Documents and Settings\Jo\Desktop\Pics\diit-1.5.jar	2009-11-23 18:24:50 UTC	jo-2009-11-24.E01	
+testHide.lnk	C:\Documents and Settings\Jo\Desktop\Pics\testHide.bmp	2009-11-23 18:25:53 UTC	jo-2009-11-24.E01	
+Downloads.lnk	C:\Documents and Settings\Jo\My Documents\Downloads	2009-11-24 22:01:54 UTC	jo-2009-11-24.E01	
+DSC00065.lnk	C:\Documents and Settings\Jo\Desktop\Pics\HighQuality\DSC00065.JPG	2009-11-24 22:14:30 UTC	jo-2009-11-24.E01	
+DSC00070.lnk	C:\Documents and Settings\Jo\Desktop\Pics\HighQuality\DSC00070.JPG	2009-11-24 22:14:45 UTC	jo-2009-11-24.E01	
+STU.lnk	C:\Documents and Settings\Jo\My Documents\Downloads\STU.doc	2009-11-24 22:01:53 UTC	jo-2009-11-24.E01	
+NTUSER.DAT	C:\WINDOWS\system32\devmgmt.msc		jo-2009-11-24.E01	Recently opened according to Windows Management Console MRU
+
+
+
+Name	Modified Time	Change Time	Access Time	Created Time	Size	Flags(Dir)	Flags(Meta)	Known	Location	MD5 Hash	SHA-256 Hash	MIME Type	Extension
+[current folder]	2009-11-20 20:00:22 UTC	2009-11-20 20:00:22 UTC	2009-11-25 00:25:16 UTC	2009-11-20 19:58:53 UTC	472	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Favorites/.				
+[parent folder]	2009-11-23 21:55:48 UTC	2009-11-23 21:55:48 UTC	2009-11-25 00:23:57 UTC	2009-11-20 19:58:49 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Favorites/..				
+Links	2009-11-20 20:00:22 UTC	2009-11-20 20:00:22 UTC	2009-11-23 21:51:22 UTC	2009-11-20 20:00:02 UTC	392	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Favorites/Links				
+Microsoft Websites	2009-11-20 20:00:22 UTC	2009-11-20 20:00:22 UTC	2009-11-23 21:51:22 UTC	2009-11-20 20:00:22 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Favorites/Microsoft Websites				
+Desktop.ini	2009-11-20 20:00:19 UTC	2009-11-20 20:00:19 UTC	2009-11-25 00:25:16 UTC	2009-11-20 20:00:19 UTC	122	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Favorites/Desktop.ini	fc2bf37169c033a08c1fd7680193cce2	df6e1089c40792e65f7d7fa7be72cc259e806e97a4705e3606b44a70d15a1f25	text/x-ini	ini
+
+
+Name	Modified Time	Change Time	Access Time	Created Time	Size	Flags(Dir)	Flags(Meta)	Known	Location	MD5 Hash	SHA-256 Hash	MIME Type	Extension
+[current folder]	2009-11-24 22:08:50 UTC	2009-11-24 22:08:50 UTC	2009-11-24 22:08:50 UTC	2009-11-23 18:20:14 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/.				
+[parent folder]	2009-11-23 18:20:14 UTC	2009-11-23 18:20:14 UTC	2009-11-25 00:25:16 UTC	2009-11-20 19:58:51 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/..				
+python-2.6.4.msi	2009-11-23 18:23:03 UTC	2009-11-23 18:23:03 UTC	2009-11-24 01:29:33 UTC	2009-11-23 18:20:14 UTC	14890496	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/python-2.6.4.msi	2e2b60ae73e9e99cd343a3fe9ed6e770	b8c3cef38f779e7e63f45b2b1b5f3fde5f06abd7661e6abad7972e078cbe0766	application/x-ms-installer	msi
+python-2.6.4.msi:Zone.Identifier	2009-11-23 18:23:03 UTC	2009-11-23 18:23:03 UTC	2009-11-24 01:29:33 UTC	2009-11-23 18:20:14 UTC	46	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/python-2.6.4.msi:Zone.Identifier	7dda7f64befdc8eef1f66698ea96422a	4d8cda0292c47ad2445909dee4ed99822ddd10f7687a4cd8089027dbc391e85e	application/octet-stream	msi
+QuickTimeInstaller.exe	2009-11-24 22:08:50 UTC	2009-11-24 22:09:05 UTC	2009-11-24 22:09:05 UTC	2009-11-24 22:08:37 UTC	32494896	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/QuickTimeInstaller.exe	5c9ecf9253aa8252055c68e3474225bc	fb75b69c8d7c490dd9310fd5f0e2ce068f966f4e02dbb415a92298b58ed8d4d1	application/x-dosexec	exe
+QuickTimeInstaller.exe:Zone.Identifier	2009-11-24 22:08:50 UTC	2009-11-24 22:09:05 UTC	2009-11-24 22:09:05 UTC	2009-11-24 22:08:37 UTC	46	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/QuickTimeInstaller.exe:Zone.Identifier	7dda7f64befdc8eef1f66698ea96422a	4d8cda0292c47ad2445909dee4ed99822ddd10f7687a4cd8089027dbc391e85e	application/octet-stream	exe
+STU.doc	2009-11-24 22:01:53 UTC	2009-11-24 22:01:53 UTC	2009-11-24 22:01:53 UTC	2009-11-24 22:01:51 UTC	29184	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/STU.doc	929af3c771d0e889abf52e0acc3b0f8f	4649d3f6026f5e11fea0f0ce9b3b915bd345f35f77ce7e09c63002fbc75fe6a6	application/msword	doc
+STU.doc:Zone.Identifier	2009-11-24 22:01:53 UTC	2009-11-24 22:01:53 UTC	2009-11-24 22:01:53 UTC	2009-11-24 22:01:51 UTC	46	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/My Documents/Downloads/STU.doc:Zone.Identifier	7dda7f64befdc8eef1f66698ea96422a	4d8cda0292c47ad2445909dee4ed99822ddd10f7687a4cd8089027dbc391e85e	application/octet-stream	doc
+
+
+Name	Modified Time	Change Time	Access Time	Created Time	Size	Flags(Dir)	Flags(Meta)	Known	Location	MD5 Hash	SHA-256 Hash	MIME Type	Extension
+[current folder]	2009-11-24 22:11:20 UTC	2009-11-24 22:11:20 UTC	2009-11-25 00:25:16 UTC	2009-11-20 09:46:10 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/.				
+[parent folder]	2009-11-20 17:50:37 UTC	2009-11-20 17:50:37 UTC	2009-11-25 00:42:32 UTC	2009-11-20 09:45:24 UTC	56	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/..				
+AVG 9.0.lnk	2009-11-20 18:56:33 UTC	2009-11-20 18:56:33 UTC	2009-11-24 22:02:06 UTC	2009-11-20 18:56:33 UTC	1507	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/AVG 9.0.lnk	2d19df17059ab51201faa71f78cba2c4	32f3d38f0d3d7e7c6d0911b0dbe0a8a00134e1a64cbbf0967000cd1da8cb1415	application/octet-stream	lnk
+Mozilla Firefox.lnk	2009-11-20 19:34:59 UTC	2009-11-20 19:34:59 UTC	2009-11-24 18:51:00 UTC	2009-11-20 19:34:59 UTC	1602	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/Mozilla Firefox.lnk	faaf0a74d2a6c1c182a15cb9489ea620	dca1eafdb69fde685035e421defca86bd9fa276efb0e7101692f94ad198818ca	application/octet-stream	lnk
+OpenOffice.org 3.1.lnk	2009-11-20 19:38:19 UTC	2009-11-20 19:38:19 UTC	2009-11-23 18:24:55 UTC	2009-11-20 19:38:19 UTC	905	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/OpenOffice.org 3.1.lnk	beba1f427feaee10a5496b59bc62f144	c007b0fe985a817deea983913d4c164637cd479480c4908728121b7d7a541760	application/octet-stream	lnk
+QuickTime Player.lnk	2009-11-24 22:11:20 UTC	2009-11-24 22:11:20 UTC	2009-11-24 22:11:20 UTC	2009-11-24 22:11:20 UTC	1604	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/All Users/Desktop/QuickTime Player.lnk	7912453b919d2448709472f52d6ce3b9	370be0da9343fde2fe62da91b0c513f8179acf8fa0e77a416dd9ccc4d3b4336c	application/octet-stream	lnk

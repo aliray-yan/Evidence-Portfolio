@@ -1,0 +1,51 @@
+─(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ file win33.exe      
+win33.exe: PE32 executable for MS Windows 4.00 (GUI), Intel i386, 4 sections
+                                                                                                               
+┌──(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ exiftool win33.exe                                   
+ExifTool Version Number         : 13.50
+File Name                       : win33.exe
+Directory                       : .
+File Size                       : 68 kB
+File Modification Date/Time     : 2013:09:23 11:13:50-04:00
+File Access Date/Time           : 2026:04:03 10:58:57-04:00
+File Inode Change Date/Time     : 2026:04:03 10:58:30-04:00
+File Permissions                : -r--------
+File Type                       : Win32 EXE
+File Type Extension             : exe
+MIME Type                       : application/octet-stream
+Machine Type                    : Intel 386 or later, and compatibles
+Time Stamp                      : 2013:08:28 12:22:09-04:00
+Image File Characteristics      : Executable, 32-bit
+PE Type                         : PE32
+Linker Version                  : 8.0
+Code Size                       : 24576
+Initialized Data Size           : 42496
+Uninitialized Data Size         : 0
+Entry Point                     : 0x3af0
+OS Version                      : 4.0
+Image Version                   : 0.0
+Subsystem Version               : 4.0
+Subsystem                       : Windows GUI
+                                                                                                               
+┌──(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ binwalk win33.exe
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Microsoft executable, portable (PE)
+26536         0x67A8          Base64 standard index table
+26608         0x67F0          Base64 standard index table
+26680         0x6838          Base64 standard index table
+26752         0x6880          Base64 standard index table
+
+                                                                                                               
+┌──(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ strings win33.exe > ascii.txt
+                                                                                                               
+┌──(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ strings -el win33.exe > unicode.txt
+                                                                                                               
+┌──(kali㉿kali)-[~/malware_lab/Dexter]
+└─$ 

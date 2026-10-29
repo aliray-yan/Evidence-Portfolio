@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Day 1 – VirtualBox Lab Topology</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    color: #c9d6e3;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 50px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #00d4ff;
+    margin-bottom: 4px;
+    text-shadow: 0 0 20px rgba(0,212,255,0.4);
+  }
+
+  .subtitle {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.72rem;
+    color: #4a6fa5;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+  }
+
+  .canvas {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    color: #8aa5c0;
+  }
+
+  .legend-dot {
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .dot-hostonly { background: #00d4ff; }
+  .dot-nat { background: #f5a623; }
+  .dot-internet { background: #b8ff6e; }
+</style>
+</head>
+<body>
+
+<h1>VirtualBox Lab Topology</h1>
+<div class="subtitle">CYBERSTER BLUE TEAM INTERNSHIP — WEEK 1 / DAY 1 DELIVERABLE</div>
+
+<div class="canvas">
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow filters -->
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#00d4ff"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f5a623"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b8ff6e"/>
+    </marker>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#141c2e" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="#0a0e1a"/>
+  <rect width="900" height="620" fill="url(#grid)"/>
+
+  <!-- ─────────────── NETWORK BANDS ─────────────── -->
+
+  <!-- Host-Only Network Band -->
+  <rect x="0" y="220" width="900" height="110" fill="#001a2e" opacity="0.7"/>
+  <rect x="0" y="220" width="4" height="110" fill="#00d4ff" opacity="0.8"/>
+  <text x="20" y="248" font-family="Share Tech Mono, monospace" font-size="11" fill="#00d4ff" opacity="0.9" letter-spacing="2">HOST-ONLY NETWORK</text>
+  <text x="20" y="265" font-family="Share Tech Mono, monospace" font-size="10" fill="#3a6080" letter-spacing="1">192.168.56.0/24  |  vboxnet0  |  DHCP: 192.168.56.101–254</text>
+
+  <!-- NAT Network Band -->
+  <rect x="0" y="400" width="900" height="100" fill="#1a1200" opacity="0.7"/>
+  <rect x="0" y="400" width="4" height="100" fill="#f5a623" opacity="0.8"/>
+  <text x="20" y="428" font-family="Share Tech Mono, monospace" font-size="11" fill="#f5a623" opacity="0.9" letter-spacing="2">NAT NETWORK</text>
+  <text x="20" y="445" font-family="Share Tech Mono, monospace" font-size="10" fill="#806030" letter-spacing="1">10.0.2.0/24  |  Adapter 2 on each VM  |  Internet Access via Host</text>
+
+  <!-- Internet cloud area -->
+  <rect x="0" y="540" width="900" height="80" fill="#0d1a0d" opacity="0.7"/>
+  <rect x="0" y="540" width="4" height="80" fill="#b8ff6e" opacity="0.8"/>
+  <text x="20" y="568" font-family="Share Tech Mono, monospace" font-size="11" fill="#b8ff6e" opacity="0.9" letter-spacing="2">INTERNET / EXTERNAL</text>
+  <text x="20" y="585" font-family="Share Tech Mono, monospace" font-size="10" fill="#406030" letter-spacing="1">Via VirtualBox NAT engine on host machine</text>
+
+  <!-- ─────────────── VMs ─────────────── -->
+
+  <!-- == KALI LINUX == -->
+  <g filter="url(#glow-blue)">
+    <rect x="60" y="50" width="180" height="145" rx="8" fill="#060e1c" stroke="#00d4ff" stroke-width="1.5"/>
+    <rect x="60" y="50" width="180" height="32" rx="8" fill="#00253a"/>
+    <rect x="60" y="70" width="180" height="12" fill="#00253a"/>
+    <!-- OS icon area -->
+    <circle cx="84" cy="66" r="10" fill="#00d4ff" opacity="0.15" stroke="#00d4ff" stroke-width="1"/>
+    <text x="84" y="70" font-family="Share Tech Mono, monospace" font-size="10" fill="#00d4ff" text-anchor="middle">K</text>
+    <text x="150" y="71" font-family="Rajdhani, sans-serif" font-size="13" font-weight="700" fill="#00d4ff" text-anchor="middle" letter-spacing="2">KALI LINUX</text>
+    <!-- Specs -->
+    <text x="150" y="105" font-family="Share Tech Mono, monospace" font-size="9.5" fill="#4a8a9a" text-anchor="middle">Role: ATTACKER MACHINE</text>
+    <text x="150" y="122" font-family="Share Tech Mono, monospace" font-size="9" fill="#3a6070" text-anchor="middle">CPU: 2 cores  |  RAM: 4 GB</text>
+    <text x="150" y="138" font-family="Share Tech Mono, monospace" font-size="9" fill="#3a6070" text-anchor="middle">Storage: 50 GB</text>
+    <!-- Adapters -->
+    <rect x="72" y="152" width="156" height="18" rx="3" fill="#001520" stroke="#00d4ff" stroke-width="0.8"/>
+    <text x="150" y="165" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#00d4ff" text-anchor="middle">Adapter 1: Host-Only  192.168.56.x</text>
+    <rect x="72" y="175" width="156" height="18" rx="3" fill="#15100a" stroke="#f5a623" stroke-width="0.8"/>
+    <text x="150" y="188" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#f5a623" text-anchor="middle">Adapter 2: NAT  10.0.2.x</text>
+  </g>
+
+  <!-- == UBUNTU SERVER (WAZUH) == -->
+  <g filter="url(#glow-blue)">
+    <rect x="360" y="30" width="180" height="165" rx="8" fill="#060e1c" stroke="#00d4ff" stroke-width="2"/>
+    <rect x="360" y="30" width="180" height="32" rx="8" fill="#001e35"/>
+    <rect x="360" y="50" width="180" height="12" fill="#001e35"/>
+    <circle cx="384" cy="46" r="10" fill="#00d4ff" opacity="0.2" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="384" y="50" font-family="Share Tech Mono, monospace" font-size="10" fill="#00d4ff" text-anchor="middle">U</text>
+    <text x="450" y="51" font-family="Rajdhani, sans-serif" font-size="12" font-weight="700" fill="#00d4ff" text-anchor="middle" letter-spacing="2">UBUNTU SERVER</text>
+    <text x="450" y="84" font-family="Share Tech Mono, monospace" font-size="9.5" fill="#4ab0c0" text-anchor="middle">Role: WAZUH SIEM SERVER</text>
+    <text x="450" y="100" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#3a8090" text-anchor="middle">Wazuh Manager</text>
+    <text x="450" y="114" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#3a8090" text-anchor="middle">Wazuh Indexer</text>
+    <text x="450" y="128" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#3a8090" text-anchor="middle">Wazuh Dashboard</text>
+    <text x="450" y="144" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#2a6070" text-anchor="middle">CPU: 2 cores  |  RAM: 8 GB</text>
+    <text x="450" y="158" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#2a6070" text-anchor="middle">Static IP: 192.168.56.10</text>
+    <!-- Adapters -->
+    <rect x="372" y="168" width="156" height="18" rx="3" fill="#001520" stroke="#00d4ff" stroke-width="0.8"/>
+    <text x="450" y="181" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#00d4ff" text-anchor="middle">Adapter 1: Host-Only  192.168.56.10</text>
+    <rect x="372" y="190" width="156" height="18" rx="3" fill="#15100a" stroke="#f5a623" stroke-width="0.8"/>
+    <text x="450" y="203" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#f5a623" text-anchor="middle">Adapter 2: NAT  10.0.2.x</text>
+  </g>
+
+  <!-- == WINDOWS 10 == -->
+  <g filter="url(#glow-blue)">
+    <rect x="660" y="50" width="180" height="145" rx="8" fill="#060e1c" stroke="#00d4ff" stroke-width="1.5"/>
+    <rect x="660" y="50" width="180" height="32" rx="8" fill="#00253a"/>
+    <rect x="660" y="70" width="180" height="12" fill="#00253a"/>
+    <circle cx="684" cy="66" r="10" fill="#00d4ff" opacity="0.15" stroke="#00d4ff" stroke-width="1"/>
+    <text x="684" y="70" font-family="Share Tech Mono, monospace" font-size="10" fill="#00d4ff" text-anchor="middle">W</text>
+    <text x="750" y="71" font-family="Rajdhani, sans-serif" font-size="13" font-weight="700" fill="#00d4ff" text-anchor="middle" letter-spacing="2">WINDOWS 10</text>
+    <text x="750" y="105" font-family="Share Tech Mono, monospace" font-size="9.5" fill="#4a8a9a" text-anchor="middle">Role: MONITORED ENDPOINT</text>
+    <text x="750" y="122" font-family="Share Tech Mono, monospace" font-size="9" fill="#3a6070" text-anchor="middle">CPU: 2 cores  |  RAM: 4 GB</text>
+    <text x="750" y="138" font-family="Share Tech Mono, monospace" font-size="9" fill="#3a6070" text-anchor="middle">Storage: 50 GB</text>
+    <rect x="672" y="152" width="156" height="18" rx="3" fill="#001520" stroke="#00d4ff" stroke-width="0.8"/>
+    <text x="750" y="165" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#00d4ff" text-anchor="middle">Adapter 1: Host-Only  192.168.56.x</text>
+    <rect x="672" y="175" width="156" height="18" rx="3" fill="#15100a" stroke="#f5a623" stroke-width="0.8"/>
+    <text x="750" y="188" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#f5a623" text-anchor="middle">Adapter 2: NAT  10.0.2.x</text>
+  </g>
+
+  <!-- ─────────────── CONNECTIONS ─────────────── -->
+
+  <!-- Kali → Host-Only network (Adapter 1 down to band) -->
+  <line x1="150" y1="193" x2="150" y2="255" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-blue)" opacity="0.8"/>
+  <!-- Ubuntu → Host-Only -->
+  <line x1="450" y1="208" x2="450" y2="255" stroke="#00d4ff" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-blue)" opacity="0.9"/>
+  <!-- Windows → Host-Only -->
+  <line x1="750" y1="193" x2="750" y2="255" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-blue)" opacity="0.8"/>
+
+  <!-- Host-only band to NAT (VM connections) -->
+  <!-- Kali Adapter 2 → NAT band -->
+  <line x1="150" y1="330" x2="150" y2="405" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-orange)" opacity="0.7"/>
+  <!-- Ubuntu Adapter 2 → NAT -->
+  <line x1="450" y1="330" x2="450" y2="405" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-orange)" opacity="0.7"/>
+  <!-- Windows Adapter 2 → NAT -->
+  <line x1="750" y1="330" x2="750" y2="405" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-orange)" opacity="0.7"/>
+
+  <!-- NAT → Internet -->
+  <line x1="450" y1="500" x2="450" y2="542" stroke="#b8ff6e" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-green)" opacity="0.8"/>
+  <text x="465" y="524" font-family="Share Tech Mono, monospace" font-size="9" fill="#b8ff6e" opacity="0.7">NAT engine</text>
+
+  <!-- Wazuh agent arrows (horizontal in Host-Only band) -->
+  <!-- Kali → Ubuntu (agent sends logs) -->
+  <path d="M 240,275 Q 340,262 360,272" stroke="#00d4ff" stroke-width="1.8" fill="none" marker-end="url(#arrow-blue)" opacity="0.6" stroke-dasharray="6,2"/>
+  <text x="285" y="258" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.6" text-anchor="middle">agent logs</text>
+  <text x="285" y="268" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.6" text-anchor="middle">:1514/:1515</text>
+
+  <!-- Windows → Ubuntu -->
+  <path d="M 660,285 Q 570,262 540,272" stroke="#00d4ff" stroke-width="1.8" fill="none" marker-end="url(#arrow-blue)" opacity="0.6" stroke-dasharray="6,2"/>
+  <text x="612" y="258" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.6" text-anchor="middle">agent logs</text>
+  <text x="612" y="268" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.6" text-anchor="middle">:1514/:1515</text>
+
+  <!-- Adapter labels on left side lines -->
+  <text x="108" y="227" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.7" text-anchor="end">eth0</text>
+  <text x="108" y="355" font-family="Share Tech Mono, monospace" font-size="8" fill="#f5a623" opacity="0.7" text-anchor="end">eth1</text>
+  <text x="408" y="235" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.7" text-anchor="end">eth0</text>
+  <text x="408" y="355" font-family="Share Tech Mono, monospace" font-size="8" fill="#f5a623" opacity="0.7" text-anchor="end">eth1</text>
+  <text x="708" y="227" font-family="Share Tech Mono, monospace" font-size="8" fill="#00d4ff" opacity="0.7" text-anchor="end">eth0</text>
+  <text x="708" y="355" font-family="Share Tech Mono, monospace" font-size="8" fill="#f5a623" opacity="0.7" text-anchor="end">eth1</text>
+
+  <!-- Host-only band label on right -->
+  <text x="880" y="278" font-family="Share Tech Mono, monospace" font-size="9" fill="#00d4ff" opacity="0.5" text-anchor="end" transform="rotate(-90,880,278)">HOST-ONLY</text>
+
+  <!-- Dashboard access note -->
+  <rect x="330" y="512" width="240" height="22" rx="4" fill="#001020" stroke="#00d4ff" stroke-width="0.8" opacity="0.8"/>
+  <text x="450" y="527" font-family="Share Tech Mono, monospace" font-size="8.5" fill="#00d4ff" text-anchor="middle" opacity="0.85">Dashboard: https://192.168.56.10  (from host)</text>
+
+</svg>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot dot-hostonly"></div> Host-Only Network (vboxnet0) — Internal VM communication</div>
+  <div class="legend-item"><div class="legend-dot dot-nat"></div> NAT Network — Internet access via host</div>
+  <div class="legend-item"><div class="legend-dot dot-internet"></div> Internet / External</div>
+</div>
+
+</body>
+</html>

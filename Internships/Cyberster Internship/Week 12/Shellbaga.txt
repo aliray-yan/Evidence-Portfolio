@@ -1,0 +1,1570 @@
+Source Name	Path	Key	Last Write	Data Source	Date Modified	Date Created	Date Accessed
+NTUSER.DAT	Recycle Bin	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-20 14:35:00 UTC	jo-2009-11-24.E01			
+NTUSER.DAT	AVG 9.0.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-20 14:35:00 UTC	jo-2009-11-24.E01	2009-11-20 13:56:34 UTC	2009-11-20 13:56:34 UTC	2009-11-20 13:56:34 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 14:52:42 UTC	jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 14:33:55 UTC	jo-2009-11-24.E01	2009-11-20 12:58:28 UTC	2009-11-20 04:45:26 UTC	2009-11-20 12:58:28 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 14:34:00 UTC	jo-2009-11-24.E01	2009-11-20 12:58:30 UTC	2009-11-20 12:58:28 UTC	2009-11-20 12:58:30 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 13:11:56 UTC	jo-2009-11-24.E01	2009-11-20 04:46:10 UTC	2009-11-20 12:58:28 UTC	2009-11-20 12:58:30 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01	2009-11-20 13:33:34 UTC	2009-11-20 13:33:34 UTC	2009-11-20 13:33:36 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 13:33:39 UTC	jo-2009-11-24.E01	2009-11-20 13:33:34 UTC	2009-11-20 13:33:34 UTC	2009-11-20 13:33:36 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 13:33:39 UTC	jo-2009-11-24.E01	2009-11-20 13:33:36 UTC	2009-11-20 13:33:34 UTC	2009-11-20 13:33:36 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 14:35:19 UTC	jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT	Recycle Bin	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01			
+NTUSER.DAT	AVG 9.0.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-20 13:56:34 UTC	2009-11-20 13:56:34 UTC	2009-11-24 17:02:08 UTC
+NTUSER.DAT	Mozilla Firefox.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-20 14:35:00 UTC	2009-11-20 14:35:00 UTC	2009-11-24 13:51:02 UTC
+NTUSER.DAT	OpenOffice.org 3.1.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-20 14:38:20 UTC	2009-11-20 14:38:20 UTC	2009-11-23 13:24:56 UTC
+NTUSER.DAT	QuickTime Player.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-24 17:11:22 UTC	2009-11-24 17:11:22 UTC	2009-11-24 17:11:22 UTC
+NTUSER.DAT	Pics	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-24 17:16:20 UTC	2009-11-23 13:24:40 UTC	2009-11-24 17:16:20 UTC
+NTUSER.DAT	web	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-24 19:26:08 UTC	2009-11-23 16:54:56 UTC	2009-11-24 19:26:08 UTC
+NTUSER.DAT	E-mail.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-23 11:57:08 UTC	2009-11-23 11:57:08 UTC	2009-11-24 17:02:12 UTC
+NTUSER.DAT	My Computer.lnk	Software\Microsoft\Windows\Shell\Bags\1\Desktop	2009-11-24 19:45:53 UTC	jo-2009-11-24.E01	2009-11-24 17:03:10 UTC	2009-11-24 17:03:10 UTC	2009-11-24 17:03:10 UTC
+NTUSER.DAT	patentauto.py	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-23 16:57:36 UTC	2009-11-23 16:55:02 UTC	2009-11-24 13:51:36 UTC
+NTUSER.DAT	patentterms.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-16 17:29:38 UTC	2009-11-23 16:55:12 UTC	2009-11-24 14:10:24 UTC
+NTUSER.DAT	urls.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-16 13:22:50 UTC	2009-11-23 16:55:06 UTC	2009-11-24 17:02:16 UTC
+NTUSER.DAT	urlscopyright.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-17 13:40:56 UTC	2009-11-23 16:55:06 UTC	2009-11-23 16:55:06 UTC
+NTUSER.DAT	urlspatents.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-17 13:40:56 UTC	2009-11-23 16:55:06 UTC	2009-11-23 16:55:06 UTC
+NTUSER.DAT	urlspersona.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-14 20:43:14 UTC	2009-11-23 16:55:06 UTC	2009-11-23 16:55:06 UTC
+NTUSER.DAT	urlstime_machine.txt	Software\Microsoft\Windows\ShellNoRoam\Bags\10\Shell		jo-2009-11-24.E01	2009-11-16 13:22:50 UTC	2009-11-23 16:55:06 UTC	2009-11-23 16:55:06 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-24 19:25:13 UTC	jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 17:16:17 UTC	jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 19:05:06 UTC	jo-2009-11-24.E01	2009-11-20 14:58:50 UTC	2009-11-20 04:45:26 UTC	2009-11-20 14:58:50 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 19:05:01 UTC	jo-2009-11-24.E01	2009-11-20 14:59:56 UTC	2009-11-20 14:58:50 UTC	2009-11-20 14:59:56 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-20 19:05:01 UTC	jo-2009-11-24.E01	2009-11-20 04:46:10 UTC	2009-11-20 14:58:52 UTC	2009-11-20 14:58:56 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-24 19:25:31 UTC	jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01	2009-11-23 13:24:40 UTC	2009-11-23 13:24:40 UTC	2009-11-23 13:24:40 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01	2009-11-24 17:03:50 UTC	2009-11-24 17:03:36 UTC	2009-11-24 17:04:56 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU	2009-11-24 17:09:50 UTC	jo-2009-11-24.E01	2009-11-24 17:03:36 UTC	2009-11-24 17:03:28 UTC	2009-11-24 17:04:56 UTC
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01			
+NTUSER.DAT		Software\Microsoft\Windows\ShellNoRoam\BagMRU		jo-2009-11-24.E01	2009-11-23 16:54:56 UTC	2009-11-23 16:54:56 UTC	2009-11-23 16:54:56 UTC
+Name	Modified Time	Change Time	Access Time	Created Time	Size	Flags(Dir)	Flags(Meta)	Known	Location	MD5 Hash	SHA-256 Hash	MIME Type	Extension
+clock.avi	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:40:51 UTC	2008-04-14 12:00:00 UTC	82944	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/clock.avi				avi
+Cat.mov	2009-11-20 09:25:26 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:25:27 UTC	5712046	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/Cat.mov	dfde414aa746b3fe801d25e779a4a750	ac54ee440152ba742eed83f96d0fdfbf04e2964ea7c69672da07270091525753	application/octet-stream	mov
+._Cat.mov	2009-11-20 13:31:48 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 13:31:48 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/._Cat.mov	46af5d7b7054e445fcd15b06e5d43c1d	daf20f66c21b5e6e4237e632af18ae5250cd860cdfa586a198d0fda4fabc1926	application/octet-stream	mov
+MontereyKittyHQ.m4v	2009-11-20 09:00:00 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:00:01 UTC	25123154	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/MontereyKittyHQ.m4v	cc6901937bf3bb50a65b395c90005785	d6c108e702d917d954cfbfd48fcfb396ff44de34f75852a840d4a38c56a165f5	application/octet-stream	m4v
+._MontereyKittyHQ.m4v	2009-11-20 13:32:02 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 13:32:02 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/._MontereyKittyHQ.m4v	d9622402dad9fb25cbeb2d7366175b6a	82ad2723d2cc6f25bd5ade61d170f970e9ca69c2b99d6384bd8b36d22179f40a	application/octet-stream	m4v
+_IGGER~1.M4V	2009-11-18 16:50:54 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-18 16:50:54 UTC	12536015	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/_IGGER~1.M4V	c99a74c555371a433d121f551d6c6398	e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad	application/octet-stream	m4v
+._TiggerTheCat.m4v	2009-11-20 13:35:28 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 13:35:29 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/._TiggerTheCat.m4v	620f0b67a91f7f74151bc5be745b7110	ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7	application/octet-stream	m4v
+Cat.m4v	2009-11-20 09:12:04 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:12:05 UTC	1077729	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/Cat.m4v	f1fdc5dc190abfbcedbe5a964cbff2d1	14f375e140138739c9e026314e2ae365382465c9ee0532589579b4b52224883f	application/octet-stream	m4v
+._Cat.m4v	2009-11-20 13:35:34 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 13:35:34 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/._Cat.m4v	481d4cde44ad9c9ef1bad3f7a32c7adc	4ba0decf72595ce31de787eb427f8b341ef422896b44e94398a963815ae9c2a8	application/octet-stream	m4v
+TiggerTheCat copy.m4v	2009-11-18 16:50:54 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-18 16:50:55 UTC	12536015	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/TiggerTheCat copy.m4v	9bd2dd0f202046eb032bdf46ba91fefa	e129b6e194cbefaba0b208208949be837bd64eb3560f8852409665acf8a3f084	application/octet-stream	m4v
+._TiggerTheCat copy.m4v	2009-11-20 13:36:26 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 13:36:27 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-work-usb-2009-12-11.E01/vol_vol2/._TiggerTheCat copy.m4v	edeca2340b4125f4ef4c949f9190ba5c	5c112f7c0c28d08542451a8687c03c7e47ebc6a50b981c237e8ade7f6d90a12f	application/octet-stream	m4v
+0000009005_000000000000000694900[1].swf	2009-11-20 19:33:25 UTC	2009-11-20 19:33:25 UTC	2009-11-20 19:33:25 UTC	2009-11-20 19:33:23 UTC	56585	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Administrator/Local Settings/Temporary Internet Files/Content.IE5/ZROVGX1G/0000009005_000000000000000694900[1].swf	c5af6a1013f417082e369ed5c1f3c645	475d35a6b11f3ce75e1a8810bf7daf83af7fec86953ac7cd00afbb47e0128559	application/x-shockwave-flash	swf
+CAMFENEL.swf	2009-11-20 18:42:19 UTC	2009-11-20 18:42:19 UTC	2009-11-20 18:42:19 UTC	2009-11-20 18:42:19 UTC	56585	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Administrator/Local Settings/Temporary Internet Files/Content.IE5/ZROVGX1G/CAMFENEL.swf	c5af6a1013f417082e369ed5c1f3c645	475d35a6b11f3ce75e1a8810bf7daf83af7fec86953ac7cd00afbb47e0128559	application/x-shockwave-flash	swf
+intro.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:40:59 UTC	2008-04-14 12:00:00 UTC	757717	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/intro.swf	5c602cec70571cdb0607296f80b2bc1f	87d9fe731185d44f826f8eb7dc18ac2e754bd53ee07f866c21c173b4e9ecf2a8	application/x-shockwave-flash	swf
+nav.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:40:59 UTC	2008-04-14 12:00:00 UTC	175759	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/nav.swf	6464bdff9b15ea2acc96d892d1694370	c11d6a61fdd32ab96027ecaeadf9c85268e79b512984368248c1ccbcf751ab8e	application/x-shockwave-flash	swf
+segment1.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:40:59 UTC	2008-04-14 12:00:00 UTC	2103945	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/segment1.swf	f132a2e95840028939217bb4649289da	4e7ad20f2331244d61560f5603b6e1c94104d15747009c00054f1e9296e01814	application/x-shockwave-flash	swf
+segment2.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:41:00 UTC	2008-04-14 12:00:00 UTC	1637375	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/segment2.swf	d31f5c186541704fec4a1949aecce0a1	76e2c4253fc988bfdcba4396591890459a4280fac6d739acb6f10bce9283c728	application/x-shockwave-flash	swf
+segment3.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:41:00 UTC	2008-04-14 12:00:00 UTC	1635503	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/segment3.swf	c41b697b736aff1d5c3a9d52331e0fb4	828565036484af596cfe50429103edff2eb006ac1f301c13c3cd2168aed511d1	application/x-shockwave-flash	swf
+segment4.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:41:01 UTC	2008-04-14 12:00:00 UTC	2794421	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/segment4.swf	994203f03d28adbf56870f0c0978b093	a256046a24200ea3d19dd417a5c79499daaf74d8785ac6f4b649ab0f6e972705	application/x-shockwave-flash	swf
+segment5.swf	2008-04-14 12:00:00 UTC	2009-11-20 09:46:59 UTC	2009-11-20 09:41:03 UTC	2008-04-14 12:00:00 UTC	7679963	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/mmTour/segment5.swf	8c4efd1bbd5ff6d10ad79b7f6b5d897b	8f99f0b50af8c1a5198beb337f45b9858f8fe3d3b5f257a9b4d0a1479e93d30d	application/x-shockwave-flash	swf
+._Cat.m4v	2009-11-20 17:26:50 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:49 UTC	2009-11-24 22:03:49 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._Cat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._Cat.mov	2009-11-20 17:26:54 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:49 UTC	2009-11-24 22:03:49 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._Cat.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._KittyMontage.mov	2009-11-20 17:28:12 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:44 UTC	2009-11-24 22:03:44 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._KittyMontage.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._MontereyKitty.m4v	2009-11-20 17:28:24 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:45 UTC	2009-11-24 22:03:45 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._MontereyKitty.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._MontereyKittyHQ.m4v	2009-11-20 17:28:50 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:47 UTC	2009-11-24 22:03:47 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._MontereyKittyHQ.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._TiggerTheCat.m4v	2009-11-20 17:29:04 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:48 UTC	2009-11-24 22:03:48 UTC	4096	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/._TiggerTheCat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._KittyMontage.mov	2009-11-20 09:28:12 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:13 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._KittyMontage.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._MontereyKitty.m4v	2009-11-20 09:28:24 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:23 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._MontereyKitty.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._MontereyKittyHQ.m4v	2009-11-20 09:28:50 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:49 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._MontereyKittyHQ.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._TiggerTheCat.m4v	2009-11-20 09:29:04 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:29:03 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._TiggerTheCat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._Cat.m4v	2009-11-20 09:26:50 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:26:50 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._Cat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._Cat.mov	2009-11-20 09:26:54 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:26:54 UTC	4096	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/._Cat.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._Cat.m4v	2009-11-20 09:26:50 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:26:50 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._Cat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._Cat.mov	2009-11-20 09:26:54 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:26:54 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._Cat.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._KittyMontage.mov	2009-11-20 09:28:12 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:13 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._KittyMontage.mov	e625b59ee98d19af5e1acc38e66847f4	f6576a3e6c0ceb43047a306359c2edc0b746154e4ffc5fa08de680bbca28000d	multipart/appledouble	mov
+._MontereyKitty.m4v	2009-11-20 09:28:24 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:23 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._MontereyKitty.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._MontereyKittyHQ.m4v	2009-11-20 09:28:50 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:28:49 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._MontereyKittyHQ.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+._TiggerTheCat.m4v	2009-11-20 09:29:04 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:29:03 UTC	4096	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/._TiggerTheCat.m4v	bd5cfbc0dba01d874349cbd4b67c6d7f	23e9f493ecb15788bf1bc88d30a407ee4d6140bcf26613127e3453525fe1ac55	multipart/appledouble	m4v
+Cat.mov	2009-11-20 17:25:26 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:08:05 UTC	2009-11-24 22:03:49 UTC	5712046	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/Cat.mov	3bf06fd991c312bd852c5f7b84d78174	a310dd51c21f039dd391baff5861ade08bc6e9fa729377d2035988f07f586566	video/quicktime	mov
+KittyMontage.mov	2009-11-20 17:18:56 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:44 UTC	2009-11-24 22:03:34 UTC	112719059	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/KittyMontage.mov	7d4058485071e25d482fd18fb2ac58bd	b70e26c75a8fcbe1c820130cfe98b0aa32936ae360a15e6905acd8b5de101202	video/quicktime	mov
+Sample.mov	2009-11-11 07:08:18 UTC	2009-11-24 22:10:29 UTC	2009-11-24 22:10:29 UTC	2009-11-11 07:08:18 UTC	55622	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Program Files/QuickTime/Sample.mov	0e242ab2d25193687bffdf12813e6e67	4c9dc5ad1ec1a244c5fb04c200aa7a9d5b36f2f0b88a6608a2a3134ed36d0273	video/quicktime	mov
+KittyMontage.mov	2009-11-20 09:18:56 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-20 09:18:55 UTC	112719059	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/KittyMontage.mov	7d4058485071e25d482fd18fb2ac58bd	b70e26c75a8fcbe1c820130cfe98b0aa32936ae360a15e6905acd8b5de101202	video/quicktime	mov
+Cat.mov	2009-11-20 09:25:26 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-20 09:25:27 UTC	5712046	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/Cat.mov	3bf06fd991c312bd852c5f7b84d78174	a310dd51c21f039dd391baff5861ade08bc6e9fa729377d2035988f07f586566	video/quicktime	mov
+Cat.mov	2009-11-20 09:25:26 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:25:27 UTC	5712046	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Cat.mov	999c203a0920ec3135e138375268578b	4fa2892be714f78c28fe34e4d0903f27e05807fb84539891035b52085e36877c	video/quicktime	mov
+KittyMontage.mov	2009-11-20 09:18:56 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:18:55 UTC	112719059	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/KittyMontage.mov	a9a53564974fe3e6c419e45f3eecb416	b72fb49c3b0d70e6bba91b566cad9f7bf3700441e6e8423830a1b3f5630d3980	video/quicktime	mov
+Cat.m4v	2009-11-20 17:12:04 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:49 UTC	2009-11-24 22:03:48 UTC	1077729	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/Cat.m4v	569136edd90a1abf74a858b9d822c134	0d0803ac35af6ea21f826e9ac7d14729c75618f5128636a5710277358c6462aa	video/x-m4v	m4v
+MontereyKitty.m4v	2009-11-20 16:57:26 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:45 UTC	2009-11-24 22:03:44 UTC	10491444	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/MontereyKitty.m4v	fb422a6213606d4a2a5d7e471e75fb46	4e15d6a79f65a661b3e5dc7c060765e25fe9cc0808cfa3448fc63b72fb4bcea4	video/x-m4v	m4v
+MontereyKittyHQ.m4v	2009-11-20 17:00:00 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:47 UTC	2009-11-24 22:03:45 UTC	25123154	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/MontereyKittyHQ.m4v	6d8481b35bbf65bd2580a267f2a04af5	8bfb8c5bb1e15353e8ff06623c4e3d50155782d7491c572a4086ba87120d88a3	video/x-m4v	m4v
+TiggerTheCat.m4v	2009-11-19 00:50:54 UTC	2009-11-24 22:16:29 UTC	2009-11-24 22:03:48 UTC	2009-11-24 22:03:47 UTC	12536015	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Jo/Desktop/Pics/Hidden/Videos/TiggerTheCat.m4v	1ff00fa337ad8b964729eb4573ea5a6c	18ff6030bb5fa95901edfc391c6ef480d8208e6d344e07c39e94f6b857cc5c43	video/x-m4v	m4v
+Cat.m4v	2009-11-20 09:12:04 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:12:05 UTC	1077729	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Cat.m4v	fc86c827fd114843a5a1c0741de4c917	7713f4be7ad028704504355876db2ce749f23d2be7714ca1b6e290862f949c17	video/x-m4v	m4v
+MontereyKitty.m4v	2009-11-20 08:57:26 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-20 08:57:26 UTC	10491444	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/MontereyKitty.m4v	fb422a6213606d4a2a5d7e471e75fb46	4e15d6a79f65a661b3e5dc7c060765e25fe9cc0808cfa3448fc63b72fb4bcea4	video/x-m4v	m4v
+MontereyKittyHQ.m4v	2009-11-20 09:00:00 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-20 09:00:00 UTC	25123154	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/MontereyKittyHQ.m4v	6d8481b35bbf65bd2580a267f2a04af5	8bfb8c5bb1e15353e8ff06623c4e3d50155782d7491c572a4086ba87120d88a3	video/x-m4v	m4v
+TiggerTheCat.m4v	2009-11-18 16:50:54 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-18 16:50:55 UTC	12536015	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/TiggerTheCat.m4v	1ff00fa337ad8b964729eb4573ea5a6c	18ff6030bb5fa95901edfc391c6ef480d8208e6d344e07c39e94f6b857cc5c43	video/x-m4v	m4v
+Cat.m4v	2009-11-20 09:12:04 UTC	0000-00-00 00:00:00	2009-11-24 00:00:00 UTC	2009-11-20 09:12:05 UTC	1077729	Allocated	Allocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/Videos/Cat.m4v	569136edd90a1abf74a858b9d822c134	0d0803ac35af6ea21f826e9ac7d14729c75618f5128636a5710277358c6462aa	video/x-m4v	m4v
+MontereyKitty.m4v	2009-11-20 08:57:26 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 08:57:26 UTC	10491444	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/MontereyKitty.m4v	d1e4742d3ddc78d09efbbc771739accf	14810295c416e8552ee91f33751ed46607672351761cc826af912c247626afbd	video/x-m4v	m4v
+MontereyKittyHQ.m4v	2009-11-20 09:00:00 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-20 09:00:00 UTC	25123154	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/MontereyKittyHQ.m4v	2798bb130bc0e1541f391fedf6b15f66	dcd791080723afc2c235aad9960dc80b0044a6029c493a27d05b3657713296b6	video/x-m4v	m4v
+TiggerTheCat.m4v	2009-11-18 16:50:54 UTC	0000-00-00 00:00:00	2009-11-20 00:00:00 UTC	2009-11-18 16:50:55 UTC	12536015	Unallocated	Unallocated	unknown	/img_jo-favorites-usb-2009-12-11.E01/vol_vol2/TiggerTheCat.m4v	fd88d42e497644de838ee1efa58fe4fa	d1ca153f448f27eb690ad0d51773c9b69e42126d99163bc7911cb82035465c88	video/x-m4v	m4v
+intro.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:12 UTC	2009-11-20 17:49:12 UTC	2009-11-20 17:49:11 UTC	665107	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/system32/oobe/images/intro.wmv	fa34f94c46988c5dd7216ccaf95ab603	425dc8f2e8325ca6b33ad9ebf44ca175cbc676e2880834d4f15bc7d1d04f72a0	video/x-ms-wmv	wmv
+copycd.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	381425	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/WindowsMediaPlayer/Video/copycd.wmv	8c093d8e8f0b413ffa49ba4a006433e0	2cf904b19dd5b98062e882fcff747f5bbf2263df786f1a833810095e69a12513	video/x-ms-wmv	wmv
+mdlib.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	457607	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/WindowsMediaPlayer/Video/mdlib.wmv	7e8fc3fe87ca4e7611e78105f727ccd4	2ef9131486ca41139a7b362cb4fd439062306986666ec499ec80f3449652f96a	video/x-ms-wmv	wmv
+nuskin.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	375519	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/WindowsMediaPlayer/Video/nuskin.wmv	ce5456b2dc3e57706cc0ebbac810d42c	d32d074a463ac4d70aa58e6be0839d9b7e7408445011778372ca6f1c565882c7	video/x-ms-wmv	wmv
+rtuner.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	572557	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/WindowsMediaPlayer/Video/rtuner.wmv	adee613c5b14453bb97ed4b011c6a7a9	d11e9bc472b6912f5330de5942d827f13f6e669074222ea8f07bef33b29c69b4	video/x-ms-wmv	wmv
+viz.wmv	2008-04-14 12:00:00 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	2009-11-20 17:49:48 UTC	300969	Allocated	Allocated	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/Help/Tours/WindowsMediaPlayer/Video/viz.wmv	157eb4fff82932bd57412f30c8bb16d8	0043c55d95dd5fb84f5e8f861588873bb0903a95f45316ae95f4945580047d4f	video/x-ms-wmv	wmv
+
+
+Department of Commerce
+
+Office of Security
+
+STU-III Briefing
+
+Listed are some procedures and guidelines that must be adhered to when assigned the responsibility of caretaker or when using the STU-III.
+
+A.  The STU-III is categorized as being a Controlled Cryptographic Item (CCI), i.e., secure telecommunications or information handling equipment, or associated cryptographic component, which is unclassified but controlled.
+
+
+1.  Secure Telecommunications and Information Handling 
+Equipment is defined as equipment designed to secure telecommunications and information handling media by converting information to a form unintelligible to an unauthorized interceptor and by reconverting the information to its original form for authorized recipients.  Such equipment, employing a classified cryptographic logic, may be stand-alone crypto-equipment as well as telecommunications and information handling equipment with integrated or embedded cryptography.
+
+2.  Cryptographic Component is defined as the hardware or firmware embodiment of the cryptographic logic in a secure telecommunications or information handling equipment.  A cryptographic component may be a modular assembly, a printed circuit board, a microcircuit, or a combination of these items.
+
+B.  Storage and Transportation of CCI equipment: CCI equipment and components shall be stored and transported in a manner that affords protection at least equal to that which is normally provided to other high value/sensitive material, and ensures that access and accounting integrity is maintained.
+
+C.  Access: A security clearances is not required for access to the STU-III.  However, access shall be restricted to U.S. citizens whose duties require such access.  Access may also be granted to permanently admitted resident aliens who are U.S. government civilian employees or active duty or reserve members of the U.S. Armed Forces whose duties require access.
+
+D.  An unkeyed STU-III may be used for unclassified or non-sensitive calls.  It must be treated and protected as other sensitive, high-value items, (i.e., a personal computer, typewriter, or telecopier).
+
+E.  A keyed STU-III must be afforded protection commensurate with the classification of the key it contains.  When persons in an area are not cleared to the level of the keyed terminal, it must be under the operational control and within view of at least one appropriately cleared, authorized person.
+
+1.  Adhere to the security classification on the display.  For example, if the display says SECRET, you may not talk above the SECRET level.
+
+2.  When secure calls are placed using STU-IIIs, the common sense approach must be used to prevent unauthorized personnel from overhearing a classified or sensitive phone conversation.  Such measures as escorting unauthorized personnel out of the area and closing room and hallway doors should be taken.
+
+3.  Check the display for any discrepancies or failures and report them to the COMSEC Custodian immediately.
+
+4.  If someone with a clearance below the level of the crypto key being used desires to make a call, the CIK and the call must be monitored by another person who has a clearance equal to or above the level of the crypto key.  (Example: If your STU-III is keyed at the TOP SECRET level and person using your unit has a SECRET clearance, you must activate the call and advise the party being called that the conversation must be kept at the SECRET level.)
+
+F.  Accountable COMSEC material issued on a hand receipt will never be reissued by a user.  If material is needed by another individual other that the immediate office of the original recipients, the material must be returned to the COMSEC custodian for reissue.
+
+G.  The responsibility for maintaining security and control of material received on a hand receipt from the custodian remains until the custodian relieves the individual by returning the signed receipt to the initial recipient.
+
+System Security Guidance
+
+A.  Protection of Crypto Ignition Key (CIK): The individual assigned the responsibility of accepting and signing for the CIK is ultimately responsible for the security of the CIK and maintaining the integrity of the National Security System involved.
+
+1.  The need to know and security clearance of any individual requesting the usage of the CIK must be validated prior to allowing them access to the CIK and instrument.
+
+2.  Individuals with security clearances are not automatically entitled to access of classified information.
+
+B.  Movement of STU-IIIs: STU-IIIs will not be moved from their original installation location without prior approval of the issuing COMSEC Custodian, or in his absence, the Department COMSEC Custodian.
+
+C.  Secure STU-II Data Applications: Prior to using the STU-III for secure data applications, authorization must be received from NC.  Guidance will be provided upon request/notification that requirements exist for using this feature of the phone.
+
+D.  STU-III Travel Restrictions: The Telecommunication Management Division (TMD) of DOC will be notified in advance of plans to use the STU-IIIs on travel.  Those persons going on travel will be briefed on protecting the instrument while on travel.  Only unclassified/sensitive key will be used while on travel.  Classified key requirements for travel will be reviewed on a case-by-case basis.  Requirements involving classified key must arrive in TMD at least 21 working days in advance of travel date (this allows time to order the key).  Only STU-IIIs with an appropriate carrying case that have been designated as a mobile nit will be used on travel.
+
+E.  Installed in Residence/Automobile: Terminals installed in the residence or automobile should be used only by those persons for whom it is installed.  All of the security requirements should be observed for preventing unauthorized access in the keyed terminal and to classified and sensitive information.  The CIK should be removed from the terminal following each use and kept in the personal possession of the user, or properly stored.  If the CIK is stored in the residence or automobile and the associated terminal is used to protect classified information, the CIK should be protected in an approved security container.
+
+F.  Violations: You may be particularly aware of these security issues when making a secure call.  Deviations from any of the above could result in a violation or constitute a practice dangerous to security and lead to serious consequences, such as, written reprimand, letter of counseling, or the loss of job. 
+
+DEPARTMENT OF COMMERCE
+
+OFFICE OF SECURITY
+
+STU III BRIEFING ACKNOWLEDGEMENT CERTIFICATE
+By signing the certification sheet below you are indicating that you have read and understand all of the above.
+
+My signature below indicates that I have read/been briefed and understand the Department of Commerce, Office of Security STU III Briefing.  I am aware that any questions I have concerning the contents of this briefing should be directed to my Regional Security Officer.
+
+PRINT NAME_______________________________________________________
+
+SSN______________________________________________________________
+
+BUREAU/OFFICE____________________________________________________
+
+WORK PHONE ______________________________________________________
+
+                         ________________________________________
+
+                                SIGNATURE               DATE
+
+Collection of this information is authorized by Executive Order 9397, 10450, 12356, U.S.C. 301 and 7531-532; 15 U.S.C. 1501 et seq; AND 44 U.S.C. 3101
+
+Please forward this signed page to the following:
+
+DEPARTMENT OF COMMERCE
+
+OFFICE OF SECURITY
+
+EASTERN REGION
+
+NORFOLK FEDERAL BUILDING
+
+200 GRANBY STREET, ROOM 407
+
+NORFOLK, VA 23510
+
+Fax (757) 441-3422
+
+PAGE  
+1
+
+
+
+------------------------------METADATA------------------------------
+
+Content-Type: application/msword
+X-TIKA:Parsed-By: org.apache.tika.parser.DefaultParser
+X-TIKA:origResourceName: D:\PROJECTS\noaa\Written Briefings\STU.doc
+cp:revision: 3
+dc:creator: Carroll Ward
+dc:title: STU-III Briefing
+dcterms:created: 2000-10-23T21:13:00Z
+dcterms:modified: 2002-09-12T19:05:00Z
+extended-properties:Application: Microsoft Word 9.0
+extended-properties:Company: DOC/OSY/ERSO
+extended-properties:Template: Normal
+extended-properties:TotalTime: 5400000000
+meta:character-count: 6468
+meta:last-author: Carroll Ward
+meta:page-count: 4
+meta:word-count: 1142
+xmpTPg:NPages: 
+
+Item: STU.doc
+Aggregate Score: Likely Notable
+Analysis Result 1
+Score:
+Likely Notable
+Type:
+Keyword Hits
+Configuration:
+
+Conclusion:
+
+Justification:
+
+Keyword:
+secret
+Keyword Preview:
+says «SECRET«, you may not talk above the «SECRET« level
+Keyword Search Type:
+0
+
+
+The Python Debugger Pdb
+=======================
+
+To use the debugger in its simplest form:
+
+        >>> import pdb
+        >>> pdb.run('<a statement>')
+
+The debugger's prompt is '(Pdb) '.  This will stop in the first
+function call in <a statement>.
+
+Alternatively, if a statement terminated with an unhandled exception,
+you can use pdb's post-mortem facility to inspect the contents of the
+traceback:
+
+        >>> <a statement>
+        <exception traceback>
+        >>> import pdb
+        >>> pdb.pm()
+
+The commands recognized by the debugger are listed in the next
+section.  Most can be abbreviated as indicated; e.g., h(elp) means
+that 'help' can be typed as 'h' or 'help' (but not as 'he' or 'hel',
+nor as 'H' or 'Help' or 'HELP').  Optional arguments are enclosed in
+square brackets.
+
+A blank line repeats the previous command literally, except for
+'list', where it lists the next 11 lines.
+
+Commands that the debugger doesn't recognize are assumed to be Python
+statements and are executed in the context of the program being
+debugged.  Python statements can also be prefixed with an exclamation
+point ('!').  This is a powerful way to inspect the program being
+debugged; it is even possible to change variables.  When an exception
+occurs in such a statement, the exception name is printed but the
+debugger's state is not changed.
+
+The debugger supports aliases, which can save typing.  And aliases can
+have parameters (see the alias help entry) which allows one a certain
+level of adaptability to the context under examination.
+
+Multiple commands may be entered on a single line, separated by the
+pair ';;'.  No intelligence is applied to separating the commands; the
+input is split at the first ';;', even if it is in the middle of a
+quoted string.
+
+If a file ".pdbrc" exists in your home directory or in the current
+directory, it is read in and executed as if it had been typed at the
+debugger prompt.  This is particularly useful for aliases.  If both
+files exist, the one in the home directory is read first and aliases
+defined there can be overriden by the local file.
+
+Aside from aliases, the debugger is not directly programmable; but it
+is implemented as a class from which you can derive your own debugger
+class, which you can make as fancy as you like.
+
+
+Debugger commands
+=================
+
+h(elp)
+        Without argument, print the list of available commands.  With
+        a command name as argument, print help about that command
+        (this is currently not implemented).
+
+w(here)
+        Print a stack trace, with the most recent frame at the bottom.
+        An arrow indicates the "current frame", which determines the
+        context of most commands.
+
+d(own)
+        Move the current frame one level down in the stack trace
+        (to a newer frame).
+
+u(p)
+        Move the current frame one level up in the stack trace
+        (to an older frame).
+
+b(reak) [ ([filename:]lineno | function) [, condition] ]
+        With a filename:line number argument, set a break there.  If
+        filename is omitted, use the current file.  With a function
+        name, set a break at the first executable line of that
+        function.  Without argument, list all breaks.  Each breakpoint
+        is assigned a number to which all the other breakpoint
+        commands refer.
+
+        The condition argument, if present, is a string which must
+        evaluate to true in order for the breakpoint to be honored.
+
+tbreak [ ([filename:]lineno | function) [, condition] ]
+        Temporary breakpoint, which is removed automatically when it
+        is first hit.  The arguments are the same as break.
+
+cl(ear) [bpnumber [bpnumber ...] ]
+        With a space separated list of breakpoint numbers, clear those
+        breakpoints.  Without argument, clear all breaks (but first
+        ask confirmation).
+
+disable bpnumber [bpnumber ...]
+        Disables the breakpoints given as a space separated list of
+        breakpoint numbers.  Disabling a breakpoint means it cannot
+        cause the program to stop execution, but unlike clearing a
+        breakpoint, it remains in the list of breakpoints and can be
+        (re-)enabled.
+
+enable bpnumber [bpnumber ...]
+        Enables the breakpoints specified.
+
+ignore bpnumber count
+        Sets the ignore count for the given breakpoint number.  If
+        count is omitted, the ignore count is set to 0.  A breakpoint
+        becomes active when the ignore count is zero.  When non-zero,
+        the count is decremented each time the breakpoint is reached
+        and the breakpoint is not disabled and any associated
+        condition evaluates to true.
+
+condition bpnumber condition
+        condition is an expression which must evaluate to true before
+        the breakpoint is honored.  If condition is absent, any
+        existing condition is removed; i.e., the breakpoint is made
+        unconditional.
+
+s(tep)
+        Execute the current line, stop at the first possible occasion
+        (either in a function that is called or in the current function).
+
+n(ext)
+        Continue execution until the next line in the current function
+        is reached or it returns.
+
+unt(il)
+        Continue execution until the line with a number greater than the 
+        current one is reached or until the current frame returns.
+
+r(eturn)
+        Continue execution until the current function returns.
+
+run [args...]
+        Restart the debugged python program. If a string is supplied it is
+        splitted with "shlex", and the result is used as the new sys.argv.
+	History, breakpoints, actions and debugger options are preserved.
+	"restart" is an alias for "run".
+
+c(ont(inue))
+        Continue execution, only stop when a breakpoint is encountered.
+
+l(ist) [first [,last]]
+        List source code for the current file.
+        Without arguments, list 11 lines around the current line
+        or continue the previous listing.
+        With one argument, list 11 lines starting at that line.
+        With two arguments, list the given range;
+        if the second argument is less than the first, it is a count.
+
+a(rgs)
+        Print the argument list of the current function.
+
+p expression
+        Print the value of the expression.
+
+(!) statement
+        Execute the (one-line) statement in the context of the current
+        stack frame.  The exclamation point can be omitted unless the
+        first word of the statement resembles a debugger command.  To
+        assign to a global variable you must always prefix the command
+        with a 'global' command, e.g.:
+        (Pdb) global list_options; list_options = ['-l']
+        (Pdb)
+
+
+whatis arg
+         Prints the type of the argument.
+
+alias [name [command]]
+        Creates an alias called 'name' that executes 'command'.  The
+        command must *not* be enclosed in quotes.  Replaceable
+        parameters can be indicated by %1, %2, and so on, while %* is
+        replaced by all the parameters.  If no command is given, the
+        current alias for name is shown. If no name is given, all
+        aliases are listed.
+
+        Aliases may be nested and can contain anything that can be
+        legally typed at the pdb prompt.  Note!  You *can* override
+        internal pdb commands with aliases!  Those internal commands
+        are then hidden until the alias is removed.  Aliasing is
+        recursively applied to the first word of the command line; all
+        other words in the line are left alone.
+
+        As an example, here are two useful aliases (especially when
+        placed in the .pdbrc file):
+
+        #Print instance variables (usage "pi classInst")
+        alias pi for k in %1.__dict__.keys(): print "%1.",k,"=",%1.__dict__[k]
+        #Print instance variables in self
+        alias ps pi self
+                
+unalias name
+        Deletes the specified alias.
+
+q(uit)
+        Quit from the debugger.
+        The program being executed is aborted.
+
+
+------------------------------METADATA------------------------------
+
+Metadata
+Name:
+/img_jo-2009-11-24.E01/vol_vol2/Program Files/OpenOffice.org 3/Basis/program/python-core-2.6.1/lib/pdb.doc
+Type:
+File System
+MIME Type:
+text/plain
+Size:
+7899
+File Name Allocation:
+Allocated
+Metadata Allocation:
+Allocated
+Modified:
+2009-04-23 03:43:02 UTC
+Accessed:
+2009-11-20 19:37:59 UTC
+Created:
+2009-04-23 03:43:02 UTC
+Changed:
+2009-11-20 19:37:59 UTC
+MD5:
+c6a62e959e560ca823c0c94c51cba257
+SHA-256:
+72d6221ab81f4b6b9ecc2eae8e03b3388b66eacad5ebc3b373d7bbafb333b27e
+Hash Lookup Results:
+UNKNOWN
+Internal ID:
+11573
+From The Sleuth Kit istat Tool:
+MFT Entry Header Values:
+Entry: 20597 Sequence: 1
+$LogFile Sequence Number: 105258718
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 278 (S-1-5-32-544)
+Last User Journal Update Sequence Number: 6728272
+Created: 2009-04-23 03:43:02.000000000 (UTC)
+File Modified: 2009-04-23 03:43:02.000000000 (UTC)
+MFT Modified: 2009-11-20 19:37:59.187500000 (UTC)
+Accessed: 2009-11-20 19:37:59.187500000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: pdb.doc
+Parent MFT Entry: 20542 Sequence: 1
+Allocated Size: 0 Actual Size: 0
+Created: 2009-11-20 19:37:59.171875000 (UTC)
+File Modified: 2009-11-20 19:37:59.171875000 (UTC)
+MFT Modified: 2009-11-20 19:37:59.171875000 (UTC)
+Accessed: 2009-11-20 19:37:59.171875000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0) Name: N/A Resident size: 72
+Type: $FILE_NAME (48-2) Name: N/A Resident size: 80
+Type: $DATA (128-3) Name: N/A Non-Resident size: 7899 init_size: 7899
+Starting address: 576648, length: 2 
+
+
+11/20/2009 09:58:49 NoClear flag is specified.
+
+11/20/2009 09:58:49    COM initialized with S_OK success code.
+
+11/20/2009 09:58:49 Branding Internet Explorer...
+11/20/2009 09:58:49 Command line is "/mode:isp /peruser".
+
+11/20/2009 09:58:49 Global branding settings are:
+11/20/2009 09:58:49    Context is (0x01C00008) "Internet Content Providers, running from per-user stub";
+11/20/2009 09:58:49    Settings file is        "C:\Program Files\Internet Explorer\Signup\install.ins";
+11/20/2009 09:58:49    Target folder path is   "C:\Program Files\Internet Explorer\Signup".
+11/20/2009 09:58:49 Done.
+
+11/20/2009 09:58:49    About to clear previous branding...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing migration of old settings...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing wininet setup...
+11/20/2009 09:58:49    There are no connection settings to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing deletion of connection settings...
+11/20/2009 09:58:49    Existing connection settings weren't specified to be deleted!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing zones HKCU settings...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing local machine policies and restrictions...
+11/20/2009 09:58:49    There are no local machine *.inf files to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing current user policies and restrictions...
+11/20/2009 09:58:49    There are no current user *.inf files to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing legacy policies and restrictions...
+11/20/2009 09:58:49        There are no local machine *.inf files to process!
+11/20/2009 09:58:49        There are no current user *.inf files to process!
+11/20/2009 09:58:49    There are no legacy *.inf files to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing general customizations...
+11/20/2009 09:58:49    Company name is set to "Microsoft Corporation".
+11/20/2009 09:58:49    Custom key is set to "MICROSO".
+11/20/2009 09:58:49    Wizard version is set to "6.0.2600.0000".
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing Help->About customization...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing browser toolbar buttons...
+11/20/2009 09:58:49    There are no toolbar buttons to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing root certificates...
+11/20/2009 09:58:49    This feature is for ISPs only!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing deletion of favorites and/or quick links...
+11/20/2009 09:58:49    None of the favorites folders were specified to be deleted!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing favorites...
+11/20/2009 09:58:49    Creating separate thread for processing favorites...
+
+11/20/2009 09:58:49    COM initialized with S_OK success code.
+11/20/2009 09:58:49    Using [FavoritesEx] section...
+
+11/20/2009 09:58:49        Preprocessing "Title1" title key...
+11/20/2009 09:58:49        Preprocessing "URL1" URL key...
+11/20/2009 09:58:49        Adding this favorite:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49                <Favorites> folder location is "C:\Documents and Settings\Administrator\Favorites".
+11/20/2009 09:58:49            Title     - "MSN.com.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=ie&pver=6&ar=IStart",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Title2" title key...
+11/20/2009 09:58:49        Preprocessing "URL2" URL key...
+11/20/2009 09:58:49        Adding this favorite:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49            Title     - "Radio Station Guide.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=windows&sbp=mediaplayer&plcid=&pver=6.1&os=&over=&olcid=&clcid=&ar=Media&sba=RadioBar&o1=&o2=&o3=",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Title3" title key...
+11/20/2009 09:58:49        Failed with E_FAIL.
+
+11/20/2009 09:58:49        Preprocessing "Title4" title key...
+11/20/2009 09:58:49        This key doesn't exist indicating that there are no more favorites.
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing ordering of favorites...
+11/20/2009 09:58:49    Favorites will be put into the default position!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing quick links...
+11/20/2009 09:58:49    Creating separate thread for processing quick links...
+
+11/20/2009 09:58:49    COM initialized with S_OK success code.
+11/20/2009 09:58:49        Preprocessing "Quick_Link_1_Name" quick link title key...
+11/20/2009 09:58:49        Preprocessing "Quick_Link_1" quick link URL key...
+11/20/2009 09:58:49        Adding this quick link:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49            Title     - "Links\Customize Links.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=ie&pver=6&ar=CLinks",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Quick_Link_2_Name" quick link title key...
+11/20/2009 09:58:49        Preprocessing "Quick_Link_2" quick link URL key...
+11/20/2009 09:58:49        Adding this quick link:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49            Title     - "Links\Free Hotmail.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=ie&ar=hotmail",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Quick_Link_3_Name" quick link title key...
+11/20/2009 09:58:49        Preprocessing "Quick_Link_3" quick link URL key...
+11/20/2009 09:58:49        Adding this quick link:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49            Title     - "Links\Windows.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=ie&ar=windows",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Quick_Link_4_Name" quick link title key...
+11/20/2009 09:58:49        Preprocessing "Quick_Link_4" quick link URL key...
+11/20/2009 09:58:49        Adding this quick link:
+11/20/2009 09:58:49            Determining favorites attributes...
+11/20/2009 09:58:49            Title     - "Links\Windows Media.url",
+11/20/2009 09:58:49            URL       - "http://www.microsoft.com/isapi/redir.dll?prd=ie&ar=windowsmedia",
+11/20/2009 09:58:49            with a default icon,
+11/20/2009 09:58:49            not marked IEAK created,
+11/20/2009 09:58:49            not made available offline
+11/20/2009 09:58:49            Done.
+11/20/2009 09:58:49        Done.
+
+11/20/2009 09:58:49        Preprocessing "Quick_Link_5_Name" quick link title key...
+11/20/2009 09:58:49        This key doesn't exist indicating that there are no more quick links.
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing ordering of quick links...
+11/20/2009 09:58:49    Quick Links will be put into the default position!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing connection settings...
+11/20/2009 09:58:49    There are no connection settings to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing TrustedPublisherLockdown restriction...
+11/20/2009 09:58:49    This restriction is not set!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Registering download URLs as safe for updating IE...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Deleting links...
+11/20/2009 09:58:49    No links to delete!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Branding Outlook Express...
+11/20/2009 09:58:49    There are no Outlook Express settings to brand!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing active desktop customizations...
+11/20/2009 09:58:49    No desktop customizations to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing channels and their categories (if any)...
+11/20/2009 09:58:49    There are no channels to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing software update channels...
+11/20/2009 09:58:49        <Web> folder location is "C:\WINDOWS\Web".
+11/20/2009 09:58:49    There are no software update channels to add!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Actual processing of channels by calling webcheck.dll "DllInstall" API...
+11/20/2009 09:58:49    There is no webcheck processing necessary!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Showing channel bar on the desktop...
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Processing subscriptions...
+11/20/2009 09:58:49    There are no subscriptions to process!
+11/20/2009 09:58:49    Done.
+
+11/20/2009 09:58:49    Refreshing browser settings...
+11/20/2009 09:58:49    Broadcasting "Windows settings change" to all top level windows...
+11/20/2009 09:58:49    Done.
+11/20/2009 09:58:49 Done.
+11/20/2009 09:58:49 Done.
+
+
+------------------------------METADATA------------------------------
+
+Metadata
+Name:
+/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Administrator/Application Data/Microsoft/Internet Explorer/brndlog.txt
+Type:
+File System
+MIME Type:
+text/plain
+Size:
+10389
+File Name Allocation:
+Allocated
+Metadata Allocation:
+Allocated
+Modified:
+2009-11-20 17:58:49 UTC
+Accessed:
+2009-11-20 17:58:49 UTC
+Created:
+2009-11-20 17:58:28 UTC
+Changed:
+2009-11-20 17:58:49 UTC
+MD5:
+d239f58dabacdfcb233ba046f51ff773
+SHA-256:
+4c548453c22fb0d6a4e6f4b9ae2eb8e2c9010c82f9fabd2c2b52c1c7fa1513f1
+Hash Lookup Results:
+UNKNOWN
+Internal ID:
+96
+From The Sleuth Kit istat Tool:
+MFT Entry Header Values:
+Entry: 10495 Sequence: 1
+$LogFile Sequence Number: 54634610
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 357 (S-1-5-21-606747145-1547161642-1644491937-500)
+Created: 2009-11-20 17:58:28.359375000 (UTC)
+File Modified: 2009-11-20 17:58:49.531250000 (UTC)
+MFT Modified: 2009-11-20 17:58:49.531250000 (UTC)
+Accessed: 2009-11-20 17:58:49.531250000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: brndlog.txt
+Parent MFT Entry: 10444 Sequence: 1
+Allocated Size: 144 Actual Size: 141
+Created: 2009-11-20 17:58:28.359375000 (UTC)
+File Modified: 2009-11-20 17:51:25.827500000 (UTC)
+MFT Modified: 2009-11-20 17:51:25.827500000 (UTC)
+Accessed: 2009-11-20 17:58:28.437500000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0) Name: N/A Resident size: 72
+Type: $FILE_NAME (48-4) Name: N/A Resident size: 88
+Type: $DATA (128-6) Name: N/A Non-Resident size: 10389 init_size: 10389
+Starting address: 1914279, length: 3 
+
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'AnalyzeSpecialization' requires to be run.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'AnalyzeSpecialization'
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0413
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0413 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040E
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040E to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0405
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0405 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x041B
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x041B to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0407
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0407 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040C
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040C to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040A
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040A to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0415
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0415 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0416
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0416 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x081A
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x081A to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0410
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0410 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0411
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0411 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0406
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0406 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0816
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0816 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0412
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0412 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0439
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0439 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x4009
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x4009 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0419
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0419 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0421
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0421 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x043E
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x043E to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x041F
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x041F to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0804
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0804 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0404
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0404 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstubanalzyespecializationstep.cpp:92]: Analyzing specialization done.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'AnalyzeSpecialization' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'OSCheckStep' needs to be executed...
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'OSCheckStep' requires to be run.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'OSCheckStep'
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstuboscheckstep.cpp:182]: Filter Manager available: 
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstuboscheckstep.cpp:69]: OSCheck: Detected Windows XP
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstuboscheckstep.cpp:93]: OSCheck: Detected Service Pack: 3.0
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstuboscheckstep.cpp:110]: OSCheck: Detected platform: x86
+2009-11-20T10:38:17-08:00 <INFO> [.\steps\avgstuboscheckstep.cpp:138]: OSCheck: Running as x86 architecture.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'OSCheckStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'AdminRightsCheckStep' needs to be executed...
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:290]: Step 'AdminRightsCheckStep' does NOT require to be run.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'WelcomeStep' needs to be executed...
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'WelcomeStep' requires to be run.
+2009-11-20T10:38:17-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'WelcomeStep'
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0413
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0413 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040E
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040E to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0405
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0405 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x041B
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x041B to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0407
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0407 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040C
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040C to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x040A
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x040A to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0415
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0415 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0416
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0416 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x081A
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x081A to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0410
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0410 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0411
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0411 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0406
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0406 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0816
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0816 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0412
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0412 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0439
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0439 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x4009
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x4009 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0419
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0419 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0421
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0421 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x043E
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x043E to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x041F
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x041F to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0804
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0804 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0404
+2009-11-20T10:38:17-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0404 to language 0x0409
+2009-11-20T10:38:17-08:00 <INFO> [.\gui\dialogs\avgstubwelcomedialog.cpp:151]: Restricted to languages based on specialization: CZ;FR;GE;ID;IN;IT;JP;KO;MS;NL;PB;PL;RU;SP;TR;US;ZH;ZT;
+2009-11-20T10:38:19-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'WelcomeStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:19-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'ConnectivityCheck' needs to be executed...
+2009-11-20T10:38:19-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'ConnectivityCheck' requires to be run.
+2009-11-20T10:38:19-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'ConnectivityCheck'
+2009-11-20T10:38:19-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stub.avg.com/softw/80/stub/avg8.stb succeeded.
+2009-11-20T10:38:19-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:319]: CONNECTION: Using direct connection.
+2009-11-20T10:38:19-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:327]: Connection details: ProxyType: APT_None Server=: AuthType=AUTH_NONE
+2009-11-20T10:38:20-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stub.avg.com/softw/80/stub/cnet.stb succeeded.
+2009-11-20T10:38:20-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:402]: Attempt to download free stub info file
+2009-11-20T10:38:20-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stubfree.avg.com/softw/80free/stub/avg8free.stb succeeded.
+2009-11-20T10:38:20-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:406]: Attempt to download free stub info file => SUCCESS
+2009-11-20T10:38:20-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:410]: Attempt to download free brand stub info file
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stubfree.avg.com/softw/80free/stub/cnetfree.stb succeeded.
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:415]: Attempt to download free brand stub info file => SUCCESS
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:359]: Attempt to download sals stub info file
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://guru.avg.com/softw/fpl80/stub/avg8sals.stb succeeded.
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:363]: Attempt to download sals stub info file => SUCCESS
+2009-11-20T10:38:21-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:367]: Attempt to download sals brand stub info file
+2009-11-20T10:38:22-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://guru.avg.com/softw/fpl80/stub/cnetsals.stb succeeded.
+2009-11-20T10:38:22-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:372]: Attempt to download sals brand stub info file => SUCCESS
+2009-11-20T10:38:22-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:457]: Checking if update is necessary...
+2009-11-20T10:38:22-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:460]: Update required. Downloading newer version...
+2009-11-20T10:38:22-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:470]: Attempt to download StubUpdate from URL1 [http://stub.avg.com/softw/80/stub/avgdm80_update_0040.pack]
+2009-11-20T10:38:23-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stub.avg.com/softw/80/stub/avgdm80_update_0040.pack succeeded.
+2009-11-20T10:38:23-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:472]: Attempt to download StubUpdate from URL1 [http://stub.avg.com/softw/80/stub/avgdm80_update_0040.pack] => SUCCESS
+2009-11-20T10:38:23-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:489]: Update will be required. Changing flag according to it.
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:519]: Attempt to download pro plugin 1...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:522]: Attempt to download pro plugin 2...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:529]: Attempt to download pro product mapping...
+2009-11-20T10:38:24-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stub.avg.com/softw/80/stub/avgdm90_prodmap_pro_0707.dat succeeded.
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:534]: Attempt to download free plugin 1...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:537]: Attempt to download free plugin 2...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:544]: Attempt to download free product mapping...
+2009-11-20T10:38:24-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://stubfree.avg.com/softw/80free/stub/avgdm90_prodmap_free_0707.dat succeeded.
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:549]: Attempt to download sals plugin 1...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:552]: Attempt to download sals plugin 1...
+2009-11-20T10:38:24-08:00 <DEBUG> [.\steps\avgstubconnectivitycheckstep.cpp:559]: Attempt to download sals product mapping...
+2009-11-20T10:38:25-08:00 <INFO> [.\steps\avgstubconnectivitycheckstep.cpp:229]: Download of http://guru.avg.com/softw/fpl80/stub/avgdm85_prodmap_sals_0361.dat succeeded.
+2009-11-20T10:38:25-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'ConnectivityCheck' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:25-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'UpdateStep' needs to be executed...
+2009-11-20T10:38:25-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'UpdateStep' requires to be run.
+2009-11-20T10:38:25-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'UpdateStep'
+2009-11-20T10:38:26-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'UpdateStep' succeeded. Result: RESULT_EXIT
+2009-11-20T10:38:26-08:00 <INFO> [.\avgstubflowcontroller.cpp:284]: Exiting upon stub step UpdateStep's request
+2009-11-20T10:38:26-08:00 <INFO> [.\avgstubapplication.cpp:144]: Flow controller ended successfully.
+2009-11-20T10:38:26-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:57]: FlowController destroyed
+2009-11-20T10:38:26-08:00 <INFO> [.\stub.cpp:71]: Download manager end
+2009-11-20T10:38:27-08:00 <INFO> [.\stub.cpp:69]: Download manager start
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:51]: FlowController created
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'InitializationStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'AnalyzeSpecialization' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'OSCheckStep' at the end
+2009-11-20T10:38:27-08:00 <INFO> [.\steps\avgstubadminrightscheckstep.cpp:18]: AdminRightsCheckStep: User is administrator: Yes
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'AdminRightsCheckStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'WelcomeStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'ConnectivityCheck' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'UpdateStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'LoadPlugins' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'ProductSelectionStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'UpSellStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'PrepareDownload' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'DownloadStep' at the end
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:63]: Entering FlowController::AddStepAfter
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:85]: Added step 'StartSetupStep' at the end
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubapplication.cpp:139]: Starting flow controller...
+2009-11-20T10:38:27-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:206]: Entering FlowController::Run
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'InitializationStep' needs to be executed...
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'InitializationStep' requires to be run.
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'InitializationStep'
+2009-11-20T10:38:27-08:00 <INFO> [.\avgi18n.cpp:123]: Change language from 0x0409 to language 0x0409
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'InitializationStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'LoadPlugins' needs to be executed...
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'LoadPlugins' requires to be run.
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'LoadPlugins'
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'LoadPlugins' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'ProductSelectionStep' needs to be executed...
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'ProductSelectionStep' requires to be run.
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'ProductSelectionStep'
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'ProductSelectionStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'UpSellStep' needs to be executed...
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'UpSellStep' requires to be run.
+2009-11-20T10:38:27-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'UpSellStep'
+2009-11-20T10:38:36-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'UpSellStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:36-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'PrepareDownload' needs to be executed...
+2009-11-20T10:38:36-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'PrepareDownload' requires to be run.
+2009-11-20T10:38:36-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'PrepareDownload'
+2009-11-20T10:38:38-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'PrepareDownload' succeeded. Result: RESULT_NEXT
+2009-11-20T10:38:38-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'DownloadStep' needs to be executed...
+2009-11-20T10:38:38-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'DownloadStep' requires to be run.
+2009-11-20T10:38:38-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'DownloadStep'
+2009-11-20T10:38:38-08:00 <INFO> [.\steps\avgstubdownloadstep.cpp:235]: Starting packet download
+2009-11-20T10:39:41-08:00 <INFO> [.\steps\avgstubdownloadstep.cpp:254]: Download ended with ErrorCode: 0x00000000
+2009-11-20T10:39:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'DownloadStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:39:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:227]: Checking whether step 'StartSetupStep' needs to be executed...
+2009-11-20T10:39:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:230]: Step 'StartSetupStep' requires to be run.
+2009-11-20T10:39:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:231]: Executing step 'StartSetupStep'
+2009-11-20T10:40:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:280]: Executing step 'StartSetupStep' succeeded. Result: RESULT_NEXT
+2009-11-20T10:40:41-08:00 <INFO> [.\avgstubflowcontroller.cpp:344]: 'StartSetupStep' was the last step. Ending.
+2009-11-20T10:40:41-08:00 <INFO> [.\avgstubapplication.cpp:144]: Flow controller ended successfully.
+2009-11-20T10:40:41-08:00 <DEBUG> [.\avgstubflowcontroller.cpp:57]: FlowController destroyed
+2009-11-20T10:40:41-08:00 <INFO> [.\stub.cpp:71]: Download manager end
+
+
+------------------------------METADATA------------------------------
+
+Metadata
+Name:
+/img_jo-2009-11-24.E01/vol_vol2/Documents and Settings/Administrator/Local Settings/Temp/AVGDownloadManager/dmlog.txt
+Type:
+File System
+MIME Type:
+text/plain
+Size:
+59226
+File Name Allocation:
+Allocated
+Metadata Allocation:
+Allocated
+Modified:
+2009-11-20 18:40:41 UTC
+Accessed:
+2009-11-20 18:40:41 UTC
+Created:
+2009-11-20 18:38:16 UTC
+Changed:
+2009-11-20 18:40:41 UTC
+MD5:
+8b31e5c878f35c33b6e432fce6a8fcba
+SHA-256:
+7d46c855ac7f77085c34d9ac1b8747e770d5d8c18b03d70547d28b23ea331fe1
+Hash Lookup Results:
+UNKNOWN
+Internal ID:
+532
+From The Sleuth Kit istat Tool:
+MFT Entry Header Values:
+Entry: 11407 Sequence: 1
+$LogFile Sequence Number: 56255516
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 357 (S-1-5-21-606747145-1547161642-1644491937-500)
+Created: 2009-11-20 18:38:16.828125000 (UTC)
+File Modified: 2009-11-20 18:40:41.359375000 (UTC)
+MFT Modified: 2009-11-20 18:40:41.359375000 (UTC)
+Accessed: 2009-11-20 18:40:41.359375000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: dmlog.txt
+Parent MFT Entry: 11406 Sequence: 1
+Allocated Size: 0 Actual Size: 0
+Created: 2009-11-20 18:38:16.828125000 (UTC)
+File Modified: 2009-11-20 18:38:16.828125000 (UTC)
+MFT Modified: 2009-11-20 18:38:16.828125000 (UTC)
+Accessed: 2009-11-20 18:38:16.828125000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0) Name: N/A Resident size: 72
+Type: $FILE_NAME (48-2) Name: N/A Resident size: 84
+Type: $DATA (128-3) Name: N/A Non-Resident size: 59226 init_size: 59226
+Starting address: 1296214, length: 1 
+Starting address: 1296831, length: 1 
+Starting address: 1367502, length: 2 
+Starting address: 1391338, length: 4 
+Starting address: 1390298, length: 3 
+Starting address: 1391387, length: 1 
+Starting address: 1391135, length: 2 
+Starting address: 1336945, length: 1 
+
+
+IDLE History
+============
+
+This file contains the release messages for previous IDLE releases.
+As you read on you go back to the dark ages of IDLE's history.
+
+
+What's New in IDLEfork 0.8.1?
+=============================
+
+*Release date: 22-Jul-2001*
+
+- New tarball released as a result of the 'revitalisation' of the IDLEfork
+  project. 
+
+- This release requires python 2.1 or better. Compatability with earlier
+  versions of python (especially ancient ones like 1.5x) is no longer a
+  priority in IDLEfork development.
+
+- This release is based on a merging of the earlier IDLE fork work with current
+  cvs IDLE (post IDLE version 0.8), with some minor additional coding by Kurt
+  B. Kaiser and Stephen M. Gava.
+
+- This release is basically functional but also contains some known breakages,
+  particularly with running things from the shell window. Also the debugger is
+  not working, but I believe this was the case with the previous IDLE fork
+  release (0.7.1) as well.
+
+- This release is being made now to mark the point at which IDLEfork is 
+  launching into a new stage of development. 
+
+- IDLEfork CVS will now be branched to enable further development and
+  exploration of the two "execution in a remote process" patches submitted by
+  David Scherer (David's is currently in IDLEfork) and GvR, while stabilisation
+  and development of less heavyweight improvements (like user customisation)
+  can continue on the trunk.
+
+
+What's New in IDLEfork 0.7.1?
+==============================
+
+*Release date: 15-Aug-2000*
+
+- First project tarball released.
+
+- This was the first release of IDLE fork, which at this stage was a
+  combination of IDLE 0.5 and the VPython idle fork, with additional changes
+  coded by David Scherer, Peter Schneider-Kamp and Nicholas Riley.
+
+
+
+IDLEfork 0.7.1 - 29 May 2000
+-----------------------------
+
+   David Scherer  <dscherer@cmu.edu>
+
+- This is a modification of the CVS version of IDLE 0.5, updated as of
+  2000-03-09.  It is alpha software and might be unstable.  If it breaks, you
+  get to keep both pieces.
+
+- If you have problems or suggestions, you should either contact me or post to
+  the list at http://www.python.org/mailman/listinfo/idle-dev (making it clear
+  that you are using this modified version of IDLE).
+
+- Changes:
+
+  - The ExecBinding module, a replacement for ScriptBinding, executes programs
+    in a separate process, piping standard I/O through an RPC mechanism to an
+    OnDemandOutputWindow in IDLE.  It supports executing unnamed programs
+    (through a temporary file).  It does not yet support debugging.
+
+  - When running programs with ExecBinding, tracebacks will be clipped to
+    exclude system modules.  If, however, a system module calls back into the
+    user program, that part of the traceback will be shown.
+
+  - The OnDemandOutputWindow class has been improved.  In particular, it now
+    supports a readline() function used to implement user input, and a
+    scroll_clear() operation which is used to hide the output of a previous run
+    by scrolling it out of the window.
+
+  - Startup behavior has been changed.  By default IDLE starts up with just a
+    blank editor window, rather than an interactive window.  Opening a file in
+    such a blank window replaces the (nonexistent) contents of that window
+    instead of creating another window.  Because of the need to have a
+    well-known port for the ExecBinding protocol, only one copy of IDLE can be
+    running.  Additional invocations use the RPC mechanism to report their
+    command line arguments to the copy already running.
+
+  - The menus have been reorganized.  In particular, the excessively large
+    'edit' menu has been split up into 'edit', 'format', and 'run'.
+
+  - 'Python Documentation' now works on Windows, if the win32api module is
+    present.
+
+  - A few key bindings have been changed: F1 now loads Python Documentation
+    instead of the IDLE help; shift-TAB is now a synonym for unindent.
+
+- New modules:
+  
+  ExecBinding.py         Executes program through loader
+  loader.py              Bootstraps user program
+  protocol.py            RPC protocol
+  Remote.py              User-process interpreter
+  spawn.py               OS-specific code to start programs
+
+- Files modified:
+
+  autoindent.py          ( bindings tweaked )
+  bindings.py            ( menus reorganized )
+  config.txt             ( execbinding enabled )
+  editorwindow.py        ( new menus, fixed 'Python Documentation' )
+  filelist.py            ( hook for "open in same window" )
+  formatparagraph.py     ( bindings tweaked )
+  idle.bat               ( removed absolute pathname )
+  idle.pyw               ( weird bug due to import with same name? )
+  iobinding.py           ( open in same window, EOL convention )
+  keydefs.py             ( bindings tweaked )
+  outputwindow.py        ( readline, scroll_clear, etc )
+  pyshell.py             ( changed startup behavior )
+  readme.txt             ( <Recursion on file with id=1234567> )
+
+
+
+IDLE 0.5 - February 2000 - Release Notes
+----------------------------------------
+
+This is an early release of IDLE, my own attempt at a Tkinter-based
+IDE for Python.
+
+(For a more detailed change log, see the file ChangeLog.)
+
+FEATURES
+
+IDLE has the following features:
+
+- coded in 100% pure Python, using the Tkinter GUI toolkit (i.e. Tcl/Tk)
+
+- cross-platform: works on Windows and Unix (on the Mac, there are
+currently problems with Tcl/Tk)
+
+- multi-window text editor with multiple undo, Python colorizing
+and many other features, e.g. smart indent and call tips
+
+- Python shell window (a.k.a. interactive interpreter)
+
+- debugger (not complete, but you can set breakpoints, view  and step)
+
+USAGE
+
+The main program is in the file "idle.py"; on Unix, you should be able
+to run it by typing "./idle.py" to your shell.  On Windows, you can
+run it by double-clicking it; you can use idle.pyw to avoid popping up
+a DOS console.  If you want to pass command line arguments on Windows,
+use the batch file idle.bat.
+
+Command line arguments: files passed on the command line are executed,
+not opened for editing, unless you give the -e command line option.
+Try "./idle.py -h" to see other command line options.
+
+IDLE requires Python 1.5.2, so it is currently only usable with a
+Python 1.5.2 distribution.  (An older version of IDLE is distributed
+with Python 1.5.2; you can drop this version on top of it.)
+
+COPYRIGHT
+
+IDLE is covered by the standard Python copyright notice
+(http://www.python.org/doc/Copyright.html).
+
+
+New in IDLE 0.5 (2/15/2000)
+---------------------------
+
+Tons of stuff, much of it contributed by Tim Peters and Mark Hammond:
+
+- Status bar, displaying current line/column (Moshe Zadka).
+
+- Better stack viewer, using tree widget.  (XXX Only used by Stack
+Viewer menu, not by the debugger.)
+
+- Format paragraph now recognizes Python block comments and reformats
+them correctly (MH)
+
+- New version of pyclbr.py parses top-level functions and understands
+much more of Python's syntax; this is reflected in the class and path
+browsers (TP)
+
+- Much better auto-indent; knows how to indent the insides of
+multi-line statements (TP)
+
+- Call tip window pops up when you type the name of a known function
+followed by an open parenthesis.  Hit ESC or click elsewhere in the
+window to close the tip window (MH)
+
+- Comment out region now inserts ## to make it stand out more (TP)
+
+- New path and class browsers based on a tree widget that looks
+familiar to Windows users
+
+- Reworked script running commands to be more intuitive: I/O now
+always goes to the *Python Shell* window, and raw_input() works
+correctly.  You use F5 to import/reload a module: this adds the module
+name to the __main__ namespace.  You use Control-F5 to run a script:
+this runs the script *in* the __main__ namespace.  The latter also
+sets sys.argv[] to the script name
+
+
+New in IDLE 0.4 (4/7/99)
+------------------------
+
+Most important change: a new menu entry "File -> Path browser", shows
+a 4-column hierarchical browser which lets you browse sys.path,
+directories, modules, and classes.  Yes, it's a superset of the Class
+browser menu entry.  There's also a new internal module,
+MultiScrolledLists.py, which provides the framework for this dialog.
+
+
+New in IDLE 0.3 (2/17/99)
+-------------------------
+
+Most important changes:
+
+- Enabled support for running a module, with or without the debugger.
+Output goes to a new window.  Pressing F5 in a module is effectively a
+reload of that module; Control-F5 loads it under the debugger.
+
+- Re-enable tearing off the Windows menu, and make a torn-off Windows
+menu update itself whenever a window is opened or closed.
+
+- Menu items can now be have a checkbox (when the menu label starts
+with "!"); use this for the Debugger and "Auto-open stack viewer"
+(was: JIT stack viewer) menu items.
+
+- Added a Quit button to the Debugger API.
+
+- The current directory is explicitly inserted into sys.path.
+
+- Fix the debugger (when using Python 1.5.2b2) to use canonical
+filenames for breakpoints, so these actually work.  (There's still a
+lot of work to be done to the management of breakpoints in the
+debugger though.)
+
+- Closing a window that is still colorizing now actually works.
+
+- Allow dragging of the separator between the two list boxes in the
+class browser.
+
+- Bind ESC to "close window" of the debugger, stack viewer and class
+browser.  It removes the selection highlighting in regular text
+windows.  (These are standard Windows conventions.)
+
+
+New in IDLE 0.2 (1/8/99)
+------------------------
+
+Lots of changes; here are the highlights:
+
+General:
+
+- You can now write and configure your own IDLE extension modules; see
+extend.txt.
+
+
+File menu:
+
+The command to open the Python shell window is now in the File menu.
+
+
+Edit menu:
+
+New Find dialog with more options; replace dialog; find in files dialog.
+
+Commands to tabify or untabify a region.
+
+Command to format a paragraph.
+
+
+Debug menu:
+
+JIT (Just-In-Time) stack viewer toggle -- if set, the stack viewer
+automaticall pops up when you get a traceback.
+
+Windows menu:
+
+Zoom height -- make the window full height.
+
+
+Help menu:
+
+The help text now show up in a regular window so you can search and
+even edit it if you like.
+
+
+
+IDLE 0.1 was distributed with the Python 1.5.2b1 release on 12/22/98.
+
+======================================================================
+
+
+------------------------------METADATA------------------------------
+
+Metadata
+Name:
+/img_jo-2009-11-24.E01/vol_vol2/Program Files/OpenOffice.org 3/Basis/program/python-core-2.6.1/lib/idlelib/HISTORY.txt
+Type:
+File System
+MIME Type:
+text/plain
+Size:
+10317
+File Name Allocation:
+Allocated
+Metadata Allocation:
+Allocated
+Modified:
+2009-04-23 04:01:08 UTC
+Accessed:
+2009-11-20 19:38:02 UTC
+Created:
+2009-04-23 04:01:08 UTC
+Changed:
+2009-11-20 19:38:02 UTC
+MD5:
+4e839af94e6259e235053a02271a2e1f
+SHA-256:
+e303aae9b71809d136c6e53c93d1a1b3412b62f269904fed6f9220d3f49d731f
+Hash Lookup Results:
+UNKNOWN
+Internal ID:
+11252
+From The Sleuth Kit istat Tool:
+MFT Entry Header Values:
+Entry: 20992 Sequence: 1
+$LogFile Sequence Number: 105656546
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 278 (S-1-5-32-544)
+Last User Journal Update Sequence Number: 6862648
+Created: 2009-04-23 04:01:08.000000000 (UTC)
+File Modified: 2009-04-23 04:01:08.000000000 (UTC)
+MFT Modified: 2009-11-20 19:38:02.765625000 (UTC)
+Accessed: 2009-11-20 19:38:02.765625000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: HISTORY.txt
+Parent MFT Entry: 20979 Sequence: 1
+Allocated Size: 0 Actual Size: 0
+Created: 2009-11-20 19:38:02.765625000 (UTC)
+File Modified: 2009-11-20 19:38:02.765625000 (UTC)
+MFT Modified: 2009-11-20 19:38:02.765625000 (UTC)
+Accessed: 2009-11-20 19:38:02.765625000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0) Name: N/A Resident size: 72
+Type: $FILE_NAME (48-2) Name: N/A Resident size: 88
+Type: $DATA (128-3) Name: N/A Non-Resident size: 10317 init_size: 10317
+Starting address: 523626, length: 3 
+
+Name	Modified Time	Change Time	Access Time	Created Time	Size	Known	Location	MD5 Hash	SHA-256 Hash	MIME Type	Extension
+AUTOEXEC.BAT	2009-11-20 17:51:49 UTC	2009-11-20 17:51:49 UTC	2009-11-20 17:51:49 UTC	2009-11-20 17:51:49 UTC	0	unknown	/img_jo-2009-11-24.E01/vol_vol2/AUTOEXEC.BAT	d41d8cd98f00b204e9800998ecf8427e	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	application/octet-stream	bat
+idle.bat	2009-04-23 04:00:16 UTC	2009-11-20 19:38:02 UTC	2009-11-20 19:38:02 UTC	2009-04-23 04:00:16 UTC	127	unknown	/img_jo-2009-11-24.E01/vol_vol2/Program Files/OpenOffice.org 3/Basis/program/python-core-2.6.1/lib/idlelib/idle.bat	529f11e0e19217421f188d2866ed973e	01d1f66e53631d3c111f7baea3262fd573ec16694358e7eb57e35e9ff753a854	application/x-bat	bat
+fetch_macholib.bat	2009-04-23 04:00:04 UTC	2009-11-20 19:37:59 UTC	2009-11-20 19:37:59 UTC	2009-04-23 04:00:04 UTC	74	unknown	/img_jo-2009-11-24.E01/vol_vol2/Program Files/OpenOffice.org 3/Basis/program/python-core-2.6.1/lib/ctypes/macholib/fetch_macholib.bat	624b8e96a277d12eda9cca45f3dfaa11	cda880175e916ece98346966b5e081d91f420b5c7c0eeb8443690f2c79b49809	application/x-bat	bat
+idle.bat	2005-10-29 03:07:06 UTC	2009-11-23 18:23:39 UTC	2009-11-23 18:23:39 UTC	2005-10-29 03:07:06 UTC	130	unknown	/img_jo-2009-11-24.E01/vol_vol2/Python26/Lib/idlelib/idle.bat	88797d032366946a0786341d342f3b47	c248e1e0628b4a324bcea5fef2843217d7a634cf4b650a467e2edfcce605ab3b	application/x-bat	bat
+msdtcvtr.bat	2008-04-14 12:00:00 UTC	2009-11-20 17:47:55 UTC	2009-11-20 17:47:19 UTC	2009-11-20 17:47:19 UTC	19429	unknown	/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/system32/MsDtc/Trace/msdtcvtr.bat	a4e34518e44880ddc089fd918371f7ed	3a7564761f87e811e01798fe633aee15b21c8ee7414bb5560305e9aee15c1945	application/x-bat	bat
+
+
+@Echo Off
+Call "%SystemRoot%\Application Compatibility Scripts\SetPaths.Cmd"
+If "%_SETPATHS%" == "FAIL" Goto Done
+Rem This is for those scripts that don't need the RootDrive.
+If Not Exist "%SystemRoot%\System32\Usrlogn1.cmd" Goto cont0
+Cd /d "%SystemRoot%\Application Compatibility Scripts\Logon"
+Call "%SystemRoot%\System32\Usrlogn1.cmd"
+:cont0
+Rem Determine the user's home directory drive letter.  If this isn't
+Rem set, exit.
+Cd /d %SystemRoot%\"Application Compatibility Scripts"
+Call RootDrv.Cmd
+If "A%RootDrive%A" == "AA" End.Cmd
+Rem Map the User's Home Directory to a Drive Letter
+Net Use %RootDrive% /D >NUL: 2>&1
+Subst %RootDrive% "%HomeDrive%%HomePath%"
+if ERRORLEVEL 1 goto SubstErr
+goto AfterSubst
+:SubstErr
+Subst %RootDrive% /d >NUL: 2>&1
+Subst %RootDrive% "%HomeDrive%%HomePath%"
+:AfterSubst
+Rem Invoke each Application Script.  Application Scripts are automatically
+Rem added to UsrLogn2.Cmd when the Installation script is run.
+If Not Exist %SystemRoot%\System32\UsrLogn2.Cmd Goto Cont1
+Cd Logon
+Call %SystemRoot%\System32\UsrLogn2.Cmd
+:Cont1
+:Done
+
+Metadata
+Name:
+/img_jo-2009-11-24.E01/vol_vol2/WINDOWS/system32/usrlogon.cmd
+Type:
+File System
+MIME Type:
+application/x-bat
+Size:
+1161
+File Name Allocation:
+Allocated
+Metadata Allocation:
+Allocated
+Modified:
+2008-04-14 12:00:00 UTC
+Accessed:
+2009-11-20 17:47:20 UTC
+Created:
+2009-11-20 17:47:20 UTC
+Changed:
+2009-11-20 17:47:20 UTC
+MD5:
+f463bc45cd34ade54f801746b6d322b1
+SHA-256:
+2df74a7f5360f9d0325c325e9be580e76bccd588bdefd64da3129c785b96fc01
+Hash Lookup Results:
+UNKNOWN
+Internal ID:
+43219
+From The Sleuth Kit istat Tool:
+MFT Entry Header Values:
+Entry: 5118 Sequence: 2
+$LogFile Sequence Number: 38780298
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 302 (S-1-5-32-544)
+Created: 2009-11-20 17:47:20.436875000 (UTC)
+File Modified: 2008-04-14 12:00:00.000000000 (UTC)
+MFT Modified: 2009-11-20 17:47:20.452500000 (UTC)
+Accessed: 2009-11-20 17:47:20.436875000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: usrlogon.cmd
+Parent MFT Entry: 29 Sequence: 1
+Allocated Size: 4096 Actual Size: 1161
+Created: 2009-11-20 17:47:20.436875000 (UTC)
+File Modified: 2008-04-14 12:00:00.000000000 (UTC)
+MFT Modified: 2009-11-20 17:47:20.436875000 (UTC)
+Accessed: 2009-11-20 17:47:20.436875000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0) Name: N/A Resident size: 72
+Type: $FILE_NAME (48-4) Name: N/A Resident size: 90
+Type: $DATA (128-3) Name: N/A Non-Resident size: 1161 init_size: 1161
+Starting address: 1339864, length: 1 
+
+@echo off
+rem  Default global login script for the Telnet Server
+rem  In the default setup, this command script is executed when the
+rem  initial command shell is invoked.  It, in turn, will try to invoke
+rem  the individual user's login script.
+echo *===============================================================
+echo Welcome to Microsoft Telnet Server.
+echo *===============================================================
+cd /d %HOMEDRIVE%\%HOMEPATH%

@@ -1,0 +1,715 @@
+	Time	agent.name	rule.description	rule.id	syscheck.path
+	Apr 7, 2026 @ 22:26:43.789	WIN10
+	File deleted.
+	553
+	c:\espionage\system_cache.b64
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_deleted
+	
+full_log
+	File 'c:\espionage\system_cache.b64' deleted
+Mode: realtime
+	
+id
+	1775582803.4240308
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File deleted.
+	
+rule.firedtimes
+	2
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_deleted, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	553
+	
+rule.level
+	7
+	
+rule.mail
+	false
+	
+rule.mitre.id
+	T1070.004, T1485
+	
+rule.mitre.tactic
+	Defense Evasion, Impact
+	
+rule.mitre.technique
+	File Deletion, Data Destruction
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	deleted
+	
+syscheck.md5_after
+	1e5b7c87745a4decaf70ee79b59fca73
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 03:00:21.000
+	
+syscheck.path
+	c:\espionage\system_cache.b64
+	
+syscheck.sha1_after
+	b81ceecae255563bf3d8aec79f8ae729f30e95ee
+	
+syscheck.sha256_after
+	969b4afb7f0f95b2b1f0c4bd71d8ca9e7e33dafa93d519523b741217100e496f
+	
+syscheck.size_after
+	136
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:26:43.789
+	Apr 7, 2026 @ 22:26:43.748	WIN10
+	File deleted.
+	553
+	c:\espionage\client_database.txt
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_deleted
+	
+full_log
+	File 'c:\espionage\client_database.txt' deleted
+Mode: realtime
+	
+id
+	1775582803.4239031
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File deleted.
+	
+rule.firedtimes
+	1
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_deleted, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	553
+	
+rule.level
+	7
+	
+rule.mail
+	false
+	
+rule.mitre.id
+	T1070.004, T1485
+	
+rule.mitre.tactic
+	Defense Evasion, Impact
+	
+rule.mitre.technique
+	File Deletion, Data Destruction
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	deleted
+	
+syscheck.md5_after
+	0ace969e25b05d74f01140259925ecf7
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 02:59:00.000
+	
+syscheck.path
+	c:\espionage\client_database.txt
+	
+syscheck.sha1_after
+	4f6e5755e8b1eaa8f5988e9967bfb810bae44337
+	
+syscheck.sha256_after
+	4680ebb21a64f8b29ec50cdc36ab206a4cd31df9cd2afd1ef0dac2c810e30366
+	
+syscheck.size_after
+	57
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:26:43.748
+	Apr 7, 2026 @ 22:12:53.330	WIN10
+	File added to the system.
+	554
+	c:\espionage\system_cache.b64
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_new_entry
+	
+full_log
+	File 'c:\espionage\system_cache.b64' added
+Mode: realtime
+	
+id
+	1775581973.2607092
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File added to the system.
+	
+rule.firedtimes
+	2
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_added, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	554
+	
+rule.level
+	5
+	
+rule.mail
+	false
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	added
+	
+syscheck.md5_after
+	1e5b7c87745a4decaf70ee79b59fca73
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 03:00:21.000
+	
+syscheck.path
+	c:\espionage\system_cache.b64
+	
+syscheck.sha1_after
+	b81ceecae255563bf3d8aec79f8ae729f30e95ee
+	
+syscheck.sha256_after
+	969b4afb7f0f95b2b1f0c4bd71d8ca9e7e33dafa93d519523b741217100e496f
+	
+syscheck.size_after
+	136
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:12:53.330
+	Apr 7, 2026 @ 22:12:53.330	WIN10
+	File added to the system.
+	554
+	c:\espionage\system_cache.b64
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_new_entry
+	
+full_log
+	File 'c:\espionage\system_cache.b64' added
+Mode: realtime
+	
+id
+	1775581973.2607092
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File added to the system.
+	
+rule.firedtimes
+	2
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_added, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	554
+	
+rule.level
+	5
+	
+rule.mail
+	false
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	added
+	
+syscheck.md5_after
+	1e5b7c87745a4decaf70ee79b59fca73
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 03:00:21.000
+	
+syscheck.path
+	c:\espionage\system_cache.b64
+	
+syscheck.sha1_after
+	b81ceecae255563bf3d8aec79f8ae729f30e95ee
+	
+syscheck.sha256_after
+	969b4afb7f0f95b2b1f0c4bd71d8ca9e7e33dafa93d519523b741217100e496f
+	
+syscheck.size_after
+	136
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:12:53.330
+	Apr 7, 2026 @ 22:11:33.963	WIN10
+	File added to the system.
+	554
+	c:\espionage\client_database.txt
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_new_entry
+	
+full_log
+	File 'c:\espionage\client_database.txt' added
+Mode: realtime
+	
+id
+	1775581893.2346440
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File added to the system.
+	
+rule.firedtimes
+	1
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_added, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	554
+	
+rule.level
+	5
+	
+rule.mail
+	false
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	added
+	
+syscheck.md5_after
+	0ace969e25b05d74f01140259925ecf7
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 02:59:00.000
+	
+syscheck.path
+	c:\espionage\client_database.txt
+	
+syscheck.sha1_after
+	4f6e5755e8b1eaa8f5988e9967bfb810bae44337
+	
+syscheck.sha256_after
+	4680ebb21a64f8b29ec50cdc36ab206a4cd31df9cd2afd1ef0dac2c810e30366
+	
+syscheck.size_after
+	57
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:11:33.963
+	Apr 7, 2026 @ 22:11:33.963	WIN10
+	File added to the system.
+	554
+	c:\espionage\client_database.txt
+Expanded document
+View surrounding documents
+View single document
+	
+_index
+	wazuh-alerts-4.x-2026.04.07
+	
+agent.id
+	001
+	
+agent.ip
+	10.10.10.30
+	
+agent.name
+	WIN10
+	
+decoder.name
+	syscheck_new_entry
+	
+full_log
+	File 'c:\espionage\client_database.txt' added
+Mode: realtime
+	
+id
+	1775581893.2346440
+	
+input.type
+	log
+	
+location
+	syscheck
+	
+manager.name
+	SOC01
+	
+rule.description
+	File added to the system.
+	
+rule.firedtimes
+	1
+	
+rule.gdpr
+	II_5.1.f
+	
+rule.gpg13
+	4.11
+	
+rule.groups
+	ossec, syscheck, syscheck_entry_added, syscheck_file
+	
+rule.hipaa
+	164.312.c.1, 164.312.c.2
+	
+rule.id
+	554
+	
+rule.level
+	5
+	
+rule.mail
+	false
+	
+rule.nist_800_53
+	SI.7
+	
+rule.pci_dss
+	11.5
+	
+rule.tsc
+	PI1.4, PI1.5, CC6.1, CC6.8, CC7.2, CC7.3
+	
+syscheck.attrs_after
+	ARCHIVE
+	
+syscheck.event
+	added
+	
+syscheck.md5_after
+	0ace969e25b05d74f01140259925ecf7
+	
+syscheck.mode
+	realtime
+	
+syscheck.mtime_after
+	Apr 8, 2026 @ 02:59:00.000
+	
+syscheck.path
+	c:\espionage\client_database.txt
+	
+syscheck.sha1_after
+	4f6e5755e8b1eaa8f5988e9967bfb810bae44337
+	
+syscheck.sha256_after
+	4680ebb21a64f8b29ec50cdc36ab206a4cd31df9cd2afd1ef0dac2c810e30366
+	
+syscheck.size_after
+	57
+	
+syscheck.uid_after
+	S-1-5-32-544
+	
+syscheck.uname_after
+	Administrators
+	
+syscheck.win_perm_after.allowed
+	DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, DELETE, READ_CONTROL, WRITE_DAC, WRITE_OWNER, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES, READ_CONTROL, SYNCHRONIZE, READ_DATA, READ_EA, EXECUTE, READ_ATTRIBUTES, DELETE, READ_CONTROL, SYNCHRONIZE, READ_DATA, WRITE_DATA, APPEND_DATA, READ_EA, WRITE_EA, EXECUTE, READ_ATTRIBUTES, WRITE_ATTRIBUTES
+	
+syscheck.win_perm_after.name
+	Administrators, SYSTEM, Users, Authenticated Users
+	
+timestamp
+	Apr 7, 2026 @ 22:11:33.963

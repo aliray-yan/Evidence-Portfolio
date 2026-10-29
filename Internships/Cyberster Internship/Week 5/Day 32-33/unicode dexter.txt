@@ -1,0 +1,28 @@
+@jjjjjjjjh
+@jjj
+@jjjj
+jjjj
+@jjjj
+@jjjj
+@jjj
+@jjj
+@jjj
+@jjj
+Digit
+Java Security Plugin
+%s\%s
+javaplugin
+Java Security Plugin
+%s\%s\%s.exe
+Sun Java Security Plugin
+Sun Java Security Plugin
+Sun Java Security Plugin
+Sun Java Security Plugin
+Sun Java Security Plugin
+\Internet Explorer\iexplore.exe
+\Internet Explorer\iexplore.exe
+%s\%s
+%s\%s\%s.exe
+%s\%s
+%s\%s\%s.exe
+??????
