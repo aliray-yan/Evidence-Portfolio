@@ -1,0 +1,8 @@
+export type Role = 'citizen' | 'officer' | 'supervisor' | 'responder' | 'admin';
+export interface User { id: string; name: string; email: string; role: Role; demo: boolean; active: boolean }
+export interface Case { id: string; title: string; description: string; location: string; category: string; created_at: string; captured_at?: string; updated_at: string; synthetic: boolean; status: string; processing_status: string; processing_error?: string; privacy_status: string; risk_label: string; risk_score: number | null; assigned_to?: string; assigned_name?: string; version: number; duration?: number; owner_id: string; legal_hold: boolean; assessment: any; stages: any[]; evidence?: any[]; segments?: any[]; events?: any[]; notes?: any[]; reviews?: any[]; alerts?: any[]; audit?: any[]; summary?: any; can_retry?: boolean; related?: {id:string;title:string;status:string;processing_status:string;relation:string}[] }
+export const roleNames: Record<Role,string> = {citizen:'Citizen',officer:'Police officer',supervisor:'Supervisor / Internal affairs',responder:'Control room',admin:'System administrator'};
+export const risks = ['Normal','Low Risk','Ambiguous','High Risk','Emergency','Unassessed'];
+export const statusLabel = (value: string) => value.replaceAll('_',' ').replace(/^./,s=>s.toUpperCase());
+export const timecode = (seconds = 0) => `${Math.floor(seconds/60).toString().padStart(2,'0')}:${Math.floor(seconds%60).toString().padStart(2,'0')}`;
+export const dateTime = (value: string) => new Intl.DateTimeFormat('en-PK',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Karachi'}).format(new Date(value));

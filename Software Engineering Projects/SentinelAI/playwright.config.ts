@@ -1,0 +1,3 @@
+import { defineConfig } from '@playwright/test';
+import path from 'node:path';
+export default defineConfig({testDir:'./e2e',fullyParallel:false,workers:1,timeout:60000,retries:0,reporter:[['list'],['json',{outputFile:'test-results/e2e-results.json'}]],use:{baseURL:'http://127.0.0.1:8010',viewport:{width:1440,height:1000},launchOptions:{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||undefined},trace:'retain-on-failure',screenshot:'only-on-failure'},webServer:{command:'python -m uvicorn backend.main:app --host 127.0.0.1 --port 8010',url:'http://127.0.0.1:8010/api/public/config',reuseExistingServer:false,timeout:60000,env:{SENTINEL_DATA_DIR:path.resolve('.local/e2e-'+Date.now()),SENTINEL_DEMO:'1',SENTINEL_WORKERS:'1'} }});

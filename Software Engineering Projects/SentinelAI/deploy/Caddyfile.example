@@ -1,0 +1,9 @@
+# Example only: configure DNS/TLS and private access before use.
+# Disable SENTINEL_DEMO and set SENTINEL_SECURE_COOKIE=1.
+# Add your hostname to SENTINEL_ALLOWED_HOSTS.
+sentinel.example.org {
+    request_body {
+        max_size 101MB
+    }
+    reverse_proxy 127.0.0.1:8000
+}

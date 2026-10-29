@@ -1,0 +1,22 @@
+# PRD scenario coverage
+
+The PRD is the supplied “SentinelAI: Multimodal Police-Interaction Accountability and Safety System” document. The numbered scenarios below distinguish **rule/workflow regression** from **real perception validation**. No real police footage, personal data or external dispatch was used.
+
+| PRD scenarios | Executed coverage | Remaining limitation |
+| --- | --- | --- |
+| TC-01–07: routine challan, payment procedure, receipt, polite guidance, refusal of money | Parameterized text rules verify these routine examples do not independently become a bribery/high-risk flag. Official-procedure and receipt-context scenarios also exist in the demo. | No trained speech/tone/visual interpretation was evaluated. Rule output on supplied text is not an accuracy claim on video. |
+| TC-08, 10, 11, 13, 14: indirect requests, neutral FIR, later receipt, status-pressure phrase | Phrase tests require Ambiguous/human review; scripted FIR, indirect-request and receipt false-positive examples are inspectable. | Semantic intent, sarcasm, tone and multilingual transcription are not validated. Later receipt is presented for human context; no model claims to understand it. |
+| TC-09: finger-rubbing without money speech | Gesture-only annotation test stays Ambiguous; corresponding synthetic case has a timestamped scripted observation. | No hand-landmark or gesture inference is installed. |
+| TC-12, 15–22: aggressive context, pressure, undocumented cash, blocking, abusive speech | Individual known phrases stay Ambiguous. Synthetic aligned speech/body/context signals can produce High Risk; tests cover alignment, temporal separation and one-modality caps. A payment concern and coercion case exercise review/rejection/escalation. | Automatically recognizing aggression, repeated pressure, handovers, discriminatory speech or a specific coercive intent remains unavailable. These scenarios are only partially covered. |
+| TC-23–27: threats, surrounding, weapon-like object, fight, fall/push | Synthetic officer-danger/weapon/violence annotations exercise safety prioritization; API/browser tests exercise local alerts, acknowledgement and response history. | No real threat, crowd, weapon, fight, fall or injury detector. A matching workflow is not a successful recognition test. |
+| TC-28: raised voice but controlled situation | No autonomous dispatch exists. Unrecognized real uploads remain Unassessed. | No tone/volume classifier, so the expected low/medium classification is not established. |
+| TC-29: explicit officer emergency keyword | Known safety phrase rule and synthetic keyword case route to high-priority human review. Safety source references are retained even when another window has a higher numeric score. | Real microphone/ASR recognition and operational latency are unvalidated; no emergency service delivery. |
+| TC-30–32: CCTV fight, weapon object, screaming/glass | Shared synthetic alert/evidence workflow supports demonstrations of provided annotations. | CCTV ingestion, object/violence inference and audio anomaly classification are unimplemented. |
+| TC-33: normal crowd | Routine text rule and missing-modality tests ensure missing detection is not advertised as a safe real-world finding. | No crowd-motion perception benchmark. |
+| TC-34: road accident | Human escalation can produce a local review alert. | No accident detector or routing integration with an emergency department. |
+
+## Demonstration inventory
+
+The repeatable seed contains ten fictional scenarios, including official challan procedure, ambiguous FIR/indirect phrasing, receipt context, gesture-only ambiguity, unofficial-payment concern, coercion and officer/public safety exercises. Speaker labels in these records are authored roles, not inferred identities. Playback is a generated silent title card; it is not a video reenactment of the transcript. Notes, events, review history and artifacts exist as database records and can be exercised through the application.
+
+The PRD asks for at least 50 scenario evaluations and quality metrics. **That deliverable is not complete.** There are ten demo cases and a larger technical test suite with parameterized examples. These counts must not be described as 50 consented video scenarios or used to fabricate precision, recall, accuracy or F1. Follow [the evaluation procedure](AI_LIMITATIONS.md#evaluation-procedure) to complete the research component.
