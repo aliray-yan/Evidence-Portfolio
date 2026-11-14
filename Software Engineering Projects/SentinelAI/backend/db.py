@@ -21,6 +21,7 @@ def encode(value):
 
 
 DEFAULT_SETTINGS = {
+    "maintenance": {"retention_enabled": False, "interval_hours": 24},
     "retention": {"days": 30, "quarantine_days": 1, "preserve_original": False},
     "thresholds": {"low": 10, "ambiguous": 30, "high": 60, "emergency": 85,
                    "weights": {"speech": .30, "gesture": .15, "body": .15, "context": .25, "temporal": .15}},

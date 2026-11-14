@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "purpose": "Compare original trained execution after bounding decoder concurrency; do not assume quantization improves CPU speed",
+  "model": "exchange-dino-gru-v4-resume1-20261111",
+  "runtime": "Original Torch eager encoder and head; no graph conversion",
+  "rounds": [1, 2, 3],
+  "output_pattern": ".local/exchange-research/external-v4-native-decoder1-roundN-20261113.json",
+  "reference": ".local/exchange-research/external-v4-dino-resume1-20261111.json",
+  "conditions": "AC power; two Torch threads; one OpenCV and FFmpeg decoder thread; no concurrent tests or inference",
+  "gate": "All three rounds below 250ms p95, all four controls correct, all 138 timestamps and flags unchanged, maximum score difference <= 1e-4",
+  "limits": "Reused controls; no threshold tuning. Original INT8 and FP32 failures remain recorded. An application load test is still required even if these checks pass."
+}

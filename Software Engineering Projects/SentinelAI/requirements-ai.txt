@@ -1,0 +1,13 @@
+# Optional local hand / pose inference. No runtime model downloads.
+# Later prebuilt MediaPipe releases include non-optional usage telemetry.
+# See docs/LOCAL_AI.md before changing this tested runtime boundary.
+mediapipe==0.10.21
+numpy>=1.26,<2
+opencv-contrib-python>=4.10,<4.12
+jax>=0.4.35,<0.5
+jaxlib>=0.4.35,<0.5
+protobuf>=4.25.3,<5
+huggingface-hub>=0.21,<1
+onnxruntime>=1.23,<2
+tokenizers>=0.22,<1
+scipy>=1.10,<2

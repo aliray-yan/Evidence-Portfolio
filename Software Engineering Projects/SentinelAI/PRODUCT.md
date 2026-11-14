@@ -17,13 +17,13 @@ Support fair, evidence-centered human review of Pakistani police interactions an
 Local FYP demonstration with explicitly synthetic scenarios; consent-based uploads. The primary desktop task is investigation; mobile supports capture and essential actions.
 
 ## Capabilities and Constraints
-The PRD is authoritative. Model output, simulated fixtures, observed evidence, unavailable analysis, and human decisions must remain distinguishable. Real model evaluation requires an authorized labeled dataset. External delivery requires an actual configured integration.
+The PRD establishes the product intent; the user's later vision-only requirement supersedes its speech and multimodal classification requirements. New capture does not request a microphone. Model output, simulated fixtures, observed evidence, unavailable analysis, and human decisions must remain distinguishable. Real model evaluation requires an authorized labeled dataset. External delivery requires an actual configured integration.
 
 ## Brand Commitments
 Deep navy/slate navigation, neutral work surfaces, restrained teal actions, amber uncertainty, red urgent safety states. Consistent icons, readable density, keyboard access, responsive layouts.
 
 ## Evidence on Hand
-The supplied October 2026 PRD. No source code, existing media, trained weights, real footage, or production credentials.
+At project inception only the October 2026 PRD was supplied. The project now contains a working application, a user-trained RWF fight bundle, attributed research data and experimental transfer models. Downloaded models/media remain in ignored local storage. Three learned transfer models failed detection screening. The fourth completed training and passed the reused detection checks but failed the CPU speed limit; it remains disabled. See [the current project handover](<project info documentation.md>) for sources, validation and remaining work. Production credentials and real police data are not part of the source tree.
 
 ## Product Principles
 - Evidence references precede conclusions.

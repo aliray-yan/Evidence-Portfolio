@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "scope": "Fresh authored development fixtures, not an independent accuracy benchmark. No real police footage or trained-model predictions are embedded.",
+  "clips": [
+    {"id":"EN-01","title":"Official online payment","expected":"no_payment_concern","lines":["The fine is thirty dollars. Please pay the fine online and keep your official receipt.","Thank you. I will use the official payment website."]},
+    {"id":"EN-02","title":"Personal cash and waived ticket","expected":"review","lines":["Pay me cash and I will make the ticket disappear. Keep this off the record.","I want to follow the official process. Please explain that request."]},
+    {"id":"EN-03","title":"Counter payment with receipt","expected":"no_payment_concern","lines":["The published fee is fifteen dollars. Please pay at the counter.","The cashier will give you an official receipt for the exact amount."]},
+    {"id":"EN-04","title":"Direct payment without receipt","expected":"review","lines":["You can pay me directly. No receipt is needed.","Why would I pay you instead of the cashier? Please explain."]},
+    {"id":"EN-05","title":"Explicit refusal","expected":"no_payment_concern","lines":["I will never accept a bribe. Do not offer a bribe.","I understand. Please give me the official receipt and payment instructions."]},
+    {"id":"EN-06","title":"Conditional payment demand","expected":"review","lines":["Give me money or I will hold your permit until tomorrow.","Please explain the published fee. I would like this request reviewed."]},
+    {"id":"EN-07","title":"Reported allegation","expected":"review","lines":["He said pay me cash, so I am reporting what happened earlier.","We will record your account. We have not established what the original speaker intended."]},
+    {"id":"EN-08","title":"Emergency assistance request","expected":"safety_review","lines":["Officer down. Send an ambulance. We need medical assistance now.","I am checking the location and following the emergency procedure."]},
+    {"id":"EN-09","title":"Ordinary cash purchase","expected":"no_payment_concern","lines":["I paid cash at the grocery shop this morning and collected my receipt.","Thank you for explaining. Please keep the documents for your records."]},
+    {"id":"EN-10","title":"Indirect personal benefit","expected":"review","lines":["Maybe you could do something for me, and we can forget about the ticket.","What do you mean by that? Please explain the official procedure."]}
+  ]
+}

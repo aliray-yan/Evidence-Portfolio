@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-07",
+  "scope": "Synthetic local browser video only; actual installed violence/person/hand models. Not Android/Wi-Fi or accuracy validation.",
+  "elapsed_seconds": 601.58,
+  "playback_seconds": 600.111,
+  "playback_ratio": 0.9975580970112038,
+  "completed": true,
+  "failure": null,
+  "violence_inference_seconds": {
+    "count": 96,
+    "median": 2.938,
+    "p95": 4.6015,
+    "maximum": 6
+  },
+  "violence_result_latency_seconds": {
+    "count": 96,
+    "median": 3.0,
+    "p95": 4.6325,
+    "maximum": 32.64
+  },
+  "sampling_error_seconds": {
+    "count": 96,
+    "median": 0.0346,
+    "p95": 0.0443,
+    "maximum": 0.0625
+  },
+  "exchange_sampled_last_call_seconds": {
+    "count": 51,
+    "median": 0.485,
+    "p95": 3.0005,
+    "maximum": 4.359
+  },
+  "receiver_receive_to_callback_seconds": {
+    "count": 8371,
+    "median": 2.4772,
+    "p95": 2.4981,
+    "maximum": 5.2021
+  },
+  "camera_capture_time_available": false,
+  "source_rtp_samples": 1536,
+  "source_rtp_matches": 1454,
+  "final_counters": {
+    "decoded_frames": 8049,
+    "decode_errors": 0,
+    "bridge_dropped": 434,
+    "skipped_video_windows": 25,
+    "skipped_exchange_frames": 317,
+    "video_windows": 96,
+    "exchange_frames": 722,
+    "video_pending": 0,
+    "exchange_pending": 0,
+    "ring_bytes": 9607672
+  },
+  "final_view": {
+    "time": 601.336,
+    "rate": 1,
+    "totalVideoFrames": 8714,
+    "droppedVideoFrames": 3
+  },
+  "resources": {
+    "backend_rss_mb": {
+      "count": 53,
+      "median": 672.2,
+      "p95": 720.38,
+      "maximum": 794.6
+    },
+    "backend_cpu_percent": {
+      "count": 53,
+      "median": 37.9,
+      "p95": 52.02,
+      "maximum": 56.4
+    },
+    "system_ram_percent": {
+      "count": 53,
+      "median": 76.3,
+      "p95": 88.22,
+      "maximum": 89.9
+    },
+    "system_available_mb": {
+      "count": 53,
+      "median": 1903.4,
+      "p95": 2199.64,
+      "maximum": 2234.9
+    }
+  },
+  "limits": [
+    "Synthetic scene contains no people; not worst-case hand/person analysis, not accuracy validation.",
+    "Concurrent host activity was not controlled.",
+    "Exchange timings sampled every approximately ten seconds are not all-inference latency distribution.",
+    "Camera-to-display latency cannot be derived without camera capture timestamps.",
+    "Initial failed run remains in vision-first-failed-test.json."
+  ],
+  "browser_test_passed": true,
+  "requested_buffer_ms": 2500,
+  "resolution": [
+    640,
+    360
+  ],
+  "target_fps": 15
+}

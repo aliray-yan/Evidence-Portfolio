@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "purpose": "Three declared AC-powered actual-video timing rounds after battery slowdown",
+  "model": "exchange-dino-gru-v4-resume1-20261111",
+  "runtime": "exchange-dino-int8-v1",
+  "rounds": [1, 2, 3],
+  "output_pattern": ".local/exchange-research/external-v4-int8-ac-roundN-20261113.json",
+  "controls_in_order": ["cash", "document", "handshake", "normal"],
+  "threshold": 0.60,
+  "sample_hz": 4,
+  "window_frames": 8,
+  "torch_threads": 2,
+  "openvino_threads": 2,
+  "opencv_threads": 1,
+  "p95_limit_seconds": 0.25,
+  "percentile": "nearest rank, every scored window; all three runs must pass",
+  "changes": "Charger connected by owner; OpenCV single-thread matches live receiver. No weights, pixels, sample indices or threshold changes.",
+  "preserved_failure": "screening-v4-int8-battery-mixed-20261113.json",
+  "limitations": ["AC and battery results are distinct conditions.", "Reused controls are not independent validation.", "Standalone inference timing excludes transport and concurrent fight inference.", "Passing requires separate actual application and sustained-stream verification."]
+}

@@ -5,7 +5,7 @@ import tempfile
 import cv2
 import numpy as np
 from .db import uid, now, encode
-from .intelligence import PHRASES, fuse
+from .intelligence import PHRASES
 from .pipeline import create_alert, run_ffmpeg, STAGES
 
 DEMO_USERS = [
@@ -98,7 +98,7 @@ def seed(db, storage, config):
                 case_id = f"SA-26-{1042-index}"
                 stamp = (datetime.now(timezone.utc)-timedelta(hours=index*17+1)).isoformat()
                 con.execute("INSERT INTO cases(id,title,description,owner_id,location,category,created_at,updated_at,synthetic,status,processing_status,privacy_status,assigned_to,duration) VALUES (?,?,?,?,?,?,?,?,1,'awaiting_review','demo','synthetic_no_people',?,24)",
-                            (case_id,title,"Synthetic Pakistani interaction exercise. Transcript and event annotations are authored fixtures; the video is a timed title card, not a depiction of the events.",owner,location,category,stamp,stamp,"demo-supervisor"))
+                            (case_id,title,"Archived multimodal-era Pakistani exercise, retained to test historical evidence access. Transcript and event annotations are authored fixtures; the video is a timed title card, not a depiction of the events.",owner,location,category,stamp,stamp,"demo-supervisor"))
                 media_id = storage.put(con,case_id,"video",video_data,"video/mp4","synthetic",end=24)
                 storage.put(con,case_id,"frame",frame_data,"image/jpeg","synthetic",start=8)
                 segments=[]
@@ -111,7 +111,10 @@ def seed(db, storage, config):
                     event={"id":uid("evt_"),"start":start,"end":start+3,"kind":kind,"title":event_title,"detail":detail,"confidence":None,"source":"synthetic","references":[s["id"] for s in segments if abs(s["start"]-start)<=3],"signals":signals}
                     events.append(event)
                     con.execute("INSERT INTO events VALUES (?,?,?,?,?,?,?,?,?,?,?)",(event["id"],case_id,start,start+3,kind,event_title,detail,None,"synthetic",encode(event["references"]),encode(signals)))
-                assessment=fuse(events,policy["value"],policy["version"])
+                labels=[('High Risk',76.5),('Emergency',90),('Ambiguous',30),('Normal',3),('Ambiguous',30),('Ambiguous',30),('High Risk',74),('Emergency',90),('Low Risk',15),('Emergency',90)]
+                label,score=labels[index]
+                assessment={'label':label,'score':score,'review_required':label in ('High Risk','Emergency','Ambiguous'),'references':[e['id'] for e in events],
+                    'contributions':{},'method':'archived-scripted-demo','version':1,'limitations':'Archived multimodal-era authored fixture. No current audio analysis or inference.'}
                 assessment.update({"policy":policy["value"],"missing":["Real encounter footage", "Real audio", "Genuine model predictions"],"synthetic":True})
                 stages=[{"name":name,"status":"simulated","detail":"Authored demo fixture; not an inference job.","at":stamp} for name in STAGES]
                 con.execute("UPDATE cases SET assessment=?,risk_label=?,risk_score=?,stages=? WHERE id=?",(encode(assessment),assessment["label"],assessment["score"],encode(stages),case_id))

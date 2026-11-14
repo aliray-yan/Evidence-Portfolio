@@ -2,12 +2,14 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import hashlib
+import asyncio
 import html
 import json
 import secrets
 import sqlite3
 import time
 from cryptography.fernet import InvalidToken
+from pydantic import ValidationError
 from urllib.parse import urlparse
 from fastapi import FastAPI, Depends, File, Form, HTTPException, Query, Request, UploadFile
 from fastapi.responses import JSONResponse, Response, FileResponse
@@ -17,10 +19,19 @@ from .config import Config, ROOT
 from .db import Database, now, uid, encode
 from .storage import Storage
 from .security import user, require, scope, case_access, public_user, token_hash, verify_password, hash_password, REVIEWERS, RESPONDERS
-from .schemas import Login, DemoLogin, Note, Decision, AlertAction, UserCreate, UserUpdate, Device, Phrase, SettingsUpdate, Reason, Hold
+from .schemas import Login, DemoLogin, Note, Decision, AlertAction, UserCreate, UserUpdate, Device, Phrase, SettingsUpdate, Reason, Hold, PrivacyDecision
 from .pipeline import Processor, STAGES, create_alert
 from .intelligence import capabilities
 from .seed import seed
+from .submission import Submission, accept_submission
+from .uploads import router as upload_router, sweep_expired
+from .retention import candidates as retention_candidates, purge as purge_retention
+from .notifications import router as notification_router
+from .reading_assistant import router as reading_router
+from .evidence_search import router as search_router
+from .test_videos import router as test_video_router
+from .live import router as live_router, Previews, sweep as sweep_live, live_peers
+from .stream_transport import Streaming, router as stream_router
 
 
 def case_dict(row):
@@ -34,11 +45,19 @@ def case_dict(row):
 def detail(con, actor, case_id):
     case = case_dict(case_access(con, actor, case_id))
     case["evidence"] = [dict(r) for r in con.execute("SELECT id,kind,mime,size,sha256,source,start,end,created_at FROM evidence WHERE case_id=? AND kind!='original'", (case_id,))]
+    if actor["role"] not in REVIEWERS and case["privacy_status"] != "faces_reviewed":
+        case["evidence"] = [e for e in case["evidence"] if e["kind"] != "face_preview"]
+    if actor['role'] not in REVIEWERS:
+        case['evidence'] = [e for e in case['evidence'] if e['kind'] not in ('live_review','live_finding')]
     case["segments"] = [dict(r) for r in con.execute("SELECT * FROM segments WHERE case_id=? ORDER BY start", (case_id,))]
     case["events"] = [dict(r) for r in con.execute("SELECT * FROM events WHERE case_id=? ORDER BY start", (case_id,))]
     for event in case["events"]:
         event["references"] = json.loads(event.pop("references_json"))
         event["signals"] = json.loads(event["signals"])
+        if event['kind']=='visual_exchange':
+            record=next((e for e in case['assessment'].get('exchange',{}).get('events',[]) if e['start']==event['start'] and e['end']==event['end']),{})
+            event['boxes']=record.get('boxes',[])
+            event['confidence_type']=record.get('confidence_type','heuristic temporal support')
     case["notes"] = [dict(r) for r in con.execute("SELECT n.*,u.name AS author FROM notes n JOIN users u ON u.id=n.actor_id WHERE n.case_id=? ORDER BY created_at DESC", (case_id,))]
     case["reviews"] = [dict(r) for r in con.execute("SELECT r.*,u.name AS author FROM reviews r JOIN users u ON u.id=r.actor_id WHERE r.case_id=? ORDER BY created_at DESC", (case_id,))]
     case["alerts"] = [dict(r) for r in con.execute("SELECT * FROM alerts WHERE case_id=?", (case_id,))]
@@ -61,17 +80,92 @@ def create_app(config=None):
     storage = Storage(config)
     db = Database(config.data_dir / "sentinel.db", storage.audit_key)
     processor = Processor(db, storage, config)
+    previews = Previews()
+    streaming = Streaming(config, db, storage, processor)
 
     @asynccontextmanager
     async def lifespan(app):
         seed(db, storage, config)
+        sweep_expired(db)
+        selection = {"configured": bool(config.violence_model)}
+        from .ai_models import model_identity
+        selection['components'] = {}
+        for component in ('gesture_model','pose_model','face_model','object_model','exchange_model','learned_exchange_model','retrieval_model'):
+            path = getattr(config, component)
+            if path:
+                try:
+                    selection['components'][component] = model_identity(path)
+                except (OSError, ValueError):
+                    selection['components'][component] = {'invalid': True}
+        if config.violence_model:
+            try:
+                source_manifest = json.loads((Path(config.violence_model) / "manifest.json").read_text(encoding="utf-8"))
+                selection.update(version=source_manifest.get("version"), sha256=source_manifest.get("sha256"))
+            except (OSError, ValueError):
+                selection["invalid"] = True
+        with db.transaction() as con:
+            sweep_live(con, db, previews, restart=True)
+            for index in con.execute("SELECT case_id FROM search_indexes WHERE status='running'").fetchall():
+                db.audit(con, None, 'evidence_index.interrupted', index['case_id'])
+            con.execute("UPDATE search_indexes SET status='queued',processed=0,updated_at=? WHERE status='running'", (now(),))
+            for guide in con.execute("SELECT id,case_id FROM reading_guides WHERE status='running'").fetchall():
+                db.audit(con, None, 'reading_guide.interrupted', guide['case_id'], {'guide_id': guide['id']})
+            con.execute("UPDATE reading_guides SET status='failed',error_code='interrupted',updated_at=? WHERE status='running'", (now(),))
+            interrupted=con.execute("SELECT alert_id FROM outbound_notifications WHERE status='sending'").fetchall()
+            for entry in interrupted:
+                con.execute("UPDATE notifications SET status='delivery_unknown',detail='Server restarted during delivery. Provider receipt is unknown; any manual retry reuses the original idempotency key.' WHERE alert_id=? AND channel='external'",(entry['alert_id'],))
+            con.execute("UPDATE outbound_notifications SET status='delivery_unknown',error_type='interrupted' WHERE status='sending'")
+            previous = con.execute("SELECT value FROM settings WHERE key='model_activation'").fetchone()
+            if previous is None or previous[0] != encode(selection):
+                con.execute("INSERT INTO settings(key,value) VALUES ('model_activation',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value,version=version+1", (encode(selection),))
+                db.audit(con, None, "model.activation", "vision_model", selection)
+        streaming.start()
         if config.workers:
             processor.start()
-        yield
-        processor.stop()
+        async def expire_previews():
+            from starlette.concurrency import run_in_threadpool
+            def expire():
+                previews.current('')
+                with db.transaction() as con:
+                    sweep_live(con, db, previews)
+                    with previews.lock:
+                        live_peers(con, previews)
+                    cutoff = (datetime.now(timezone.utc)-timedelta(minutes=60)).isoformat()
+                    for item in con.execute("SELECT * FROM evidence WHERE kind='live_review' AND created_at<?", (cutoff,)).fetchall():
+                        storage.delete(item)
+                        con.execute('DELETE FROM evidence WHERE id=?', (item['id'],))
+                        db.audit(con, None, 'live.clear_buffer_expired', item['case_id'])
+                streaming.sweep()
+            while True:
+                await asyncio.sleep(1)
+                await run_in_threadpool(expire)
+        cleanup = asyncio.create_task(expire_previews())
+        try:
+            yield
+        finally:
+            cleanup.cancel()
+            try:
+                await cleanup
+            except asyncio.CancelledError:
+                pass
+            with previews.lock:
+                previews.frames.clear()
+                previews.peers.clear()
+            streaming.stop()
+            processor.stop()
 
     app = FastAPI(title="SentinelAI", version="1.0.0", lifespan=lifespan, docs_url="/api/docs" if config.demo else None, redoc_url=None)
     app.state.db, app.state.storage, app.state.config, app.state.processor = db, storage, config, processor
+    app.state.search = processor.search
+    app.state.previews = previews
+    app.state.streaming = streaming
+    app.include_router(live_router)
+    app.include_router(stream_router)
+    app.include_router(upload_router)
+    app.include_router(notification_router)
+    app.include_router(reading_router)
+    app.include_router(search_router)
+    app.include_router(test_video_router)
     app.add_middleware(TrustedHostMiddleware, allowed_hosts=list(config.allowed_hosts))
 
     @app.middleware("http")
@@ -93,7 +187,7 @@ def create_app(config=None):
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["X-Frame-Options"] = "DENY"
         response.headers["Referrer-Policy"] = "no-referrer"
-        response.headers["Permissions-Policy"] = "camera=(self), microphone=(self), geolocation=(self)"
+        response.headers["Permissions-Policy"] = "camera=(self), microphone=(), geolocation=(self)"
         if request.url.path.startswith("/api"):
             response.headers["Cache-Control"] = "no-store"
         response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; media-src 'self' blob:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
@@ -107,7 +201,7 @@ def create_app(config=None):
 
     @app.get("/api/public/config")
     def public_config():
-        return {"demo": config.demo, "max_upload_mb": config.max_upload // 1024**2, "max_duration_seconds": config.max_duration}
+        return {"demo": config.demo, "test_uploads": config.test_uploads, "max_upload_mb": config.max_upload // 1024**2, "max_duration_seconds": config.max_duration}
 
     @app.get("/api/auth/demo-users")
     def demo_users(request: Request):
@@ -218,10 +312,10 @@ def create_app(config=None):
             distribution={k:sum(c["risk_label"]==k for c in rows) for k in ["Normal","Low Risk","Ambiguous","High Risk","Emergency","Unassessed"]}
             days=[(datetime.now(timezone.utc)-timedelta(days=i)).date().isoformat() for i in range(6,-1,-1)]
             trend=[{"date":d,"total":sum(c["created_at"].startswith(d) for c in rows),"review":sum(c["created_at"].startswith(d) and c["risk_label"] in ("Ambiguous","High Risk","Emergency") for c in rows)} for d in days]
-            alerts=[dict(r) for r in con.execute(f"SELECT a.*,c.title,c.location,c.synthetic FROM alerts a JOIN cases c ON c.id=a.case_id WHERE {where} AND a.status!='resolved' ORDER BY a.created_at DESC",params)]
+            alerts=[dict(r) for r in con.execute(f"SELECT a.*,c.title,c.location,c.synthetic,c.test_recording FROM alerts a JOIN cases c ON c.id=a.case_id WHERE {where} AND a.status!='resolved' ORDER BY a.created_at DESC",params)]
             latencies=[]
             for c in rows:
-                if c["synthetic"] or c["processing_status"] not in ("partial","completed"):
+                if c["synthetic"] or c["test_recording"] or c["processing_status"] not in ("partial","completed"):
                     continue
                 stages=c["stages"]
                 if stages:
@@ -230,7 +324,7 @@ def create_app(config=None):
             return {"total":len(rows),"awaiting_review":sum(c["status"] in ("awaiting_review","appealed","escalated") for c in rows),"active_alerts":len(alerts),"failed":sum(c["processing_status"]=='failed' for c in rows),"incomplete":sum(c["processing_status"] in ('failed','partial','queued','processing') for c in rows),"distribution":distribution,"trend":trend,"recent":rows[:6],"alerts":alerts[:4],"processing_seconds":round(sum(latencies)/len(latencies),1) if latencies else None,"processing_samples":len(latencies)}
 
     @app.post("/api/cases/upload")
-    async def upload(request: Request, file: UploadFile=File(...), title: str=Form(...), location: str=Form(""), consent: bool=Form(False), category: str=Form("interaction"), captured_at: str=Form(""), latitude: float|None=Form(None), longitude: float|None=Form(None), parent_case_id: str=Form(""), actor=Depends(user)):
+    async def upload(request: Request, file: UploadFile=File(...), title: str=Form(...), location: str=Form(""), consent: bool=Form(False), category: str=Form("interaction"), captured_at: str=Form(""), latitude: float|None=Form(None), longitude: float|None=Form(None), parent_case_id: str=Form(""), test_recording: bool=Form(False), actor=Depends(user)):
         require(actor,{"citizen","officer","supervisor","admin"})
         title,location=title.strip(),location.strip()
         if not consent:
@@ -258,38 +352,15 @@ def create_app(config=None):
         data=b"".join(chunks)
         if len(data)<16 or not ((ext==".mp4" and data[4:8]==b"ftyp") or (ext==".webm" and data[:4]==b"\x1aE\xdf\xa3")):
             raise HTTPException(415,"File contents do not match a supported video container.")
-        digest=hashlib.sha256(data).hexdigest()
+        try:
+            metadata = Submission(title=title, location=location, consent=consent, category=category,
+                                  captured_at=captured_at, latitude=latitude, longitude=longitude, parent_case_id=parent_case_id, test_recording=test_recording)
+        except ValidationError:
+            raise HTTPException(422, "Check the case details, capture time and location before submitting.")
         with db.transaction() as con:
-            owner_id=actor["id"]
-            if parent_case_id:
-                parent=case_access(con,actor,parent_case_id)
-                if parent["status"]!='evidence_requested':
-                    raise HTTPException(409,"Additional evidence must be requested on this case before linking a recording.")
-                owner_id=parent["owner_id"]
-            def link_recording(child_id):
-                if not parent_case_id:
-                    return
-                if child_id==parent_case_id:
-                    raise HTTPException(409,"This is the original recording. Submit a different recording as additional evidence.")
-                added=con.execute("INSERT OR IGNORE INTO case_links VALUES (?,?,?,?)",(parent_case_id,child_id,actor["id"],now())).rowcount
-                if added:
-                    con.execute("UPDATE cases SET version=version+1,updated_at=? WHERE id=?",(now(),parent_case_id))
-                    db.audit(con,actor["id"],"evidence.supplement_received",parent_case_id,{"related_case_id":child_id})
-            existing=con.execute("SELECT id FROM cases WHERE owner_id=? AND sha256=?",(owner_id,digest)).fetchone()
-            if existing:
-                link_recording(existing[0])
-                db.audit(con,actor["id"],"upload.duplicate",existing[0])
-                return {"id":existing[0],"duplicate":True}
-            case_id="SA-"+datetime.now().strftime("%y")+"-"+secrets.token_hex(4).upper()
-            stamp=now()
-            stages=[{"name":STAGES[0],"status":"completed","at":stamp,"detail":"Encrypted source received. Consent declared by uploader."}]
-            con.execute("INSERT INTO cases(id,title,owner_id,location,latitude,longitude,category,created_at,captured_at,updated_at,sha256,stages) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(case_id,title,owner_id,location,latitude,longitude,category,stamp,captured_at or None,stamp,digest,encode(stages)))
-            link_recording(case_id)
-            storage.put(con,case_id,"original",data,"video/mp4" if ext==".mp4" else "video/webm","upload")
-            con.execute("INSERT INTO jobs(id,case_id,created_at,updated_at) VALUES (?,?,?,?)",(uid("job_"),case_id,stamp,stamp))
-            db.audit(con,actor["id"],"upload.received",case_id,{"bytes":total,"consent":True})
+            result = accept_submission(con, db, storage, actor, metadata, data, ext, force_test=config.test_uploads)
         processor.wake_event.set()
-        return JSONResponse({"id":case_id,"duplicate":False},status_code=201)
+        return JSONResponse(result, status_code=200 if result["duplicate"] else 201)
 
     @app.get("/api/cases/{case_id}")
     def get_case(case_id: str,actor=Depends(user)):
@@ -354,6 +425,7 @@ def create_app(config=None):
                 raise HTTPException(409,"No retryable source remains. Upload a new recording.")
             con.execute("UPDATE jobs SET status='queued',updated_at=? WHERE case_id=?",(now(),case_id))
             con.execute("UPDATE cases SET processing_status='queued',processing_error=NULL WHERE id=?",(case_id,))
+            con.execute('DELETE FROM search_indexes WHERE case_id=?', (case_id,))
             db.audit(con,actor["id"],"processing.retry",case_id)
         processor.wake_event.set()
         return {"ok":True}
@@ -365,7 +437,15 @@ def create_app(config=None):
             if not evidence:
                 raise HTTPException(404,"Evidence is unavailable or access is restricted.")
             c=case_access(con,actor,evidence["case_id"])
-            if c["privacy_status"] not in ('full_frame_blurred','synthetic_no_people') or c["status"]=='deleted':
+            if evidence['kind'] == 'live_finding':
+                require(actor, REVIEWERS)
+            if evidence["kind"] == 'face_preview' and c["privacy_status"] != 'faces_reviewed' and actor["role"] not in REVIEWERS:
+                raise HTTPException(403,"Selective redaction is restricted until privacy review is approved.")
+            if evidence['kind'] == 'live_review':
+                require(actor, REVIEWERS)
+                if datetime.fromisoformat(evidence['created_at']) < datetime.now(timezone.utc)-timedelta(minutes=60):
+                    raise HTTPException(410, 'The clear live buffer expired. The protected evidence remains available.')
+            if c["privacy_status"] not in ('full_frame_blurred','synthetic_no_people','faces_reviewed') or c["status"]=='deleted':
                 raise HTTPException(423,"Evidence is held until privacy processing completes.")
             try:
                 data=storage.read(evidence)
@@ -390,6 +470,24 @@ def create_app(config=None):
             return Response(data[start:end+1],status_code=206,media_type=evidence["mime"],headers=headers)
         return Response(data,media_type=evidence["mime"],headers=headers)
 
+    @app.post("/api/cases/{case_id}/privacy-review")
+    def privacy_review(case_id: str, body: PrivacyDecision, actor=Depends(user)):
+        require(actor, REVIEWERS)
+        with db.transaction() as con:
+            c = case_access(con, actor, case_id)
+            if c['version'] != body.version or c['processing_status'] not in ('partial', 'completed') or c['status'] == 'deleted':
+                raise HTTPException(409, "Case changed or is not ready. Refresh before reviewing privacy.")
+            artifact = con.execute("SELECT id FROM evidence WHERE case_id=? AND kind='face_preview'", (case_id,)).fetchone()
+            if not artifact:
+                raise HTTPException(409, "No selective-redaction copy exists for this case.")
+            target = 'faces_reviewed' if body.action == 'approve' else 'full_frame_blurred'
+            if c['privacy_status'] == target:
+                raise HTTPException(409, "This privacy state is already recorded.")
+            con.execute("UPDATE cases SET privacy_status=?,version=version+1,updated_at=? WHERE id=?", (target,now(),case_id))
+            con.execute("INSERT INTO reviews VALUES (?,?,?,?,?,?,?,?)", (uid('rv_'),case_id,actor['id'],'privacy_'+body.action,body.reason,c['status'],c['status'],now()))
+            db.audit(con,actor['id'],'privacy.'+body.action,case_id,{'evidence_id':artifact['id']})
+        return {'ok':True, 'privacy_status':target}
+
     @app.get("/api/cases/{case_id}/report")
     def report(case_id: str,format: str="json",actor=Depends(user)):
         if format not in ('json','html'):
@@ -400,8 +498,8 @@ def create_app(config=None):
                 raise HTTPException(410,"Case content has expired.")
             db.audit(con,actor["id"],"case.export",case_id,{"format":format})
         # Minimize exported identity/location: no owner IDs or exact coordinates.
-        exported={k:data[k] for k in ('id','title','synthetic','created_at','status','processing_status','privacy_status','risk_label','risk_score','assessment','evidence','segments','events','reviews','summary','related')}
-        exported["notice"]="Decision support only. Not a legal determination. Synthetic records are not genuine model outputs."
+        exported={k:data[k] for k in ('id','title','synthetic','test_recording','created_at','status','processing_status','privacy_status','risk_label','risk_score','assessment','evidence','segments','events','reviews','summary','related')}
+        exported["notice"]="Decision support only. Not a legal determination. Authored seed findings are simulated. Uploaded test recordings may have actual model outputs but are not operational evidence."
         if format=='json':
             return Response(json.dumps(exported,ensure_ascii=False,indent=2),media_type="application/json",headers={"Content-Disposition":f'attachment; filename="{case_id}.json"'})
         text=html.escape(json.dumps(exported,ensure_ascii=False,indent=2))
@@ -415,7 +513,7 @@ def create_app(config=None):
             where="a.status=?" if status else "1=1"
             params=[status] if status else []
             total=con.execute(f"SELECT COUNT(*) FROM alerts a WHERE {where}",params).fetchone()[0]
-            rows=[dict(r) for r in con.execute(f"SELECT a.*,c.title,c.location,c.synthetic,c.risk_score,u.name AS assigned_name,(SELECT count(*) FROM evidence e WHERE e.case_id=c.id AND kind!='original') AS evidence_count FROM alerts a JOIN cases c ON c.id=a.case_id LEFT JOIN users u ON u.id=a.assigned_to WHERE {where} ORDER BY CASE WHEN a.status='resolved' THEN 1 ELSE 0 END, CASE WHEN severity='Emergency' THEN 0 ELSE 1 END,a.created_at DESC LIMIT 20 OFFSET ?",[*params,(page-1)*20])]
+            rows=[dict(r) for r in con.execute(f"SELECT a.*,c.title,c.location,c.synthetic,c.test_recording,c.risk_score,u.name AS assigned_name,(SELECT count(*) FROM evidence e WHERE e.case_id=c.id AND kind!='original') AS evidence_count FROM alerts a JOIN cases c ON c.id=a.case_id LEFT JOIN users u ON u.id=a.assigned_to WHERE {where} ORDER BY CASE WHEN a.status='resolved' THEN 1 ELSE 0 END, CASE WHEN severity='Emergency' THEN 0 ELSE 1 END,a.created_at DESC LIMIT 20 OFFSET ?",[*params,(page-1)*20])]
             for a in rows:
                 a["history"]=[dict(r) for r in con.execute("SELECT h.*,u.name AS author FROM alert_history h LEFT JOIN users u ON u.id=h.actor_id WHERE alert_id=? ORDER BY created_at DESC",(a["id"],))]
                 a["notifications"]=[dict(r) for r in con.execute("SELECT * FROM notifications WHERE alert_id=?",(a["id"],))]
@@ -451,7 +549,8 @@ def create_app(config=None):
         with db.connect() as con:
             where,params=scope(actor)
             jobs=[dict(r) for r in con.execute(f"SELECT j.id,j.case_id,j.status,j.attempts,j.updated_at,c.processing_error,c.title FROM jobs j JOIN cases c ON c.id=j.case_id WHERE {where} ORDER BY j.updated_at DESC LIMIT 30",params)]
-            return {"database":"available","worker":"running" if processor.thread and processor.thread.is_alive() else "stopped", "demo":config.demo,"capabilities":capabilities(config),"jobs":jobs,"media_encryption":"Fernet authenticated encryption","database_encryption":"Requires encrypted host volume; SQLite is not encrypted by the application.","transport":"Secure cookie enabled; terminate HTTPS at reverse proxy." if config.secure_cookie else "Local HTTP demonstration. Use HTTPS before any remote or real-data deployment."}
+            search_jobs=[dict(r) for r in con.execute(f"SELECT s.case_id,s.status,s.processed,s.total,s.error_code,s.updated_at,c.title FROM search_indexes s JOIN cases c ON c.id=s.case_id WHERE {where} ORDER BY s.updated_at DESC LIMIT 30",params)]
+            return {"database":"available","worker":"running" if processor.thread and processor.thread.is_alive() else "stopped", "demo":config.demo,"capabilities":capabilities(config),"jobs":jobs,"search_jobs":search_jobs,"media_encryption":"Fernet authenticated encryption","database_encryption":"Requires encrypted host volume; SQLite is not encrypted by the application.","transport":"Secure cookie enabled; terminate HTTPS at reverse proxy." if config.secure_cookie else "Local HTTP demonstration. Use HTTPS before any remote or real-data deployment."}
 
     @app.get("/api/admin/users")
     def users(actor=Depends(user)):
@@ -541,6 +640,10 @@ def create_app(config=None):
             elif key=='categories':
                 ensure(set(value)=={'languages','gestures'})
                 ensure(all(isinstance(v,list) and 1<=len(v)<=30 and all(isinstance(x,str) and 1<=len(x)<=60 for x in v) for v in value.values()))
+            elif key=='maintenance':
+                ensure(set(value)=={'retention_enabled','interval_hours'})
+                ensure(type(value['retention_enabled']) is bool)
+                ensure(type(value['interval_hours']) is int and 1<=value['interval_hours']<=168)
             else:
                 raise HTTPException(404,"Unknown setting.")
         except (ValueError,KeyError,TypeError):
@@ -559,25 +662,28 @@ def create_app(config=None):
         with db.connect() as con:
             return [dict(r) for r in con.execute("SELECT * FROM phrases ORDER BY category,phrase")]
 
+    @app.get('/api/live-review-alerts')
+    def live_review_alerts(actor=Depends(user)):
+        require(actor,REVIEWERS)
+        with db.transaction() as con:
+            rows=con.execute("SELECT r.payload,r.case_id,r.session_id FROM live_results r JOIN live_sessions s ON s.id=r.session_id WHERE r.kind='visual_exchange' ORDER BY r.seq DESC LIMIT 20").fetchall()
+            db.audit(con,actor['id'],'stream.alerts_access','live-review-alerts')
+        items=[]
+        for row in rows:
+            value=json.loads(storage.cipher.decrypt(row['payload'].encode()))
+            if value.get('flagged'):
+                items.append({k:value.get(k) for k in ('id','title','created_at','start_seconds','end_seconds','confidence','confidence_type')} | {'session_id':row['session_id'],'case_id':row['case_id']})
+        return {'items':items}
+
     @app.post("/api/admin/phrases")
     def add_phrase(body: Phrase,actor=Depends(user)):
         require(actor,{"admin"})
-        with db.transaction() as con:
-            ident=uid("ph_")
-            con.execute("INSERT INTO phrases VALUES (?,?,?,?,?,1)",(ident,body.phrase,body.category,body.language,body.explanation))
-            db.audit(con,actor["id"],"phrase.created",ident,{"category":body.category})
-        return {"id":ident}
+        raise HTTPException(410,"Audio phrase detection has been removed. Historical library is read-only.")
 
     @app.post("/api/admin/phrases/{phrase_id}/toggle")
     def toggle_phrase(phrase_id: str,body: Reason,actor=Depends(user)):
         require(actor,{"admin"})
-        with db.transaction() as con:
-            row=con.execute("SELECT active FROM phrases WHERE id=?",(phrase_id,)).fetchone()
-            if not row:
-                raise HTTPException(404,"Phrase not found.")
-            con.execute("UPDATE phrases SET active=? WHERE id=?",(1-row[0],phrase_id))
-            db.audit(con,actor["id"],"phrase.updated",phrase_id,{"active":not row[0],"reason":body.reason})
-        return {"ok":True}
+        raise HTTPException(410,"Audio phrase detection has been removed. Historical library is read-only.")
 
     @app.get("/api/admin/audit")
     def audit(q: str=Query("",max_length=100),page: int=Query(1,ge=1),actor=Depends(user)):
@@ -600,41 +706,18 @@ def create_app(config=None):
             db.audit(con,actor["id"],"retention.hold",case_id,{"enabled":body.enabled,"reason":body.reason})
         return {"ok":True}
 
-    def retention_candidates(con):
-        policy=db.setting(con,'retention')['value']
-        cutoff=(datetime.now(timezone.utc)-timedelta(days=policy['days'])).isoformat()
-        quarantine=(datetime.now(timezone.utc)-timedelta(days=policy['quarantine_days'])).isoformat()
-        expired=[dict(r) for r in con.execute("SELECT id,title,created_at FROM cases WHERE created_at<? AND legal_hold=0 AND status!='deleted' AND processing_status NOT IN ('processing','queued')",(cutoff,))]
-        raw=[dict(r) for r in con.execute("SELECT e.* FROM evidence e JOIN cases c ON c.id=e.case_id WHERE e.kind='original' AND e.created_at<? AND c.legal_hold=0 AND c.processing_status='failed'",(quarantine,))]
-        return expired,raw
-
     @app.get("/api/admin/retention-preview")
     def retention_preview(actor=Depends(user)):
         require(actor,{'admin'})
         with db.connect() as con:
-            expired,raw=retention_candidates(con)
+            expired,raw=retention_candidates(con,db)
             return {"cases":expired,"quarantined_originals":len(raw)}
 
     @app.post("/api/admin/retention-run")
     def retention_run(body: Reason,actor=Depends(user)):
         require(actor,{'admin'})
         with db.transaction() as con:
-            expired,raw=retention_candidates(con)
-            for c in expired:
-                for e in con.execute("SELECT * FROM evidence WHERE case_id=?",(c['id'],)).fetchall():
-                    storage.delete(e)
-                # Keep operational tombstones and audit identifiers, erase content.
-                con.execute("UPDATE alerts SET event_id=NULL,status='resolved' WHERE case_id=?",(c['id'],))
-                for table in ('evidence','segments','events','notes','reviews','jobs'):
-                    con.execute(f"DELETE FROM {table} WHERE case_id=?",(c['id'],))
-                con.execute("UPDATE cases SET title='Deleted under retention policy',description='',location='',latitude=NULL,longitude=NULL,status='deleted',assessment='{}',stages='[]',sha256=NULL,privacy_status='deleted',risk_label='Unassessed',risk_score=NULL,processing_status='deleted' WHERE id=?",(c['id'],))
-                db.audit(con,actor['id'],'retention.deleted',c['id'],{'reason':body.reason})
-            for e in raw:
-                storage.delete(e)
-                con.execute("DELETE FROM evidence WHERE id=?",(e['id'],))
-                db.audit(con,actor['id'],'retention.quarantine_deleted',e['case_id'])
-            db.audit(con,actor['id'],'retention.run','retention',{'cases':len(expired),'originals':len(raw),'reason':body.reason})
-            return {'deleted_cases':len(expired),'deleted_originals':len(raw)}
+            return purge_retention(con,db,storage,actor['id'],body.reason)
 
     dist=ROOT/'dist'
     if dist.exists():

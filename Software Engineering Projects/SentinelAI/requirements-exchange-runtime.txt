@@ -1,0 +1,5 @@
+# Optional fixed full-precision CPU execution of the trained DINO encoder.
+# Original model weights, temporal sampling and threshold stay unchanged.
+-r requirements-exchange-dino.txt
+openvino==2025.4.1
+openvino-telemetry==2025.2.0

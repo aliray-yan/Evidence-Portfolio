@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "purpose": "Combined trained exchange and fight inference, continuous original WebRTC stream",
+  "duration_seconds": 600,
+  "source": "Existing attributed cash stock control repeated through Chromium fake camera, not a physical phone or new accuracy evidence",
+  "video": {"width":640,"height":360,"fps":15,"audio":false},
+  "requested_buffer_ms": 2500,
+  "models": {"exchange":"exchange-reviewed-9dcdef5530fa","fight":"rwf-r3d18-v1-7d13c9d32165"},
+  "runs": [
+    {"path":".local/live-benchmark/native-learned-20261113","exchange_queue_frames":1,"role":"Measure original immediate-replacement queue under concurrent inference"},
+    {"path":".local/live-benchmark/native-learned-queue4-20261113","exchange_queue_frames":4,"role":"Absorb one source second of bursts; preserve same 4Hz/eight-frame model, bounded memory, gap resets and normal playback"}
+  ],
+  "checks": ["600-second stream remains published", "Playback advances at rate 1 and covers at least 94% of wall time", "Both real models run, and learned transfer findings exist", "Replay plays and explicit preservation creates an investigation link", "Disclose gaps, skipped work, CPU, memory, RTP matches and delays even on passing runs"],
+  "limits": ["One camera on AC power; host load uncontrolled", "Browser capture-time availability determines whether camera-to-display estimates are possible", "Native classifier supplies no action bounding boxes", "No field accuracy or Android/Wi-Fi validation"]
+}

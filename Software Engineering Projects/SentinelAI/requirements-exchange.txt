@@ -1,0 +1,5 @@
+# Optional vision-only exchange baseline; official checkpoint installed explicitly.
+ultralytics==8.4.153
+# Ultralytics declares opencv-python even though MediaPipe uses contrib.
+# Keep their shared cv2 ABI compatible with MediaPipe's NumPy <2 runtime.
+opencv-python>=4.10,<4.12

@@ -1,6 +1,7 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 test('main screens meet automated WCAG A/AA checks',async({page})=>{
+ test.setTimeout(120000); // This single journey scans seventeen rendered states on the CPU test host.
  const results:any[]=[];
  async function check(name:string){
    const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
@@ -16,8 +17,8 @@ test('main screens meet automated WCAG A/AA checks',async({page})=>{
    await expect(page.getByRole('status',{name:'Loading records'})).toHaveCount(0);
    await check(url);
  }
- for(const [url,ready] of [['/admin?tab=devices','Registered devices'],['/admin?tab=policies','Evidence retention & privacy'],['/admin?tab=models','Risk thresholds & fusion weights'],['/admin?tab=phrases','Phrase & slang library'],['/audit','Recorded events']]){
-   await page.goto(url);await expect(page.getByRole('heading',{name:ready,exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'Loading records'})).toHaveCount(0);await check(url);
+ for(const [url,ready] of [['/admin?tab=devices','Registered devices'],['/admin?tab=policies','Evidence retention & privacy'],['/admin?tab=models','Visual review thresholds'],['/admin?tab=phrases','Audio phrase detection removed'],['/audit','Recorded events']]){
+   await page.goto(url);if(url.includes('phrases'))await expect(page.getByText(/Audio phrase detection has been removed/)).toBeVisible();else await expect(page.getByRole('heading',{name:ready,exact:true})).toBeVisible();await expect(page.getByRole('status',{name:'Loading records'})).toHaveCount(0);await check(url);
  }
  await page.goto('/cases/SA-26-1042');await expect(page.getByRole('heading',{name:'Evidence player'})).toBeVisible();
  for(const name of ['Event timeline','Evidence summary','Case history']){await page.getByRole('tab',{name,exact:false}).click();await check(name);}

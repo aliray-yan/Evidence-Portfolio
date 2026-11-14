@@ -171,8 +171,9 @@ def test_device_and_library(login):
     assert device.status_code==200
     assert admin.post(f"/api/admin/devices/{device.json()['id']}/revoke",json={'reason':'Device retired after testing.'}).status_code==200
     phrase=admin.post('/api/admin/phrases',json={'phrase':'procedural '+uid(),'category':'routine','language':'Roman Urdu','explanation':'Test phrase only; no inference claim.'})
-    assert phrase.status_code==200
-    assert admin.post(f"/api/admin/phrases/{phrase.json()['id']}/toggle",json={'reason':'Disable test-only phrase entry.'}).status_code==200
+    assert phrase.status_code==410
+    assert admin.get('/api/admin/phrases').status_code==200
+    assert admin.post('/api/admin/phrases/legacy-id/toggle',json={'reason':'Retired library must be read only.'}).status_code==410
 
 def test_password_hash():
     digest=hash_password('secure local password')

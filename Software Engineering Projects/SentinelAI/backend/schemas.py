@@ -58,3 +58,7 @@ class Reason(Input):
 
 class Hold(Reason):
     enabled: bool
+
+class PrivacyDecision(Reason):
+    action: Literal["approve", "revoke"]
+    version: int = Field(ge=1)

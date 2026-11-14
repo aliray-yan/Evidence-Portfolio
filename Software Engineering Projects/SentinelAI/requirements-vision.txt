@@ -1,0 +1,5 @@
+# Optional CPU inference. Install alongside requirements.txt in the same environment.
+# Compatible torch/torchvision pairs are resolved together; actual versions go in each export.
+torch>=2.6,<3
+torchvision>=0.21,<1
+setuptools>=77.0.3

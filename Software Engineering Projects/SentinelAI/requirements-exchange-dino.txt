@@ -1,0 +1,9 @@
+# Optional research encoder only. The application does not load this model.
+-r requirements-exchange-training.txt
+transformers==4.57.6
+safetensors>=0.4.3,<1
+psutil>=5.9,<8
+# Optional export benchmark; newer ONNX releases require protobuf >=5,
+# which conflicts with the project's intentionally pinned MediaPipe runtime.
+onnx==1.17.0
+protobuf>=4.25.3,<5

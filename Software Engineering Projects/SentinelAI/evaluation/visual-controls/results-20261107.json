@@ -1,0 +1,57 @@
+{
+  "scope": "Actual installed YOLO/person, MediaPipe/hand and temporal-rule inference on attributed stock controls. No training or independent accuracy estimate. Cash and envelope transfers were missed.",
+  "original_runs": [
+    "2026-11-05",
+    "2026-11-07"
+  ],
+  "results": [
+    {
+      "file": "cash.mp4",
+      "source": "https://mixkit.co/free-stock-video/hands-of-people-during-a-money-transaction-18247/",
+      "license": "Mixkit Stock Video Free License",
+      "sha256": "6f323d5e944abe56ace1284379a8b9ffc151b5702d6b86ffc5fa4a109c948067",
+      "findings": 0,
+      "sampled_frames": 13,
+      "frames_with_two_people": 3,
+      "frames_with_two_hands": 1,
+      "frames_with_object_proposals": 0,
+      "elapsed_seconds": 18.661
+    },
+    {
+      "file": "handshake.mp4",
+      "source": "https://mixkit.co/free-stock-video/people-hands-giving-a-handshake-on-a-white-background-30017/",
+      "license": "Mixkit Stock Video Free License",
+      "sha256": "050a323e629fcde22c3a078ff394ebb465d29b34335f4bf525e246efffab456e",
+      "findings": 0,
+      "sampled_frames": 19,
+      "frames_with_two_people": 0,
+      "frames_with_two_hands": 0,
+      "frames_with_object_proposals": 0,
+      "elapsed_seconds": 5.746
+    },
+    {
+      "file": "normal.mp4",
+      "source": "https://mixkit.co/free-stock-video/a-young-couple-engages-in-conversation-at-a-romantic-adorned-51638/",
+      "license": "Mixkit Stock Video Free License",
+      "sha256": "84d93098f5fb4540fdb69ed8a65ef6c230dd86619df0d2dd6c697558c6d8f231",
+      "findings": 0,
+      "sampled_frames": 32,
+      "frames_with_two_people": 0,
+      "frames_with_two_hands": 0,
+      "frames_with_object_proposals": 0,
+      "elapsed_seconds": 29.285
+    },
+    {
+      "file": "document.mp4",
+      "source": "https://mixkit.co/free-stock-video/postman-delivering-envelopes-to-a-person-at-home-31137/",
+      "license": "Mixkit Stock Video Free License",
+      "sha256": "459c3a7ac2bb5d12b902487988d87ed5da4b758187004f1e4b29ba385925e74b",
+      "findings": 0,
+      "sampled_frames": 20,
+      "frames_with_two_people": 14,
+      "frames_with_two_hands": 12,
+      "frames_with_object_proposals": 0,
+      "elapsed_seconds": 12.829
+    }
+  ]
+}

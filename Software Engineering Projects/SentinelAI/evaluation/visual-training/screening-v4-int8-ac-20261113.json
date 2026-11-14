@@ -1,0 +1,1318 @@
+{
+  "schema": 1,
+  "purpose": "research_integration_screening",
+  "profile": "openvino-int8-dino-v1",
+  "model_manifest_sha256": "635636276804b88311157b3bcf8415f3f632d0415b73a8dd44717900c8a09586",
+  "runtime_sha256": "891ec0fabbc0e431fcefe7f67469da58167701332120294a000705367ba192df",
+  "heldout_sha256": "72d5e0d7fa41796f01a240f5da71f14605f1744b7deb4601b12e51ca10bc554e",
+  "threshold": 0.5999999999999999,
+  "screening_pass": false,
+  "checks": {
+    "sbu_precision": true,
+    "sbu_recall": true,
+    "cornell_precision": true,
+    "cornell_recall": true,
+    "cap_negative_specificity": true,
+    "round_1_cash": true,
+    "round_1_document": true,
+    "round_1_handshake": true,
+    "round_1_normal": true,
+    "round_1_cpu_p95_under_250ms": true,
+    "round_2_cash": true,
+    "round_2_document": true,
+    "round_2_handshake": true,
+    "round_2_normal": true,
+    "round_2_cpu_p95_under_250ms": false,
+    "round_3_cash": true,
+    "round_3_document": true,
+    "round_3_handshake": true,
+    "round_3_normal": true,
+    "round_3_cpu_p95_under_250ms": false
+  },
+  "test": {
+    "overall": {
+      "count": 460,
+      "threshold": 0.5999999999999999,
+      "confusion_matrix": [
+        [
+          327,
+          9
+        ],
+        [
+          9,
+          115
+        ]
+      ],
+      "accuracy": 0.9608695652173913,
+      "precision": 0.9274193548387096,
+      "recall": 0.9274193548387096,
+      "f1": 0.9274193548387096
+    },
+    "datasets": {
+      "cap": {
+        "count": 90,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            90,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cornell": {
+        "count": 342,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            213,
+            9
+          ],
+          [
+            8,
+            112
+          ]
+        ],
+        "accuracy": 0.9502923976608187,
+        "precision": 0.9256198347107438,
+        "recall": 0.9333333333333333,
+        "f1": 0.9294605809128631
+      },
+      "sbu": {
+        "count": 28,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            24,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "accuracy": 0.9642857142857143,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      }
+    },
+    "categories": {
+      "cap/person_closes_box": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_closes_cabinet": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_closes_car_trunk": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_closes_oven_door": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_closes_refrigerator": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_drinks_from_bottle": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_folds_pants": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_folds_shirt": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_folds_socks": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_folds_towel": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_be_quiet": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_blow_kiss": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_cut": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_hang_loose": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_heart": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_peace": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_raise_hand": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_stop": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_swipe_down": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_swipe_left": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_swipe_right": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_swipe_up": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_thumbs_down": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_gestures_thumbs_up": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_interacts_with_laptop": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_box": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_cabinet": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_car_trunk": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_oven_door": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_refrigerator": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_opens_suitcase": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_picks_up_object_from_countertop": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_picks_up_object_from_floor": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_picks_up_object_from_table": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_down_object_on_countertop": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_down_object_on_floor": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_down_object_on_shelf": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_in_cabinet": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_backpack": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_bag": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_box": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_kitchen_drawer": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_oven": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_object_into_refrigerator": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_on_jacket": {
+        "count": 3,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_puts_on_sunglasses": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_sits_down": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_stands_up": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_stands_up_from_floor": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_takes_object_from_basket": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_takes_object_from_cabinet": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_takes_object_from_oven": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_takes_object_from_refrigerator": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_talks_on_phone": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cap/person_texts_on_phone": {
+        "count": 1,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cornell/exchange": {
+        "count": 120,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            8,
+            112
+          ]
+        ],
+        "accuracy": 0.9333333333333333,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104
+      },
+      "cornell/reach": {
+        "count": 108,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            108,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cornell/retreat": {
+        "count": 114,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            105,
+            9
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 0.9210526315789473,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/approach": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/depart": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/exchange": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "sbu/handshake": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/hug": {
+        "count": 2,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/kick": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/punch": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/push": {
+        "count": 4,
+        "threshold": 0.5999999999999999,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "timing_rounds": [
+    {
+      "report_sha256": "f6196aff18b2b6543d4031c2803ff324927208d268242480be6c18801ba11fc7",
+      "p95_seconds": 0.2430646999999908
+    },
+    {
+      "report_sha256": "ecb9eba197c3fb82e1850e79aa62af1ac6ce2b297bd6c918fe89376b6ee113c4",
+      "p95_seconds": 0.31720980000000054
+    },
+    {
+      "report_sha256": "7dbec7eff9239b6715ea8b40e17b12d11ccd3334c2eed747010a96688d587328",
+      "p95_seconds": 0.35557280000011815
+    }
+  ],
+  "limits": [
+    "Passing allows integration testing, not automatic activation or field approval.",
+    "All evaluation sources reused; SBU has only four positive reserved examples.",
+    "Latency excludes decoding, transport and concurrent fight inference.",
+    "No currency, intent, guilt, exact action onset or spatial boxes."
+  ]
+}

@@ -1,0 +1,4 @@
+# Same-stream decoding and bounded runtime measurement. MediaMTX and the RTP
+# adapter are installed separately by python -m backend.setup_streaming --bridge.
+av>=16,<19
+psutil>=6,<8

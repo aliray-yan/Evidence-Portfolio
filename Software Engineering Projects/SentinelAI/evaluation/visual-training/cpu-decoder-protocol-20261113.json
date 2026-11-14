@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "purpose": "Bound decoder concurrency to prevent competing decode and inference pools",
+  "runtime": "exchange-dino-int8-v1",
+  "rounds": [1, 2, 3],
+  "output_pattern": ".local/exchange-research/external-v4-int8-decoder1-roundN-20261113.json",
+  "reference": ".local/exchange-research/external-v4-int8-ac-round1-20261113.json",
+  "changes": "FFmpeg decoder limited to one thread, consistent with live decoder. Original selected frame indices, pixels, model threshold and weights preserved.",
+  "conditions": "AC power; two Torch/OpenVINO threads; one OpenCV thread; no concurrent test or inference jobs",
+  "gate": "All three runs p95 below 250ms and all controls correct; every scored window included; exact timing/classification agreement and score error <= 1e-4 versus preceding INT8 run",
+  "preserved_failure": "screening-v4-int8-ac-20261113.json",
+  "limits": "Standalone known-control screening only; actual application and sustained-stream verification still required. No field approval."
+}

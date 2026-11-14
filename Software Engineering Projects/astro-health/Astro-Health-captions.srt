@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:03,000
+Ali Rayyan · BoredtoMARS
+Astro Health | NASA Space Apps 2026
+
+2
+00:00:03,000 --> 00:00:06,000
+Astronaut health, far from Earth.
+A prototype for monitoring change and planning a response.
+
+3
+00:00:06,000 --> 00:00:10,000
+Learn a personal baseline.
+Five simulated indicators. Seven baseline days.
+
+4
+00:00:10,000 --> 00:00:14,400
+Test the alert workflow.
+A simulated heart-rate spike moves beyond the modeled trend.
+
+5
+00:00:14,400 --> 00:00:20,500
+Understand the flag. Record the next step.
+Local explanations and a saved follow-up.
+
+6
+00:00:20,500 --> 00:00:24,000
+Add the human context.
+Save crew wellbeing; export a mission report.
+
+7
+00:00:24,000 --> 00:00:27,500
+Built with NASA open-data context.
+OSD-575 + OSD-656 biomarker variability informs simulated noise.
+
+8
+00:00:27,500 --> 00:00:30,000
+Next: sensors and clinical validation.
+Research prototype · simulated data · no clinical claims.

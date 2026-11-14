@@ -1,0 +1,4 @@
+# Export/calibration only; application inference does not import NNCF.
+-r requirements-exchange-runtime.txt
+nncf==2.18.0
+numpy==1.26.4

@@ -1,0 +1,355 @@
+{
+  "schema": 1,
+  "version": "exchange-mnv3-gru-v1",
+  "model_manifest_sha256": "1fa485cf59efb0b27e2b9d065e509236ef985e936b68c0d664fe8e3dbd9387e9",
+  "external_report_sha256": "9b56f58b4521e889d96c0b735fedc16d02c8cb5b03995805a5ff9fbf7f968c92",
+  "screening_pass": false,
+  "checks": {
+    "cornell_precision": true,
+    "sbu_precision": false,
+    "cornell_recall": true,
+    "sbu_recall": true,
+    "control_cash": true,
+    "control_document": true,
+    "control_handshake": false,
+    "control_normal": false,
+    "cpu_sample_p95_under_250ms": true
+  },
+  "test": {
+    "overall": {
+      "count": 370,
+      "threshold": 0.42499999999999993,
+      "confusion_matrix": [
+        [
+          231,
+          15
+        ],
+        [
+          13,
+          111
+        ]
+      ],
+      "accuracy": 0.9243243243243243,
+      "precision": 0.8809523809523809,
+      "recall": 0.8951612903225806,
+      "f1": 0.888
+    },
+    "datasets": {
+      "cornell": {
+        "count": 342,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            209,
+            13
+          ],
+          [
+            13,
+            107
+          ]
+        ],
+        "accuracy": 0.9239766081871345,
+        "precision": 0.8916666666666667,
+        "recall": 0.8916666666666667,
+        "f1": 0.8916666666666667
+      },
+      "sbu": {
+        "count": 28,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            22,
+            2
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "accuracy": 0.9285714285714286,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      }
+    },
+    "categories": {
+      "cornell/exchange": {
+        "count": 120,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            13,
+            107
+          ]
+        ],
+        "accuracy": 0.8916666666666667,
+        "precision": 1.0,
+        "recall": 0.8916666666666667,
+        "f1": 0.9427312775330396
+      },
+      "cornell/reach": {
+        "count": 108,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            108,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "cornell/retreat": {
+        "count": 114,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            101,
+            13
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 0.8859649122807017,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/approach": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/depart": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/exchange": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "sbu/handshake": {
+        "count": 2,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/hug": {
+        "count": 2,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/kick": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/punch": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sbu/push": {
+        "count": 4,
+        "threshold": 0.42499999999999993,
+        "confusion_matrix": [
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "accuracy": 0.75,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  "training": {
+    "seed": 42,
+    "epochs_run": 17,
+    "selected_epoch": 5,
+    "seconds": 369.919,
+    "device": "cpu",
+    "encoder": "Official Torchvision MobileNet V3 Small ImageNet1K V1, frozen",
+    "head": "Learned GRU over eight ordered RGB embeddings",
+    "selection": "Mean dataset F1 on development; threshold grid 0.10 to 0.95 by 0.025"
+  },
+  "cpu_sample_p95_seconds": 0.03672710000000734,
+  "percentile_method": "nearest rank",
+  "counts": {
+    "train": {
+      "sbu/0": 62,
+      "sbu/1": 11,
+      "cornell/1": 437,
+      "cornell/0": 845
+    },
+    "dev": {
+      "sbu/0": 22,
+      "sbu/1": 3,
+      "cornell/1": 120,
+      "cornell/0": 230
+    },
+    "test": {
+      "sbu/0": 24,
+      "sbu/1": 4,
+      "cornell/1": 120,
+      "cornell/0": 222
+    }
+  },
+  "excluded_source_files": 43,
+  "external_controls": [
+    {
+      "control": "cash",
+      "expected_visible_transfer": true,
+      "sha256": "6f323d5e944abe56ace1284379a8b9ffc151b5702d6b86ffc5fa4a109c948067",
+      "detected": true,
+      "windows": 18,
+      "maximum_score": 0.9888830780982971,
+      "wall_seconds": 3.865815800000064
+    },
+    {
+      "control": "document",
+      "expected_visible_transfer": true,
+      "sha256": "459c3a7ac2bb5d12b902487988d87ed5da4b758187004f1e4b29ba385925e74b",
+      "detected": true,
+      "windows": 33,
+      "maximum_score": 0.9942119717597961,
+      "wall_seconds": 7.3554399999999305
+    },
+    {
+      "control": "handshake",
+      "expected_visible_transfer": false,
+      "sha256": "050a323e629fcde22c3a078ff394ebb465d29b34335f4bf525e246efffab456e",
+      "detected": true,
+      "windows": 30,
+      "maximum_score": 0.9976041913032532,
+      "wall_seconds": 4.663085500000079
+    },
+    {
+      "control": "normal",
+      "expected_visible_transfer": false,
+      "sha256": "84d93098f5fb4540fdb69ed8a65ef6c230dd86619df0d2dd6c697558c6d8f231",
+      "detected": true,
+      "windows": 57,
+      "maximum_score": 0.9979009628295898,
+      "wall_seconds": 15.423553500000025
+    }
+  ],
+  "conclusion": "Do not activate: one or more predeclared quality/performance checks failed.",
+  "limitations": [
+    "Participant-held-out laboratory windows are correlated within recordings and camera views.",
+    "SBU test includes only four positive sequences; estimates have substantial uncertainty.",
+    "Four external controls are a screening check, not a validated field benchmark.",
+    "No banknote identity, intent, guilt, spatial action boxes or measured false alarms per hour.",
+    "Physical Android retesting is postponed."
+  ]
+}
